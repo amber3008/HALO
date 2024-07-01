@@ -22,7 +22,7 @@ import cucumber.api.java.en.When;
 public class OrderSearchSeleniumSteps 
 {
 	WebDriver driver;
-   public static envName;
+   public static String envName;
 	public static Logger logger = null;
 	HomePage hp;
 	SeleniumBase sb;
