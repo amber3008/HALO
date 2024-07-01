@@ -16,7 +16,7 @@ public class OCX_OrderCreationAVPN
 	public void createandstartorderrequest_is_pushed_to_OMX() throws Exception 
 	{
 		//ocxMis = new OCXOrderCreationOld_MIS_Steps();
-		System.out.println("Env to send CASO is: "+OCXOrderCreationOld_MIS_Steps.envName);
+		//System.out.println("Env to send CASO is: "+OCXOrderCreationOld_MIS_Steps.envName);
 		try
 		{
 			//OrderCreationInOCX.casoPush(ocxMis.envName);
