@@ -9,7 +9,7 @@ import cucumber.api.java.en.When;
 public class OCX_OrderCreationAVPN
 {
 	public static TriggerDecomposeSalesOrderRequest_MIS tds;
-	public OCXOrderCreationOld_MIS_Steps ocxMis;
+	public static OCXOrderCreationOld_MIS_Steps ocxMis;
 
 	
 	@When("^createAndStartOrderRequest is pushed to OMX\\.$")
