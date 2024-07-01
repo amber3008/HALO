@@ -49,11 +49,11 @@
 												<value>$BUILD_URL</value>
 										</property>	 -->
 
-                        <enviroment>${enviroment}</enviroment>
+                  <!--      <enviroment>${enviroment}</enviroment> -->
 						 
                     </systemPropetryVariables>
                                <suiteXmlFiles>
-                        <suiteXmlFile>${suitXmlFile}</suiteXmlFile>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                             <!--      <suiteXmlFiles>
                                          <suiteXmlFile>testng.xml</suiteXmlFile>
