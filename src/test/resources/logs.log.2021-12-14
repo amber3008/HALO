@@ -1,0 +1,1576 @@
+12-14-2021 16:21:36  INFO [OMXOrderCreationSteps.java:57] - --------------------Triggering Notify Request-----------------
+ 12-14-2021 16:21:38  INFO [TriggerNotifyRequest.java:56] - URL is:http://newtt4a1.snt.bst.bls.com:9003/omxenterprise-client-inbound-ws-war/NxEnterpriseService
+ 12-14-2021 16:21:38  INFO [TriggerNotifyRequest.java:57] - URL is:http://newtt4a1.snt.bst.bls.com:9003/omxenterprise-client-inbound-ws-war/NxEnterpriseService
+ 12-14-2021 16:21:38  INFO [UpdateXMLs.java:75] - SOR ID is:1-TNRSCPABDDC63
+ 12-14-2021 16:21:38  INFO [UpdateXMLs.java:100] - Request After update is :<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:nxen="http://omx.att.com/omx/nxenterprise" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v3="http://cio.att.com/commonheader/v3">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <nxen:notifyProjectRequest>
+         <nxen:sourceSystem>ATTeBiz</nxen:sourceSystem>
+         <!--ATTeBiz,SalesExpr,ROME-->
+         <nxen:serviceNameList>
+            <nxen:serviceName>MIS</nxen:serviceName> 
+            <nxen:serviceName>BVOIP</nxen:serviceName>
+           <!-- <nxen:serviceName>AVPN</nxen:serviceName>-->
+         </nxen:serviceNameList>
+         <!--<nxen:sorId>1-TNRSCPABDDC63</nxen:sorId> -->
+         <nxen:solutionID>1-TNRSCPABDDC63</nxen:solutionID>
+         <nxen:ProjectIdList>
+            <nxen:dborProjectId>TNRSCPAB108196</nxen:dborProjectId>
+         </nxen:ProjectIdList>
+         <nxen:customerName>HALOAMBCUSTOMER</nxen:customerName>
+         <nxen:opportunityId>1-C2823484</nxen:opportunityId>
+         <!--<nxen:eventOperation>SORSubmitted</nxen:eventOperation>-->
+         <nxen:eventOperation>submitOrderData</nxen:eventOperation>
+         <nxen:SOREligibility>OMX</nxen:SOREligibility>
+      </nxen:notifyProjectRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+ 12-14-2021 16:59:21  INFO [OMXOrderCreationSteps.java:57] - --------------------Triggering Notify Request-----------------
+ 12-14-2021 16:59:22  INFO [TriggerNotifyRequest.java:56] - URL is:http://newtt5a1.snt.bst.bls.com:9003/omxenterprise-client-inbound-ws-war/NxEnterpriseService
+ 12-14-2021 16:59:22  INFO [TriggerNotifyRequest.java:57] - URL is:http://newtt5a1.snt.bst.bls.com:9003/omxenterprise-client-inbound-ws-war/NxEnterpriseService
+ 12-14-2021 16:59:22  INFO [UpdateXMLs.java:75] - SOR ID is:1-MEDCB1933
+ 12-14-2021 16:59:22  INFO [UpdateXMLs.java:100] - Request After update is :<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:nxen="http://omx.att.com/omx/nxenterprise" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v3="http://cio.att.com/commonheader/v3">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <nxen:notifyProjectRequest>
+         <nxen:sourceSystem>ATTeBiz</nxen:sourceSystem>
+         <!--ATTeBiz,SalesExpr,ROME-->
+         <nxen:serviceNameList>
+            <nxen:serviceName>MIS</nxen:serviceName> 
+            <!--<nxen:serviceName>BVOIP</nxen:serviceName>-->
+           <!-- <nxen:serviceName>AVPN</nxen:serviceName>-->
+         </nxen:serviceNameList>
+         <!--<nxen:sorId>1-MEDCB1933</nxen:sorId> -->
+         <nxen:solutionID>1-MEDCB1933</nxen:solutionID>
+         <nxen:ProjectIdList>
+            <nxen:dborProjectId>ME535372</nxen:dborProjectId>
+         </nxen:ProjectIdList>
+         <nxen:customerName>HALOAMBCUSTOMER</nxen:customerName>
+         <nxen:opportunityId>1-C2823484</nxen:opportunityId>
+         <!--<nxen:eventOperation>SORSubmitted</nxen:eventOperation>-->
+         <nxen:eventOperation>submitOrderData</nxen:eventOperation>
+         <nxen:SOREligibility>OMX</nxen:SOREligibility>
+      </nxen:notifyProjectRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+ 12-14-2021 16:59:23  INFO [TriggerNotifyRequest.java:64] - Response in format is:<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+<env:Header/>
+<env:Body>
+<ns3:notifyProjectResponse xmlns="http://cio.att.com/commonheader/v3" xmlns:ns3="http://omx.att.com/omx/nxenterprise"/>
+</env:Body>
+</env:Envelope>
+
+ 12-14-2021 16:59:23  INFO [OMXOrderCreationSteps.java:63] - --------------------SOR ID while testing-----------------
+ 12-14-2021 16:59:23  INFO [OMXOrderCreationSteps.java:64] - 1-MEDCB1933
+ 12-14-2021 16:59:23  INFO [OMXOrderCreationSteps.java:65] - --------------------PROJ ID while testing-----------------
+ 12-14-2021 16:59:23  INFO [OMXOrderCreationSteps.java:66] - ME535372
+ 12-14-2021 16:59:23  INFO [OMXOrderCreationSteps.java:67] - --------------------Notify Request Triggered-----------------
+ 12-14-2021 16:59:41  INFO [OrderCreationInOCX.java:70] - URL for pushing CASO Request is :http://zltv9973.vci.att.com:41300/ORDERING_PORTFOLIO/CreateAndStartOrder?wsdl
+ 12-14-2021 16:59:41  INFO [UpdateXMLs.java:519] - SOR ID is:1-MEDCB1933
+ 12-14-2021 16:59:41  INFO [UpdateXMLs.java:521] - PROJ ID is:ME535372
+ 12-14-2021 16:59:41  INFO [UpdateXMLs.java:524] - Request After update is :<?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+   <env:Header>
+      <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" env:mustUnderstand="1">
+         <wsse:UsernameToken wsu:Id="UsernameToken-13">
+            <wsse:Username>OMS</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">Oms111</wsse:Password>
+         </wsse:UsernameToken>
+      </wsse:Security>
+   </env:Header>
+   <env:Body>
+   
+      <ns0:createAndStartOrder xmlns:ns0="http://CreateAndStartOrder.createAndStartOrder.services.amdocs.com">
+         <OrderingContext/>
+         <CreateAndStartOrderInput>
+            <orderInformationX9>
+               <requestingApplicationX9>SalesExpr</requestingApplicationX9>
+               <startOrderingProcessX9>Y</startOrderingProcessX9>
+               <validationModeOnlyX9>N</validationModeOnlyX9>
+             <highFrequencyLineInfoList>
+                  <reservationID>5058</reservationID>
+                  <orderCircuitToApplyReservationTo>/L8YX/615654//ATI/</orderCircuitToApplyReservationTo>
+               </highFrequencyLineInfoList>
+               <sorlessOrderIndX9>N</sorlessOrderIndX9>
+               <tnPlatformInfoX9/>
+               <cpeSwapFlagX9>false</cpeSwapFlagX9>
+            </orderInformationX9>
+            <appointmentInformationX9>
+               <bestAvailableDateIndX9>N</bestAvailableDateIndX9>
+               <customerPurchaseDecisionDateX9>2019-10-01</customerPurchaseDecisionDateX9>
+               <customerRefusesEarlyTurnupServiceIndicatorX9>N</customerRefusesEarlyTurnupServiceIndicatorX9>
+               <customerRequestDueDateX9>2019-10-02</customerRequestDueDateX9>
+               <isInRegionX9>false</isInRegionX9>
+            </appointmentInformationX9>
+            <customerInformationX9>
+               <commonCustomerIdentifierX9>INTERNAL_100144741</commonCustomerIdentifierX9>
+               <contractIDX9>Contract02516800782</contractIDX9>
+            </customerInformationX9>
+            <projectInformationX9>
+               <foreignSorIdX9>1-MEDCB1933</foreignSorIdX9>
+               <marketStrataX9>0</marketStrataX9>
+               <projectIdentifierX9>ME535372</projectIdentifierX9>
+               <projectNumberX9>MISEXPRESS_</projectNumberX9>
+               <solutionIdentifierX9>60887260</solutionIdentifierX9>
+            </projectInformationX9>
+            <siteInformationX9>
+               <siteIDX9>60857764</siteIDX9>
+            </siteInformationX9>
+            <updateProductInOrderConfigurationX9>
+               <configureNewOfferingX9>
+                  <installAddressIdX9>752706</installAddressIdX9>
+                  <productDetailsX9>
+                     <actionTypeListX9>
+                        <actionTypeX9 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                     </actionTypeListX9>
+                     <orderActionTypeX9 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">PR</orderActionTypeX9>
+                     <productConfigurationChangesX9 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <changedContainedProductsX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>20079</attributeIDX9>
+                              <attributeNameX9>CONTRACTIDENTIFIER</attributeNameX9>
+                              <valueX9>Contract02516800782</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>20089</attributeIDX9>
+                              <attributeNameX9>CTNUMBER</attributeNameX9>
+                              <valueX9>MIS19057102</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>20099</attributeIDX9>
+                              <attributeNameX9>CONTRACTEDBUSINESSNAME</attributeNameX9>
+                              <valueX9>ADI_Vyatta01_Cust15</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>20169</attributeIDX9>
+                              <attributeNameX9>CUSTOMERTYPE</attributeNameX9>
+                              <valueX9>Domestic</valueX9>
+                           </attributeValueChangeX9>
+                           <productSpecContainmentIDX9>72833</productSpecContainmentIDX9>
+                           <productSpecContainmentNameX9>MISEXPRESS.MISSITECONFIGURATION.CONTRACTDETAILS</productSpecContainmentNameX9>
+                        </changedContainedProductsX9>
+                        <changedContainedProductsX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>67823</attributeIDX9>
+                              <attributeNameX9>ETESITEKEY</attributeNameX9>
+                              <valueX9>SITEH1103099</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>68283</attributeIDX9>
+                              <attributeNameX9>BASESERVICETYPE</attributeNameX9>
+                              <valueX9>MIS</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>5789895</attributeIDX9>
+                              <attributeNameX9>MARKETINGOFFERNAME</attributeNameX9>
+                              <valueX9>MIS Express</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>71893</attributeIDX9>
+                              <attributeNameX9>MANAGEMENTOPTION</attributeNameX9>
+                              <valueX9>w/ Managed Router</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>67843</attributeIDX9>
+                              <attributeNameX9>SERVICEFLAVOR</attributeNameX9>
+                              <valueX9>MIS Express</valueX9>
+                           </attributeValueChangeX9>
+                           <productSpecContainmentIDX9>72263</productSpecContainmentIDX9>
+                           <productSpecContainmentNameX9>MISEXPRESS.MISSITECONFIGURATION.SITECONFIGMAIN</productSpecContainmentNameX9>
+                        </changedContainedProductsX9>
+                        <changedContainedProductsX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>9809</attributeIDX9>
+                              <attributeNameX9>LECADDRESSID</attributeNameX9>
+                              <valueX9>752706</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>5556455</attributeIDX9>
+                              <attributeNameX9>CPESHIPTOADDRESSID</attributeNameX9>
+                              <valueX9>752859</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>271</attributeIDX9>
+                              <attributeNameX9>POSTALADDRESSID</attributeNameX9>
+                              <valueX9>759195</valueX9>
+                           </attributeValueChangeX9>
+                           <productSpecContainmentIDX9>5577155</productSpecContainmentIDX9>
+                           <productSpecContainmentNameX9>MISEXPRESS.MISSITECONFIGURATION.LOCATIONDATA</productSpecContainmentNameX9>
+                        </changedContainedProductsX9>
+                        <changedContainedProductsX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>77123</attributeIDX9>
+                              <attributeNameX9>TYPEOFTRIPLET</attributeNameX9>
+                              <valueX9>S</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>841</attributeIDX9>
+                              <attributeNameX9>MASTERCUSTOMERNUMBER</attributeNameX9>
+                              <valueX9>25175A</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>861</attributeIDX9>
+                              <attributeNameX9>SALESOFFICECODE</attributeNameX9>
+                              <valueX9>12</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>851</attributeIDX9>
+                              <attributeNameX9>GROUPCODE</attributeNameX9>
+                              <valueX9>MAL</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>14819</attributeIDX9>
+                              <attributeNameX9>ACCOUNTNUMBER</attributeNameX9>
+                              <valueX9>8310000587324</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>96493</attributeIDX9>
+                              <attributeNameX9>ACCOUNTTYPE</attributeNameX9>
+                              <valueX9>SA</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>96513</attributeIDX9>
+                              <attributeNameX9>BILLERCUSTOMERNAME</attributeNameX9>
+                              <valueX9>ADIVB TEST ACCOUNT1</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>96503</attributeIDX9>
+                              <attributeNameX9>BILLERCODE</attributeNameX9>
+                              <valueX9>UP</valueX9>
+                           </attributeValueChangeX9>
+                           <naturalKeyX9>SAS</naturalKeyX9>
+                           <productSpecContainmentIDX9>5621425</productSpecContainmentIDX9>
+                           <productSpecContainmentNameX9>MISEXPRESS.MISSITECONFIGURATION.ACCOUNTDETAILS</productSpecContainmentNameX9>
+                        </changedContainedProductsX9>
+                        <changedContainedProductsX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>5555875</attributeIDX9>
+                              <attributeNameX9>TRANSACTIONALORDERIDENTIFIER</attributeNameX9>
+                              <valueX9>N/A</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>17889</attributeIDX9>
+                              <attributeNameX9>EXPRESSPRODUCT</attributeNameX9>
+                              <valueX9>MIS</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>17899</attributeIDX9>
+                              <attributeNameX9>EXPRESSOFFER</attributeNameX9>
+                              <valueX9>MIS Express</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>17909</attributeIDX9>
+                              <attributeNameX9>EXPRESSSLA</attributeNameX9>
+                              <valueX9>30</valueX9>
+                           </attributeValueChangeX9>
+                           <productSpecContainmentIDX9>5556275</productSpecContainmentIDX9>
+                           <productSpecContainmentNameX9>MISEXPRESS.MISSITECONFIGURATION.ADDITIONALORDERINFO</productSpecContainmentNameX9>
+                        </changedContainedProductsX9>
+                        <changedContainedProductsX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>76633</attributeIDX9>
+                              <attributeNameX9>LOCATIONCONTACTID</attributeNameX9>
+                              <valueX9>1822556</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>76623</attributeIDX9>
+                              <attributeNameX9>ALTERNATELOCATIONCONTACTID</attributeNameX9>
+                              <valueX9>1822557</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>9879</attributeIDX9>
+                              <attributeNameX9>TECHNICALCONTACTID</attributeNameX9>
+                              <valueX9>1822558</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>9889</attributeIDX9>
+                              <attributeNameX9>ALTERNATETECHNICALCONTACTID</attributeNameX9>
+                              <valueX9>1822375</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>9909</attributeIDX9>
+                              <attributeNameX9>CUSTOMERCONTACTID</attributeNameX9>
+                              <valueX9>1820994</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>11539</attributeIDX9>
+                              <attributeNameX9>ALTERNATECUSTOMERCONTACTID</attributeNameX9>
+                              <valueX9>1820993</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>9919</attributeIDX9>
+                              <attributeNameX9>BILLINGCONTACTID</attributeNameX9>
+                              <valueX9>1822367</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>9929</attributeIDX9>
+                              <attributeNameX9>SWIPCONTACTID</attributeNameX9>
+                              <valueX9>1819439</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>9939</attributeIDX9>
+                              <attributeNameX9>SECURITYCONTACTID</attributeNameX9>
+                              <valueX9>1822565</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>9949</attributeIDX9>
+                              <attributeNameX9>ALTENATESECURITYCONTACTID</attributeNameX9>
+                              <valueX9>1822564</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>10039</attributeIDX9>
+                              <attributeNameX9>SHIPTOCONTACTID</attributeNameX9>
+                              <valueX9>1822563</valueX9>
+                           </attributeValueChangeX9>
+                           <productSpecContainmentIDX9>74813</productSpecContainmentIDX9>
+                           <productSpecContainmentNameX9>MISEXPRESS.MISSITECONFIGURATION.CONTACTS</productSpecContainmentNameX9>
+                        </changedContainedProductsX9>
+                     </productConfigurationChangesX9>
+                     <productOfferingProductSpecIDX9 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">5552835</productOfferingProductSpecIDX9>
+                     <productOfferingProductSpecNameX9 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">MISEXPRESS.MISSITECONFIGURATION</productOfferingProductSpecNameX9>
+                  </productDetailsX9>
+                  <productDetailsX9 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                     <actionTypeListX9>
+                        <actionTypeX9 xsi:nil="true"/>
+                     </actionTypeListX9>
+                     <orderActionTypeX9>PR</orderActionTypeX9>
+                     <productConfigurationChangesX9>
+                        <changedContainedProductsX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>67833</attributeIDX9>
+                              <attributeNameX9>ETEACCESSKEY</attributeNameX9>
+                              <valueX9>PLIDH8147236</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>67823</attributeIDX9>
+                              <attributeNameX9>ETESITEKEY</attributeNameX9>
+                              <valueX9>SITEH1103099</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>68593</attributeIDX9>
+                              <attributeNameX9>ETEPORTKEY</attributeNameX9>
+                              <valueX9>PORTH8147237</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>32213</attributeIDX9>
+                              <attributeNameX9>TYPEOFCIRCUIT</attributeNameX9>
+                              <valueX9>40 Gbps</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>42993</attributeIDX9>
+                              <attributeNameX9>NUMBEROFCIRCUITS</attributeNameX9>
+                              <valueX9>1</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>68283</attributeIDX9>
+                              <attributeNameX9>BASESERVICETYPE</attributeNameX9>
+                              <valueX9>MIS</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>67843</attributeIDX9>
+                              <attributeNameX9>SERVICEFLAVOR</attributeNameX9>
+                              <valueX9>MIS Express</valueX9>
+                           </attributeValueChangeX9>
+                           <productSpecContainmentIDX9>70773</productSpecContainmentIDX9>
+                           <productSpecContainmentNameX9>MISEXPRESS.MISETHERNETACCESS.ACCESSMAIN</productSpecContainmentNameX9>
+                        </changedContainedProductsX9>
+                        <changedContainedProductsX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>30673</attributeIDX9>
+                              <attributeNameX9>ACCESSSPEED</attributeNameX9>
+                              <valueX9>40000000</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>9849</attributeIDX9>
+                              <attributeNameX9>UNITOFSPEED</attributeNameX9>
+                              <valueX9>KBPS</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>12649</attributeIDX9>
+                              <attributeNameX9>PHYSICALINTERFACETYPE</attributeNameX9>
+                              <valueX9>40G Base LR4</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>12659</attributeIDX9>
+                              <attributeNameX9>ACCESSTAILTECHNOLOGY</attributeNameX9>
+                              <valueX9>ESP Ethernet Dedicated</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>13539</attributeIDX9>
+                              <attributeNameX9>INTERCONNECTTECHNOLOGY</attributeNameX9>
+                              <valueX9>Direct Connect</valueX9>
+                           </attributeValueChangeX9>
+                           <productSpecContainmentIDX9>85223</productSpecContainmentIDX9>
+                           <productSpecContainmentNameX9>MISEXPRESS.MISETHERNETACCESS.ETHERNETDATA</productSpecContainmentNameX9>
+                        </changedContainedProductsX9>
+                        <changedContainedProductsX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>12619</attributeIDX9>
+                              <attributeNameX9>ACCESSBILLINGARRANGEMENT</attributeNameX9>
+                              <valueX9>Local Access Combo</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>12629</attributeIDX9>
+                              <attributeNameX9>PROVISIONINGACCESSARRANGEMENTCODE</attributeNameX9>
+                              <valueX9>BA</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>38583</attributeIDX9>
+                              <attributeNameX9>PROVISIONINGACCESSARRANGEMENT</attributeNameX9>
+                              <valueX9>Baseline</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>30653</attributeIDX9>
+                              <attributeNameX9>TYPEOFTIEDOWN</attributeNameX9>
+                              <valueX9>Bay Panel Jack</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>30643</attributeIDX9>
+                              <attributeNameX9>ATTLOCATIONCLLI</attributeNameX9>
+                              <!--manually added-->
+                              <valueX9>ORLDFLMAF16</valueX9>
+                           </attributeValueChangeX9>
+                           <productSpecContainmentIDX9>85213</productSpecContainmentIDX9>
+                           <productSpecContainmentNameX9>MISEXPRESS.MISETHERNETACCESS.CUSTOMERPREMENDPOINT</productSpecContainmentNameX9>
+                        </changedContainedProductsX9>
+                        <changedContainedProductsX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>9819</attributeIDX9>
+                              <attributeNameX9>COMMONLANGUAGECIRCUITIDENTIFIER</attributeNameX9>
+                              <valueX9>/L8YX/990384//ATI/</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>89773</attributeIDX9>
+                              <attributeNameX9>USONUMBER</attributeNameX9>
+                              <valueX9>32584835</valueX9>
+                           </attributeValueChangeX9>
+                           <naturalKeyX9>/L8YX/990384//ATI/</naturalKeyX9>
+                           <productSpecContainmentIDX9>5552115</productSpecContainmentIDX9>
+                           <productSpecContainmentNameX9>MISEXPRESS.MISETHERNETACCESS.CIRCUITINFORMATION</productSpecContainmentNameX9>
+                        </changedContainedProductsX9>
+                        <changedContainedProductsX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>32613</attributeIDX9>
+                              <attributeNameX9>BAY</attributeNameX9>
+                              <valueX9>1</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>32683</attributeIDX9>
+                              <attributeNameX9>PANEL</attributeNameX9>
+                              <valueX9>1</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>32693</attributeIDX9>
+                              <attributeNameX9>JACK</attributeNameX9>
+                              <valueX9>1</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>5565875</attributeIDX9>
+                              <attributeNameX9>CIRCUITREFERENCEID</attributeNameX9>
+                              <valueX9>/L8YX/990384//ATI/</valueX9>
+                           </attributeValueChangeX9>
+                           <naturalKeyX9>/L8YX/990384//ATI/</naturalKeyX9>
+                           <productSpecContainmentIDX9>5564275</productSpecContainmentIDX9>
+                           <productSpecContainmentNameX9>MISEXPRESS.MISETHERNETACCESS.CUSTOMERPREMENDPOINT.BAYPANELJACK</productSpecContainmentNameX9>
+                        </changedContainedProductsX9>
+                        <changedContainedProductsX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>32353</attributeIDX9>
+                              <attributeNameX9>ADDLPOINTOFTERMINATIONCLLI</attributeNameX9>
+                              <valueX9>DLLTSCDA</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>32363</attributeIDX9>
+                              <attributeNameX9>ACCESSTERMINATIONLOCCLLI</attributeNameX9>
+                              <valueX9>ORLDFLMAF17</valueX9>
+                           </attributeValueChangeX9>
+                           <productSpecContainmentIDX9>5564265</productSpecContainmentIDX9>
+                           <productSpecContainmentNameX9>MISEXPRESS.MISETHERNETACCESS.CUSTOMERPREMENDPOINT.BALADATA</productSpecContainmentNameX9>
+                        </changedContainedProductsX9>
+                        <changedContainedProductsX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>77123</attributeIDX9>
+                              <attributeNameX9>TYPEOFTRIPLET</attributeNameX9>
+                              <valueX9>A</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>841</attributeIDX9>
+                              <attributeNameX9>MASTERCUSTOMERNUMBER</attributeNameX9>
+                              <valueX9>25175A</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>861</attributeIDX9>
+                              <attributeNameX9>SALESOFFICECODE</attributeNameX9>
+                              <valueX9>12</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>851</attributeIDX9>
+                              <attributeNameX9>GROUPCODE</attributeNameX9>
+                              <valueX9>002</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>14819</attributeIDX9>
+                              <attributeNameX9>ACCOUNTNUMBER</attributeNameX9>
+                              <valueX9>8310000587324</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>96493</attributeIDX9>
+                              <attributeNameX9>ACCOUNTTYPE</attributeNameX9>
+                              <valueX9>SA</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>96513</attributeIDX9>
+                              <attributeNameX9>BILLERCUSTOMERNAME</attributeNameX9>
+                              <valueX9>ADIVB TEST ACCOUNT1</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>96503</attributeIDX9>
+                              <attributeNameX9>BILLERCODE</attributeNameX9>
+                              <valueX9>PL</valueX9>
+                           </attributeValueChangeX9>
+                           <naturalKeyX9>SAA</naturalKeyX9>
+                           <productSpecContainmentIDX9>5576825</productSpecContainmentIDX9>
+                           <productSpecContainmentNameX9>MISEXPRESS.MISETHERNETACCESS.ACCOUNTDETAILS</productSpecContainmentNameX9>
+                        </changedContainedProductsX9>
+                     </productConfigurationChangesX9>
+                     <productOfferingProductSpecIDX9>5564255</productOfferingProductSpecIDX9>
+                     <productOfferingProductSpecNameX9>MISEXPRESS.MISETHERNETACCESS</productOfferingProductSpecNameX9>
+                     <USONumberX9>32584835</USONumberX9>
+                  </productDetailsX9>
+                  <productDetailsX9 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                     <actionTypeListX9>
+                        <actionTypeX9 xsi:nil="true"/>
+                     </actionTypeListX9>
+                     <orderActionTypeX9>PR</orderActionTypeX9>
+                     <productConfigurationChangesX9>
+                        <changedContainedProductsX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>68593</attributeIDX9>
+                              <attributeNameX9>ETEPORTKEY</attributeNameX9>
+                              <valueX9>PORTH8147237</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>67823</attributeIDX9>
+                              <attributeNameX9>ETESITEKEY</attributeNameX9>
+                              <valueX9>SITEH1103099</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>67833</attributeIDX9>
+                              <attributeNameX9>ETEACCESSKEY</attributeNameX9>
+                              <valueX9>PLIDH8147236</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>5553335</attributeIDX9>
+                              <attributeNameX9>ETECPEKEY</attributeNameX9>
+                              <valueX9>CPEH8147235</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>31</attributeIDX9>
+                              <attributeNameX9>PORTSPEED</attributeNameX9>
+                              <valueX9>40000000</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>9849</attributeIDX9>
+                              <attributeNameX9>UNITOFSPEED</attributeNameX9>
+                              <valueX9>KBPS</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>131</attributeIDX9>
+                              <attributeNameX9>PORTSERVICE</attributeNameX9>
+                              <valueX9>40 Gbps Ethernet</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>70053</attributeIDX9>
+                              <attributeNameX9>BVOIPINDICATOR</attributeNameX9>
+                              <valueX9>No</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>4031</attributeIDX9>
+                              <attributeNameX9>BIBINDICATOR</attributeNameX9>
+                              <valueX9>No</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>5560715</attributeIDX9>
+                              <attributeNameX9>LINKPROTOCOL</attributeNameX9>
+                              <valueX9>Ethernet</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>43013</attributeIDX9>
+                              <attributeNameX9>SUPPORTMLPPP</attributeNameX9>
+                              <valueX9>No</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>9979</attributeIDX9>
+                              <attributeNameX9>TYPEOFINSTALLATION</attributeNameX9>
+                              <valueX9>On-Site Install</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>68283</attributeIDX9>
+                              <attributeNameX9>BASESERVICETYPE</attributeNameX9>
+                              <valueX9>MIS</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>67843</attributeIDX9>
+                              <attributeNameX9>SERVICEFLAVOR</attributeNameX9>
+                              <valueX9>MIS Express</valueX9>
+                           </attributeValueChangeX9>
+                           <productSpecContainmentIDX9>69563</productSpecContainmentIDX9>
+                           <productSpecContainmentNameX9>MISEXPRESS.MISPORT.PORTMAIN</productSpecContainmentNameX9>
+                        </changedContainedProductsX9>
+                        <changedContainedProductsX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>75093</attributeIDX9>
+                              <attributeNameX9>PORTIPADDRESSVERSION</attributeNameX9>
+                              <valueX9>IP V4/V6 Dual Stack</valueX9>
+                           </attributeValueChangeX9>
+                           <productSpecContainmentIDX9>69653</productSpecContainmentIDX9>
+                           <productSpecContainmentNameX9>MISEXPRESS.MISPORT.LAYER3PORTDATA</productSpecContainmentNameX9>
+                        </changedContainedProductsX9>
+                        <changedContainedProductsX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>221</attributeIDX9>
+                              <attributeNameX9>PORTBILLINGMETHOD</attributeNameX9>
+                              <valueX9>HiCap Flex</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>73903</attributeIDX9>
+                              <attributeNameX9>MINIMUMBANDWIDTHCOMMITMENT</attributeNameX9>
+                              <valueX9>40000000</valueX9>
+                           </attributeValueChangeX9>
+                           <productSpecContainmentIDX9>5560195</productSpecContainmentIDX9>
+                           <productSpecContainmentNameX9>MISEXPRESS.MISPORT.PORTBILLINGDATA</productSpecContainmentNameX9>
+                        </changedContainedProductsX9>
+                        <changedContainedProductsX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>211</attributeIDX9>
+                              <attributeNameX9>VLANTAGCONTROL</attributeNameX9>
+                              <valueX9>ARPA</valueX9>
+                           </attributeValueChangeX9>
+                           <productSpecContainmentIDX9>69663</productSpecContainmentIDX9>
+                           <productSpecContainmentNameX9>MISEXPRESS.MISPORT.ETHERNETPORTDATA</productSpecContainmentNameX9>
+                        </changedContainedProductsX9>
+                        <changedContainedProductsX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>10169</attributeIDX9>
+                              <attributeNameX9>IPDOMAINNAME</attributeNameX9>
+                              <valueX9>ATT.com</valueX9>
+                           </attributeValueChangeX9>
+                           <productSpecContainmentIDX9>5555185</productSpecContainmentIDX9>
+                           <productSpecContainmentNameX9>MISEXPRESS.MISPORT.DOMAIN</productSpecContainmentNameX9>
+                        </changedContainedProductsX9>
+                     </productConfigurationChangesX9>
+                     <productOfferingProductSpecIDX9>5552845</productOfferingProductSpecIDX9>
+                     <productOfferingProductSpecNameX9>MISEXPRESS.MISPORT</productOfferingProductSpecNameX9>
+                  </productDetailsX9>
+                  <productDetailsX9 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                     <actionTypeListX9>
+                        <actionTypeX9 xsi:nil="true"/>
+                     </actionTypeListX9>
+                     <orderActionTypeX9>PR</orderActionTypeX9>
+                     <productConfigurationChangesX9>
+                        <changedContainedProductsX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>70093</attributeIDX9>
+                              <attributeNameX9>ETESERVICECONNECTIONKEY</attributeNameX9>
+                              <valueX9>SCONH8147238</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>67823</attributeIDX9>
+                              <attributeNameX9>ETESITEKEY</attributeNameX9>
+                              <valueX9>SITEH1103099</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>70033</attributeIDX9>
+                              <attributeNameX9>SERVICECONNECTIONTYPE</attributeNameX9>
+                              <valueX9>Internet</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>11809</attributeIDX9>
+                              <attributeNameX9>CLASSOFSERVICEINDICATOR</attributeNameX9>
+                              <valueX9>No</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>70033</attributeIDX9>
+                              <attributeNameX9>SERVICECONNECTIONTYPE</attributeNameX9>
+                              <valueX9>Internet</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>71863</attributeIDX9>
+                              <attributeNameX9>SERVICECONNECTIONSPEED</attributeNameX9>
+                              <valueX9>40000000</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>9849</attributeIDX9>
+                              <attributeNameX9>UNITOFSPEED</attributeNameX9>
+                              <valueX9>KBPS</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>70053</attributeIDX9>
+                              <attributeNameX9>BVOIPINDICATOR</attributeNameX9>
+                              <valueX9>No</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>68283</attributeIDX9>
+                              <attributeNameX9>BASESERVICETYPE</attributeNameX9>
+                              <valueX9>MIS</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>67843</attributeIDX9>
+                              <attributeNameX9>SERVICEFLAVOR</attributeNameX9>
+                              <valueX9>MIS Express</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>4031</attributeIDX9>
+                              <attributeNameX9>BIBINDICATOR</attributeNameX9>
+                              <valueX9>No</valueX9>
+                           </attributeValueChangeX9>
+                           <productSpecContainmentIDX9>69093</productSpecContainmentIDX9>
+                           <productSpecContainmentNameX9>MISEXPRESS.MISSERVICECONNECTION.SERVICECONNECTIONMAIN</productSpecContainmentNameX9>
+                        </changedContainedProductsX9>
+                        <changedContainedProductsX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>75943</attributeIDX9>
+                              <attributeNameX9>WANIPADDRESSVERSION</attributeNameX9>
+                              <valueX9>IP V4/V6 Dual Stack</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>11829</attributeIDX9>
+                              <attributeNameX9>ATTPROVIDEDIPV4WANIPINDICATOR</attributeNameX9>
+                              <valueX9>Yes</valueX9>
+                           </attributeValueChangeX9>
+                           <productSpecContainmentIDX9>5588975</productSpecContainmentIDX9>
+                           <productSpecContainmentNameX9>MISEXPRESS.MISSERVICECONNECTION.IPDATA</productSpecContainmentNameX9>
+                        </changedContainedProductsX9>
+                        <changedContainedProductsX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>73273</attributeIDX9>
+                              <attributeNameX9>BIDIRECTIONALFORWARDINGINDICATOR</attributeNameX9>
+                              <valueX9>No</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>5745255</attributeIDX9>
+                              <attributeNameX9>DEFAULTTUNNELINDICATOR</attributeNameX9>
+                              <valueX9>No</valueX9>
+                           </attributeValueChangeX9>
+                           <productSpecContainmentIDX9>5552215</productSpecContainmentIDX9>
+                           <productSpecContainmentNameX9>MISEXPRESS.MISSERVICECONNECTION.SCFEATURES</productSpecContainmentNameX9>
+                        </changedContainedProductsX9>
+                        <changedContainedProductsX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>72243</attributeIDX9>
+                              <attributeNameX9>IPV4ROUTINGPROTOCOL</attributeNameX9>
+                              <valueX9>Static</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>72253</attributeIDX9>
+                              <attributeNameX9>IPV6ROUTINGPROTOCOL</attributeNameX9>
+                              <valueX9>Static</valueX9>
+                           </attributeValueChangeX9>
+                           <productSpecContainmentIDX9>5588995</productSpecContainmentIDX9>
+                           <productSpecContainmentNameX9>MISEXPRESS.MISSERVICECONNECTION.ROUTINGINFO</productSpecContainmentNameX9>
+                        </changedContainedProductsX9>
+                        <changedContainedProductsX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>68593</attributeIDX9>
+                              <attributeNameX9>ETEPORTKEY</attributeNameX9>
+                              <valueX9>PORTH8147237</valueX9>
+                           </attributeValueChangeX9>
+                           <productSpecContainmentIDX9>5588985</productSpecContainmentIDX9>
+                           <productSpecContainmentNameX9>MISEXPRESS.MISSERVICECONNECTION.PORTTERMINATIONENDPOINT</productSpecContainmentNameX9>
+                        </changedContainedProductsX9>
+                     </productConfigurationChangesX9>
+                     <productOfferingProductSpecIDX9>5552805</productOfferingProductSpecIDX9>
+                     <productOfferingProductSpecNameX9>MISEXPRESS.MISSERVICECONNECTION</productOfferingProductSpecNameX9>
+                     <USONumberX9>3258BJLC</USONumberX9>
+                  </productDetailsX9>
+                  <productDetailsX9 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                     <actionTypeListX9>
+                        <actionTypeX9 xsi:nil="true"/>
+                     </actionTypeListX9>
+                     <orderActionTypeX9>PR</orderActionTypeX9>
+                     <productConfigurationChangesX9>
+                        <changedContainedProductsX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>5553335</attributeIDX9>
+                              <attributeNameX9>ETECPEKEY</attributeNameX9>
+                              <valueX9>CPEH8147235</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>67823</attributeIDX9>
+                              <attributeNameX9>ETESITEKEY</attributeNameX9>
+                              <valueX9>SITEH1103099</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>67833</attributeIDX9>
+                              <attributeNameX9>ETEACCESSKEY</attributeNameX9>
+                              <valueX9>PLIDH8147236</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>68283</attributeIDX9>
+                              <attributeNameX9>BASESERVICETYPE</attributeNameX9>
+                              <valueX9>MIS</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>67843</attributeIDX9>
+                              <attributeNameX9>SERVICEFLAVOR</attributeNameX9>
+                              <valueX9>MIS Express</valueX9>
+                           </attributeValueChangeX9>
+                           <productSpecContainmentIDX9>5553475</productSpecContainmentIDX9>
+                           <productSpecContainmentNameX9>MISEXPRESS.MISCPE.CPEMAIN</productSpecContainmentNameX9>
+                        </changedContainedProductsX9>
+                        <changedContainedProductsX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>9989</attributeIDX9>
+                              <attributeNameX9>EQUIPMENTMANUFACTURER</attributeNameX9>
+                              <valueX9>Cisco</valueX9>
+                           </attributeValueChangeX9>
+                           <attributeValueChangeX9>
+                              <attributeIDX9>10009</attributeIDX9>
+                              <attributeNameX9>PREFERREDEQUIPMANUFACTURER</attributeNameX9>
+                              <valueX9>Cisco</valueX9>
+                           </attributeValueChangeX9>
+                           <productSpecContainmentIDX9>5817925</productSpecContainmentIDX9>
+                           <productSpecContainmentNameX9>MISEXPRESS.MISCPE.ROUTER</productSpecContainmentNameX9>
+                        </changedContainedProductsX9>
+                     </productConfigurationChangesX9>
+                     <productOfferingProductSpecIDX9>5554835</productOfferingProductSpecIDX9>
+                     <productOfferingProductSpecNameX9>MISEXPRESS.MISCPE</productOfferingProductSpecNameX9>
+                  </productDetailsX9>
+                  <productOfferingCatalogIDX9 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">5552865</productOfferingCatalogIDX9>
+                  <productOfferingCatalogNameX9 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">MISEXPRESS</productOfferingCatalogNameX9>
+               </configureNewOfferingX9>
+               <runCompatibilityRulesX9 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</runCompatibilityRulesX9>
+            </updateProductInOrderConfigurationX9>
+            <correlationIDX9 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2507612</correlationIDX9>
+         </CreateAndStartOrderInput>
+      </ns0:createAndStartOrder>
+      
+   </env:Body>
+</env:Envelope>
+ 12-14-2021 17:01:41  INFO [OrderCreationInOCX.java:94] - Response in format is:<S:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<env:Header/>
+<S:Body>
+<ns2:createAndStartOrderResponse xmlns:ns2="http://CreateAndStartOrder.createAndStartOrder.services.amdocs.com">
+<CreateAndStartOrderOutput>
+<correlationIDX9>2507612</correlationIDX9>
+<orderInformationX9>
+<orderIdX9>302098844</orderIdX9>
+<orderStatusX9>SB</orderStatusX9>
+<orderVersionX9>1</orderVersionX9>
+<productOfferingX9>
+<offerNameX9>MIS Express</offerNameX9>
+<orderActionInformationX9>
+<orderActionStatusX9>DE</orderActionStatusX9>
+<orderNumberX9>302098845</orderNumberX9>
+<orderVersionX9>1</orderVersionX9>
+<productIdentifierX9>SITEH1103099</productIdentifierX9>
+<productX9>Site Config</productX9>
+<serviceTypeX9>MIS</serviceTypeX9>
+</orderActionInformationX9>
+<orderActionInformationX9>
+<orderActionStatusX9>DE</orderActionStatusX9>
+<orderNumberX9>302098847</orderNumberX9>
+<orderVersionX9>1</orderVersionX9>
+<productIdentifierX9>PLIDH8147236</productIdentifierX9>
+<productX9>Access</productX9>
+<serviceTypeX9>MIS</serviceTypeX9>
+</orderActionInformationX9>
+<orderActionInformationX9>
+<orderActionStatusX9>DE</orderActionStatusX9>
+<orderNumberX9>302098849</orderNumberX9>
+<orderVersionX9>1</orderVersionX9>
+<productIdentifierX9>PORTH8147237</productIdentifierX9>
+<productX9>PORT</productX9>
+<serviceTypeX9>MIS</serviceTypeX9>
+</orderActionInformationX9>
+<orderActionInformationX9>
+<orderActionStatusX9>DE</orderActionStatusX9>
+<orderNumberX9>302098851</orderNumberX9>
+<orderVersionX9>1</orderVersionX9>
+<productIdentifierX9>SCONH8147238</productIdentifierX9>
+<productX9>Service Connection</productX9>
+<serviceTypeX9>MIS</serviceTypeX9>
+</orderActionInformationX9>
+<orderActionInformationX9>
+<orderActionStatusX9>DE</orderActionStatusX9>
+<orderNumberX9>302098853</orderNumberX9>
+<orderVersionX9>1</orderVersionX9>
+<productIdentifierX9>CPEH8147235</productIdentifierX9>
+<productX9>CPE</productX9>
+<serviceTypeX9>MIS</serviceTypeX9>
+</orderActionInformationX9>
+</productOfferingX9>
+</orderInformationX9>
+</CreateAndStartOrderOutput>
+</ns2:createAndStartOrderResponse>
+</S:Body>
+</S:Envelope>
+
+ 12-14-2021 17:02:01  INFO [ISTOrderCreation_HALO.java:79] - The status of Order is : DE
+ 12-14-2021 17:02:01  INFO [ISTOrderCreation_HALO.java:84] - The Order Action ID is : 302098845
+ 12-14-2021 17:02:01  INFO [ISTOrderCreation_HALO.java:89] - The Service group ID is : 302098844
+ 12-14-2021 17:02:01  INFO [ISTOrderCreation_HALO.java:94] - The Service Type is : Site Config
+ 12-14-2021 17:02:01  INFO [OCXOrderStatus.java:63] - {
+   "SearchOrderRequest":{
+      "searchOrderInputsX9":{
+         "returnLocationX9":"true"
+      }
+   }
+}
+ 12-14-2021 17:02:01  INFO [OCXOrderStatus.java:64] - Getting response for SORID :1-MEDCB1933 with URL : http://zltv9973.vci.att.com:41300/rp-webapp-9/ordering/Orders?paramType=solutionid&paramValue=1-MEDCB1933
+ 12-14-2021 17:02:19  INFO [OCXOrderStatus.java:163] - PMN  :  DE
+ 12-14-2021 17:02:19  INFO [OCXOrderStatus.java:163] - SCMC  :  DE
+ 12-14-2021 17:02:19  INFO [OCXOrderStatus.java:163] - null  :  null
+ 12-14-2021 17:02:19  INFO [OCXOrderStatus.java:163] - AMC  :  DE
+ 12-14-2021 17:02:19  INFO [OCXOrderStatus.java:163] - CPEM  :  DE
+ 12-14-2021 17:02:19  INFO [OCXOrderStatus.java:163] - SCM  :  DE
+ 12-14-2021 17:02:19  INFO [OCXOrderStatus.java:168] - PMN  :  302098849
+ 12-14-2021 17:02:19  INFO [OCXOrderStatus.java:168] - SCMC  :  302098851
+ 12-14-2021 17:02:19  INFO [OCXOrderStatus.java:168] - null  :  null
+ 12-14-2021 17:02:19  INFO [OCXOrderStatus.java:168] - AMC  :  302098847
+ 12-14-2021 17:02:19  INFO [OCXOrderStatus.java:168] - CPEM  :  302098853
+ 12-14-2021 17:02:19  INFO [OCXOrderStatus.java:168] - SCM  :  302098845
+ 12-14-2021 17:02:19  INFO [OCXOrderStatus.java:98] - Status is : DE
+ 12-14-2021 17:02:19  INFO [OCXOrderStatus.java:127] - Order ID is :null
+ 12-14-2021 17:02:19  INFO [OCXOrderStatus.java:134] - SG ID is :302098844
+ 12-14-2021 17:02:19  INFO [OMXOrderCreationSteps.java:85] - --------------------Triggering SG Level MOR-----------------
+ 12-14-2021 17:02:19  INFO [OMXOrderCreationSteps.java:86] - Type Of order is : MIS
+ 12-14-2021 17:02:19  INFO [OMXOrderCreationSteps.java:87] - Testing Type is : IST
+ 12-14-2021 17:02:19  INFO [TriggerMOR_SGLevel.java:58] - Type if Order is : MIS
+ 12-14-2021 17:02:19  INFO [TriggerMOR_SGLevel.java:145] - URL is:http://t5nap1a1.snt.bst.bls.com:9003/ocx-client-inbound-ws-war/OrderManagementServicePort
+ 12-14-2021 17:02:19  INFO [TriggerMOR_SGLevel.java:148] - SORID and Project ID is:1-MEDCB1933
+ 12-14-2021 17:02:19  INFO [TriggerMOR_SGLevel.java:149] - ME535372
+ 12-14-2021 17:02:19  INFO [TriggerMOR_SGLevel.java:150] - Request to be updated:<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns0:manageOrderRequest xmlns="http://cio.att.com/entity/model" xmlns:ns0="http://cio.att.com/order/management/model" xmlns:ns1="http://cio.att.com/ord/model" xmlns:ns2="http://cio.att.com/req/model">
+         <ns0:order>
+            <ns2:eid>
+               <context>OCX</context>
+               <id>{$sorId$}</id>
+               <entityType>SOR</entityType>
+               <!--SOR,Solution-->
+            </ns2:eid>
+            <ns1:isBundle>true</ns1:isBundle>
+            <ns1:subOrders>
+               <ns1:item>
+                  <ns2:eid>
+                     <context>OCX</context>
+                     <id>{$sgId$}</id><!--  Put SGID here-->
+                     <entityType>Order</entityType>
+                  </ns2:eid>
+                  <ns2:type>DECOMPOSE</ns2:type>
+                  <ns2:characteristics>
+                     <item>
+                        <name>ServiceGroupOrderId</name>
+                        <value>{$sgId$}</value> <!--  Put SG here -->
+                     </item>
+                     <item>
+                        <name>serviceGroupCounter</name>
+                        <value>1</value>
+                     </item>
+                     <item>
+                        <name>projectId</name>
+                        <value>{$projId$}</value>
+                     </item>
+                  </ns2:characteristics>
+                  <ns2:associations>
+                     <item>
+                        <associationName>associatedServiceOrder</associationName>
+                        <items>
+                           <item>
+                              <context>OCX</context>
+                              <id>{$oaId$}</id> <!--  Put Order Action here SG ID +1 -->
+                              <entityType>OrderAction</entityType>
+                              <type>MISS</type>
+                              <product>MIS</product>
+                           </item>
+                        </items>
+                     </item>
+                <!-- <item>
+                        <associationName>AssociatedServiceOrder</associationName>
+                        <items>
+                           <item>
+                              <context>OCX</context>
+                              <id>27272349</id>
+                              <entityType>OrderAction</entityType>
+                              <type>BVFLEX</type>
+                              <product>IPFLEX</product>
+                           </item>
+                        </items>
+                     </item> -->                  
+                  </ns2:associations>
+                  <ns1:isBundle>false</ns1:isBundle>
+                  <ns1:actionType>PR</ns1:actionType>
+                  <ns1:actionSubType>NA</ns1:actionSubType>
+                  <ns1:version>1</ns1:version>
+               </ns1:item>
+            </ns1:subOrders>
+         </ns0:order>
+      </ns0:manageOrderRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+ 12-14-2021 17:02:19  INFO [TriggerMOR_SGLevel.java:151] - -------------------------Updating Xmls--------------------------
+ 12-14-2021 17:02:19  INFO [UpdateXMLs.java:139] - SOR ID is:1-MEDCB1933
+ 12-14-2021 17:02:19  INFO [UpdateXMLs.java:156] - Request After update is :<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns0:manageOrderRequest xmlns="http://cio.att.com/entity/model" xmlns:ns0="http://cio.att.com/order/management/model" xmlns:ns1="http://cio.att.com/ord/model" xmlns:ns2="http://cio.att.com/req/model">
+         <ns0:order>
+            <ns2:eid>
+               <context>OCX</context>
+               <id>1-MEDCB1933</id>
+               <entityType>SOR</entityType>
+               <!--SOR,Solution-->
+            </ns2:eid>
+            <ns1:isBundle>true</ns1:isBundle>
+            <ns1:subOrders>
+               <ns1:item>
+                  <ns2:eid>
+                     <context>OCX</context>
+                     <id>302098844</id><!--  Put SGID here-->
+                     <entityType>Order</entityType>
+                  </ns2:eid>
+                  <ns2:type>DECOMPOSE</ns2:type>
+                  <ns2:characteristics>
+                     <item>
+                        <name>ServiceGroupOrderId</name>
+                        <value>302098844</value> <!--  Put SG here -->
+                     </item>
+                     <item>
+                        <name>serviceGroupCounter</name>
+                        <value>1</value>
+                     </item>
+                     <item>
+                        <name>projectId</name>
+                        <value>ME535372</value>
+                     </item>
+                  </ns2:characteristics>
+                  <ns2:associations>
+                     <item>
+                        <associationName>associatedServiceOrder</associationName>
+                        <items>
+                           <item>
+                              <context>OCX</context>
+                              <id>302098845</id> <!--  Put Order Action here SG ID +1 -->
+                              <entityType>OrderAction</entityType>
+                              <type>MISS</type>
+                              <product>MIS</product>
+                           </item>
+                        </items>
+                     </item>
+                <!-- <item>
+                        <associationName>AssociatedServiceOrder</associationName>
+                        <items>
+                           <item>
+                              <context>OCX</context>
+                              <id>27272349</id>
+                              <entityType>OrderAction</entityType>
+                              <type>BVFLEX</type>
+                              <product>IPFLEX</product>
+                           </item>
+                        </items>
+                     </item> -->                  
+                  </ns2:associations>
+                  <ns1:isBundle>false</ns1:isBundle>
+                  <ns1:actionType>PR</ns1:actionType>
+                  <ns1:actionSubType>NA</ns1:actionSubType>
+                  <ns1:version>1</ns1:version>
+               </ns1:item>
+            </ns1:subOrders>
+         </ns0:order>
+      </ns0:manageOrderRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+ 12-14-2021 17:02:19  INFO [UpdateXMLs.java:185] - [Ljava.lang.String;@36417a54
+ 12-14-2021 17:02:20  INFO [TriggerMOR_SGLevel.java:165] - Response in format is:<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+<env:Header/>
+<env:Body>
+<ns4:manageOrderResponse xmlns:ns5="http://cio.att.com/req/model" xmlns:ns2="http://cio.att.com/ord/model" xmlns:ns1="http://cio.att.com/entity/model" xmlns:ns4="http://cio.att.com/order/management/model"/>
+</env:Body>
+</env:Envelope>
+
+ 12-14-2021 17:02:20  INFO [OMXOrderCreationSteps.java:89] - --------------------SG Level MOR Triggered-----------------
+ 12-14-2021 17:02:30  INFO [OMXOrderCreationSteps.java:92] - SOR ID is: 1-MEDCB1933
+ 12-14-2021 17:02:30  INFO [OMXOrderCreationSteps.java:93] - SG ID is: 302098844
+ 12-14-2021 17:02:30  INFO [OMXOrderCreationSteps.java:94] - Order ID is: 302098845
+ 12-14-2021 17:02:40  INFO [OMXOrderCreationSteps.java:117] - --------------------Activities in Error are getting checked and progressed-----------------
+ 12-14-2021 17:02:48  INFO [GetActivitiesOfSG.java:54] - URL for getHierarchy Request is : http://t5nap1a1.snt.bst.bls.com:9003/affi/native-ws/VisibilityService.wsdl
+ 12-14-2021 17:02:56  INFO [GetProjectId.java:59] - URL for Order Search in OMX is : http://t5nap1a1.snt.bst.bls.com:9003/affi/native-ws/ProjectStoreSearchService.wsdl
+ 12-14-2021 17:02:56  INFO [UpdateXMLs.java:466] - Request After update is :<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:sear="http://athena.it.att.com/aff/search" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sear:hierarchySearchRequest>
+         <!--You have a CHOICE of the next 3 items at this level-->
+         <!--<sear:orderId>?</sear:orderId>-->
+         <!--<sear:sorId>?</sear:sorId>-->
+         <sear:serviceGroupOrderId>302098844</sear:serviceGroupOrderId>
+      </sear:hierarchySearchRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+ 12-14-2021 17:03:04  INFO [GetProjectId.java:71] - Response in format is:<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+<env:Header/>
+<env:Body>
+<hierarchySearchResult xmlns="http://athena.it.att.com/aff/search" xmlns:ns0="http://athena.it.att.com/aff/common">
+<sorHierarchy>
+<sor>
+<planId>02D5A898E95C4FEEAC89067C627B2FB3</planId>
+<offer>MIS Express</offer>
+<info>
+<sorId>1-MEDCB1933</sorId>
+<solutionId>1-MEDCB1933</solutionId>
+<dborProjectId>ME535372</dborProjectId>
+<projectStatus>IN_PROGRESS</projectStatus>
+<customerName>ADI_Vyatta01_Cust15</customerName>
+<mcn>25175A</mcn>
+<marketStrata>RETAIL</marketStrata>
+<inJeopardy>No</inJeopardy>
+<projectId>Project78703</projectId>
+<sendingSystem>ATTeBiz</sendingSystem>
+</info>
+<dates>
+<sorReceiptDate>2021-12-14T11:29:24.000Z</sorReceiptDate>
+<creationDate>2021-12-14T11:29:24.000Z</creationDate>
+<cpdd>2019-10-01T00:00:00.000Z</cpdd>
+</dates>
+<ocxOrderId>302098844</ocxOrderId>
+<services>MIS</services>
+</sor>
+<serviceGroupHierarchy>
+<serviceGroup>
+<planId>64DA301BF118487F84D21F6843102115</planId>
+<info>
+<serviceGroupOrderId>302098844</serviceGroupOrderId>
+<serviceGroupId>302098844</serviceGroupId>
+<serviceGroupStatus>IN_PROGRESS</serviceGroupStatus>
+<sorId>1-MEDCB1933</sorId>
+<dborProjectId>ME535372</dborProjectId>
+<customerName>ADI_Vyatta01_Cust15</customerName>
+<siteInfo>
+<name>CPE site</name>
+<city>PHOENIX</city>
+<state>LA</state>
+<country>US</country>
+<address>211 211 W MONROE ST ST</address>
+<room>45</room>
+<floor>67</floor>
+<timezone>CST</timezone>
+<postalCode>850031615</postalCode>
+<nc3SiteName>CPE site</nc3SiteName>
+</siteInfo>
+<projectId>Project78708</projectId>
+<marketStrata>RETAIL</marketStrata>
+</info>
+<dates>
+<creationDate>2021-12-14T11:32:21.000Z</creationDate>
+</dates>
+<inJeopardy>No</inJeopardy>
+<offer>MIS_EXPRESS</offer>
+<bundleDetails/>
+<externalOrder/>
+<hybridNetworkInd>No</hybridNetworkInd>
+</serviceGroup>
+<orders>
+<totalResultsCount>0</totalResultsCount>
+</orders>
+</serviceGroupHierarchy>
+</sorHierarchy>
+</hierarchySearchResult>
+</env:Body>
+</env:Envelope>
+
+ 12-14-2021 17:03:04  INFO [GetProjectId.java:73] - Project ID of SG is :Project78708
+ 12-14-2021 17:03:04  INFO [UpdateXMLs.java:457] - Request After update is :<?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+   <env:Header/>
+   <env:Body>
+      <getVisibilityPlanRequest xmlns="http://athena.it.att.com/visibility" xmlns:ns0="http://athena.it.att.com/commonordermessaging" xmlns:ns1="http://cio.att.com/commonheader/v3" xmlns:ns2="http://athena.it.att.com/aff/common">
+         <projectId>Project78708</projectId>
+      </getVisibilityPlanRequest>
+   </env:Body>
+</env:Envelope>
+ 12-14-2021 17:03:04  INFO [GetActivitiesOfSG.java:64] - Response in format is:<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+<env:Header/>
+<env:Body>
+<ns2:getVisibilityPlanResponse xmlns:ns0="http://athena.it.att.com/aff/common" xmlns:ns2="http://athena.it.att.com/visibility" xmlns:ns1="http://athena.it.att.com/commonordermessaging" xmlns:ns3="http://cio.att.com/commonheader/v3">
+<ns3:WSResponseHeader/>
+<ns2:visibilityPlanDetail>
+<ns2:planId>64DA301BF118487F84D21F6843102115</ns2:planId>
+<ns2:needAttention>false</ns2:needAttention>
+<ns2:activities>
+<ns2:activity>
+<ns2:activityName>Create Service Group</ns2:activityName>
+<ns2:activityId>161CA91C1E744139BB805CA6F51BEC04</ns2:activityId>
+<ns2:activityDisplayName>Create Service Group</ns2:activityDisplayName>
+<ns2:status>Completed</ns2:status>
+<ns2:state>Completed</ns2:state>
+<ns2:plannedStartDate>2021-12-14T11:32:21.000Z</ns2:plannedStartDate>
+<ns2:plannedCompletionDate>2021-12-14T11:32:21.000Z</ns2:plannedCompletionDate>
+<ns2:startDate>2021-12-14T11:32:21.000Z</ns2:startDate>
+<ns2:completedDate>2021-12-14T11:32:21.000Z</ns2:completedDate>
+<ns2:needAttention>false</ns2:needAttention>
+</ns2:activity>
+<ns2:activity>
+<ns2:activityName>Manage Service Group Cancel</ns2:activityName>
+<ns2:activityId>5DA869A5ED4045DFA9BF47DE8A5DDAB0</ns2:activityId>
+<ns2:activityDisplayName>Manage Service Group Cancel</ns2:activityDisplayName>
+<ns2:status>Not Started</ns2:status>
+<ns2:state>Pending</ns2:state>
+<ns2:plannedStartDate>2021-12-14T11:32:21.000Z</ns2:plannedStartDate>
+<ns2:plannedCompletionDate>2021-12-15T11:32:21.000Z</ns2:plannedCompletionDate>
+<ns2:needAttention>false</ns2:needAttention>
+</ns2:activity>
+<ns2:activity>
+<ns2:activityName>Processing Service Level</ns2:activityName>
+<ns2:activityId>19D000DEDEE845329B94A5C4686BA4D0</ns2:activityId>
+<ns2:activityDisplayName>Waiting for Service Orders to Complete</ns2:activityDisplayName>
+<ns2:status>Not Started</ns2:status>
+<ns2:state>Pending</ns2:state>
+<ns2:plannedStartDate>2021-12-14T11:32:29.000Z</ns2:plannedStartDate>
+<ns2:plannedCompletionDate>2021-12-14T13:32:00.000Z</ns2:plannedCompletionDate>
+<ns2:needAttention>false</ns2:needAttention>
+</ns2:activity>
+<ns2:activity>
+<ns2:activityName>TQ Notification</ns2:activityName>
+<ns2:activityId>DE5076751F624F7D870041602212AA6C</ns2:activityId>
+<ns2:activityDisplayName>TQ Notification</ns2:activityDisplayName>
+<ns2:status>Not Started</ns2:status>
+<ns2:state>Pending</ns2:state>
+<ns2:plannedStartDate>2021-12-14T11:32:21.000Z</ns2:plannedStartDate>
+<ns2:plannedCompletionDate>2021-12-15T11:32:00.000Z</ns2:plannedCompletionDate>
+<ns2:needAttention>false</ns2:needAttention>
+</ns2:activity>
+<ns2:activity>
+<ns2:activityName>Inquire Order Data (Service Group)</ns2:activityName>
+<ns2:activityId>32EA08537D2C42B08CDA78FFBF21738A</ns2:activityId>
+<ns2:activityDisplayName>Get Order Data (Service Group)</ns2:activityDisplayName>
+<ns2:status>Completed</ns2:status>
+<ns2:state>Completed</ns2:state>
+<ns2:plannedStartDate>2021-12-14T11:32:21.000Z</ns2:plannedStartDate>
+<ns2:plannedCompletionDate>2021-12-14T11:32:29.000Z</ns2:plannedCompletionDate>
+<ns2:startDate>2021-12-14T11:32:22.000Z</ns2:startDate>
+<ns2:completedDate>2021-12-14T11:32:29.000Z</ns2:completedDate>
+<ns2:needAttention>false</ns2:needAttention>
+</ns2:activity>
+</ns2:activities>
+<ns2:milestones>
+<ns2:milstone>
+<ns2:milestoneId>Milestone289448</ns2:milestoneId>
+<ns2:status>INACTIVE</ns2:status>
+<ns2:milestoneName>Service Group Complete</ns2:milestoneName>
+<ns2:milestoneType>Driving</ns2:milestoneType>
+<ns2:plannedStartDate>2021-12-14T11:49:00.000Z</ns2:plannedStartDate>
+<ns2:plannedFinishDate>2021-12-14T13:49:00.000Z</ns2:plannedFinishDate>
+<ns2:forecastStartDate>2021-12-14T11:32:29.000Z</ns2:forecastStartDate>
+<ns2:forecastFinishDate>2021-12-14T13:32:00.000Z</ns2:forecastFinishDate>
+</ns2:milstone>
+<ns2:milstone>
+<ns2:milestoneId>Order_Cancel_Initiated</ns2:milestoneId>
+<ns2:status>INACTIVE</ns2:status>
+<ns2:milestoneName>Order Cancel Initiated</ns2:milestoneName>
+<ns2:milestoneType>Tracking</ns2:milestoneType>
+<ns2:plannedStartDate>2021-12-14T11:32:21.000Z</ns2:plannedStartDate>
+<ns2:plannedFinishDate>2021-12-15T11:32:21.000Z</ns2:plannedFinishDate>
+<ns2:forecastStartDate>2021-12-14T11:32:21.000Z</ns2:forecastStartDate>
+<ns2:forecastFinishDate>2021-12-15T11:32:21.000Z</ns2:forecastFinishDate>
+</ns2:milstone>
+<ns2:milstone>
+<ns2:milestoneId>Milestone289449</ns2:milestoneId>
+<ns2:status>ACHIEVED</ns2:status>
+<ns2:milestoneName>Service Group WF initiated</ns2:milestoneName>
+<ns2:milestoneType>Driving</ns2:milestoneType>
+<ns2:plannedStartDate>2021-12-14T11:32:21.000Z</ns2:plannedStartDate>
+<ns2:plannedFinishDate>2021-12-14T11:34:00.000Z</ns2:plannedFinishDate>
+<ns2:forecastStartDate>2021-12-14T11:32:21.000Z</ns2:forecastStartDate>
+<ns2:forecastFinishDate>2021-12-14T11:34:00.000Z</ns2:forecastFinishDate>
+<ns2:actualStartDate>2021-12-14T11:32:21.000Z</ns2:actualStartDate>
+<ns2:actualFinishDate>2021-12-14T11:32:21.000Z</ns2:actualFinishDate>
+</ns2:milstone>
+</ns2:milestones>
+</ns2:visibilityPlanDetail>
+</ns2:getVisibilityPlanResponse>
+</env:Body>
+</env:Envelope>
+
+ 12-14-2021 17:03:04  INFO [GetActivitiesOfSG.java:113] - Response is : <env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Header/><env:Body><ns2:getVisibilityPlanResponse xmlns:ns0="http://athena.it.att.com/aff/common" xmlns:ns2="http://athena.it.att.com/visibility" xmlns:ns1="http://athena.it.att.com/commonordermessaging" xmlns:ns3="http://cio.att.com/commonheader/v3"><ns3:WSResponseHeader/><ns2:visibilityPlanDetail><ns2:planId>64DA301BF118487F84D21F6843102115</ns2:planId><ns2:needAttention>false</ns2:needAttention><ns2:activities><ns2:activity><ns2:activityName>Create Service Group</ns2:activityName><ns2:activityId>161CA91C1E744139BB805CA6F51BEC04</ns2:activityId><ns2:activityDisplayName>Create Service Group</ns2:activityDisplayName><ns2:status>Completed</ns2:status><ns2:state>Completed</ns2:state><ns2:plannedStartDate>2021-12-14T11:32:21.000Z</ns2:plannedStartDate><ns2:plannedCompletionDate>2021-12-14T11:32:21.000Z</ns2:plannedCompletionDate><ns2:startDate>2021-12-14T11:32:21.000Z</ns2:startDate><ns2:completedDate>2021-12-14T11:32:21.000Z</ns2:completedDate><ns2:needAttention>false</ns2:needAttention></ns2:activity><ns2:activity><ns2:activityName>Manage Service Group Cancel</ns2:activityName><ns2:activityId>5DA869A5ED4045DFA9BF47DE8A5DDAB0</ns2:activityId><ns2:activityDisplayName>Manage Service Group Cancel</ns2:activityDisplayName><ns2:status>Not Started</ns2:status><ns2:state>Pending</ns2:state><ns2:plannedStartDate>2021-12-14T11:32:21.000Z</ns2:plannedStartDate><ns2:plannedCompletionDate>2021-12-15T11:32:21.000Z</ns2:plannedCompletionDate><ns2:needAttention>false</ns2:needAttention></ns2:activity><ns2:activity><ns2:activityName>Processing Service Level</ns2:activityName><ns2:activityId>19D000DEDEE845329B94A5C4686BA4D0</ns2:activityId><ns2:activityDisplayName>Waiting for Service Orders to Complete</ns2:activityDisplayName><ns2:status>Not Started</ns2:status><ns2:state>Pending</ns2:state><ns2:plannedStartDate>2021-12-14T11:32:29.000Z</ns2:plannedStartDate><ns2:plannedCompletionDate>2021-12-14T13:32:00.000Z</ns2:plannedCompletionDate><ns2:needAttention>false</ns2:needAttention></ns2:activity><ns2:activity><ns2:activityName>TQ Notification</ns2:activityName><ns2:activityId>DE5076751F624F7D870041602212AA6C</ns2:activityId><ns2:activityDisplayName>TQ Notification</ns2:activityDisplayName><ns2:status>Not Started</ns2:status><ns2:state>Pending</ns2:state><ns2:plannedStartDate>2021-12-14T11:32:21.000Z</ns2:plannedStartDate><ns2:plannedCompletionDate>2021-12-15T11:32:00.000Z</ns2:plannedCompletionDate><ns2:needAttention>false</ns2:needAttention></ns2:activity><ns2:activity><ns2:activityName>Inquire Order Data (Service Group)</ns2:activityName><ns2:activityId>32EA08537D2C42B08CDA78FFBF21738A</ns2:activityId><ns2:activityDisplayName>Get Order Data (Service Group)</ns2:activityDisplayName><ns2:status>Completed</ns2:status><ns2:state>Completed</ns2:state><ns2:plannedStartDate>2021-12-14T11:32:21.000Z</ns2:plannedStartDate><ns2:plannedCompletionDate>2021-12-14T11:32:29.000Z</ns2:plannedCompletionDate><ns2:startDate>2021-12-14T11:32:22.000Z</ns2:startDate><ns2:completedDate>2021-12-14T11:32:29.000Z</ns2:completedDate><ns2:needAttention>false</ns2:needAttention></ns2:activity></ns2:activities><ns2:milestones><ns2:milstone><ns2:milestoneId>Milestone289448</ns2:milestoneId><ns2:status>INACTIVE</ns2:status><ns2:milestoneName>Service Group Complete</ns2:milestoneName><ns2:milestoneType>Driving</ns2:milestoneType><ns2:plannedStartDate>2021-12-14T11:49:00.000Z</ns2:plannedStartDate><ns2:plannedFinishDate>2021-12-14T13:49:00.000Z</ns2:plannedFinishDate><ns2:forecastStartDate>2021-12-14T11:32:29.000Z</ns2:forecastStartDate><ns2:forecastFinishDate>2021-12-14T13:32:00.000Z</ns2:forecastFinishDate></ns2:milstone><ns2:milstone><ns2:milestoneId>Order_Cancel_Initiated</ns2:milestoneId><ns2:status>INACTIVE</ns2:status><ns2:milestoneName>Order Cancel Initiated</ns2:milestoneName><ns2:milestoneType>Tracking</ns2:milestoneType><ns2:plannedStartDate>2021-12-14T11:32:21.000Z</ns2:plannedStartDate><ns2:plannedFinishDate>2021-12-15T11:32:21.000Z</ns2:plannedFinishDate><ns2:forecastStartDate>2021-12-14T11:32:21.000Z</ns2:forecastStartDate><ns2:forecastFinishDate>2021-12-15T11:32:21.000Z</ns2:forecastFinishDate></ns2:milstone><ns2:milstone><ns2:milestoneId>Milestone289449</ns2:milestoneId><ns2:status>ACHIEVED</ns2:status><ns2:milestoneName>Service Group WF initiated</ns2:milestoneName><ns2:milestoneType>Driving</ns2:milestoneType><ns2:plannedStartDate>2021-12-14T11:32:21.000Z</ns2:plannedStartDate><ns2:plannedFinishDate>2021-12-14T11:34:00.000Z</ns2:plannedFinishDate><ns2:forecastStartDate>2021-12-14T11:32:21.000Z</ns2:forecastStartDate><ns2:forecastFinishDate>2021-12-14T11:34:00.000Z</ns2:forecastFinishDate><ns2:actualStartDate>2021-12-14T11:32:21.000Z</ns2:actualStartDate><ns2:actualFinishDate>2021-12-14T11:32:21.000Z</ns2:actualFinishDate></ns2:milstone></ns2:milestones></ns2:visibilityPlanDetail></ns2:getVisibilityPlanResponse></env:Body></env:Envelope>
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:55] - 6
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:57] - 21
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:60] - Activitywise:Create Service Group
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:60] - Activitywise:Completed
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:60] - Activitywise:Completed
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:60] - Activitywise:161CA91C1E744139BB805CA6F51BEC04
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:60] - Activitywise:Manage Service Group Cancel
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:60] - Activitywise:Not Started
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:60] - Activitywise:Pending
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:60] - Activitywise:5DA869A5ED4045DFA9BF47DE8A5DDAB0
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:60] - Activitywise:Processing Service Level
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:60] - Activitywise:Not Started
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:60] - Activitywise:Pending
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:60] - Activitywise:19D000DEDEE845329B94A5C4686BA4D0
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:60] - Activitywise:TQ Notification
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:60] - Activitywise:Not Started
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:60] - Activitywise:Pending
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:60] - Activitywise:DE5076751F624F7D870041602212AA6C
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:60] - Activitywise:Inquire Order Data (Service Group)
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:60] - Activitywise:Completed
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:60] - Activitywise:Completed
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:60] - Activitywise:32EA08537D2C42B08CDA78FFBF21738A
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:60] - Activitywise:64DA301BF118487F84D21F6843102115
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:72] - Create Service Group
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:72] - Completed
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:72] - Completed
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:72] - 161CA91C1E744139BB805CA6F51BEC04
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:72] - Manage Service Group Cancel
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:72] - Not Started
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:72] - Pending
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:72] - 5DA869A5ED4045DFA9BF47DE8A5DDAB0
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:72] - Processing Service Level
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:72] - Not Started
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:72] - Pending
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:72] - 19D000DEDEE845329B94A5C4686BA4D0
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:72] - TQ Notification
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:72] - Not Started
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:72] - Pending
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:72] - DE5076751F624F7D870041602212AA6C
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:72] - Inquire Order Data (Service Group)
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:72] - Completed
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:72] - Completed
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:72] - 32EA08537D2C42B08CDA78FFBF21738A
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:72] - 64DA301BF118487F84D21F6843102115
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:79] - ============For getting the Error================
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:110] - All activities in Pending:null
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:110] - All activities in Pending:null
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:110] - All activities in Pending:null
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:110] - All activities in Pending:null
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:110] - All activities in Pending:null
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:110] - All activities in Pending:null
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:110] - All activities in Pending:null
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:110] - All activities in Pending:null
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:110] - All activities in Pending:null
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:110] - All activities in Pending:null
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:110] - All activities in Pending:null
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:110] - All activities in Pending:null
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:110] - All activities in Pending:null
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:110] - All activities in Pending:null
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:110] - All activities in Pending:null
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:110] - All activities in Pending:null
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:110] - All activities in Pending:null
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:110] - All activities in Pending:null
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:110] - All activities in Pending:null
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:110] - All activities in Pending:null
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:115] - All activities in Error:null
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:115] - All activities in Error:null
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:115] - All activities in Error:null
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:115] - All activities in Error:null
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:115] - All activities in Error:null
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:115] - All activities in Error:null
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:115] - All activities in Error:null
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:115] - All activities in Error:null
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:115] - All activities in Error:null
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:115] - All activities in Error:null
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:115] - All activities in Error:null
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:115] - All activities in Error:null
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:115] - All activities in Error:null
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:115] - All activities in Error:null
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:115] - All activities in Error:null
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:115] - All activities in Error:null
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:115] - All activities in Error:null
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:115] - All activities in Error:null
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:115] - All activities in Error:null
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:115] - All activities in Error:null
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:119] - ---------------------All Activities Are--------------------
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:158] - Tg is: com.amdocs.halo.automation.base.TriggerXmls@1e58512c
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:168] - URL is:http://t5nas1a1.snt.bst.bls.com:9007/aff/DynamicProcessManagerSvc?wsdl
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:181] - No activity in Error
+ 12-14-2021 17:03:04  INFO [UpdateActivityStatus_SG.java:221] - No activity in Pending
+ 12-14-2021 17:03:04  INFO [ISTOrderCreation_HALO.java:104] - ==============If order not submitted , Submitting theorder==================
+ 12-14-2021 17:03:04  INFO [ISTOrderCreation_HALO.java:105] - The status of the order is: DE
+ 12-14-2021 17:03:05  INFO [OCXOrderStatus.java:236] - {
+   "SearchOrderRequest":{
+      "searchOrderInputsX9":{
+         "returnLocationX9":"true"
+      }
+   }
+}
+ 12-14-2021 17:03:05  INFO [OCXOrderStatus.java:237] - Getting response for ORDERID :302098845 with URL : http://zltv9973.vci.att.com:41300/rp-webapp-9/ordering/Orders?paramType=orderactionId&paramValue=302098845
+ 12-14-2021 17:03:15  INFO [OCXOrderStatus.java:254] - io.restassured.internal.RestAssuredResponseImpl@21bd20ee
+ 12-14-2021 17:03:15  INFO [OCXOrderStatus.java:257] - Status of order is :DE
+ 12-14-2021 17:03:15  INFO [OCXOrderStatus.java:262] - Order ID is :302098845
+ 12-14-2021 17:03:15  INFO [OCXOrderStatus.java:267] - SG ID is :302098844
+ 12-14-2021 17:03:15  INFO [ISTOrderCreation_HALO.java:109] - The order is successfully submitted from OCX
+ 12-14-2021 17:03:16  INFO [OCXOrderStatus.java:236] - {
+   "SearchOrderRequest":{
+      "searchOrderInputsX9":{
+         "returnLocationX9":"true"
+      }
+   }
+}
+ 12-14-2021 17:03:16  INFO [OCXOrderStatus.java:237] - Getting response for ORDERID :302098845 with URL : http://zltv9973.vci.att.com:41300/rp-webapp-9/ordering/Orders?paramType=orderactionId&paramValue=302098845
+ 12-14-2021 17:03:26  INFO [OCXOrderStatus.java:254] - io.restassured.internal.RestAssuredResponseImpl@625d9132
+ 12-14-2021 17:03:26  INFO [OCXOrderStatus.java:257] - Status of order is :DE
+ 12-14-2021 17:03:26  INFO [OCXOrderStatus.java:262] - Order ID is :302098845
+ 12-14-2021 17:03:26  INFO [OCXOrderStatus.java:267] - SG ID is :302098844
+ 12-14-2021 17:03:26  INFO [OMXOrderCreationSteps.java:165] - --------------------OA is created in OMX-----------------
+ 12-14-2021 17:03:26  INFO [OMXOrderCreationSteps.java:166] - SOR ID for MIS is: 1-MEDCB1933
+ 12-14-2021 17:08:26  INFO [OCXOrderStatus.java:236] - {
+   "SearchOrderRequest":{
+      "searchOrderInputsX9":{
+         "returnLocationX9":"true"
+      }
+   }
+}
+ 12-14-2021 17:08:26  INFO [OCXOrderStatus.java:237] - Getting response for ORDERID :302098845 with URL : http://zltv9973.vci.att.com:41300/rp-webapp-9/ordering/Orders?paramType=orderactionId&paramValue=302098845
+ 12-14-2021 17:08:37  INFO [OCXOrderStatus.java:254] - io.restassured.internal.RestAssuredResponseImpl@522bf64e
+ 12-14-2021 17:08:37  INFO [OCXOrderStatus.java:257] - Status of order is :DE
+ 12-14-2021 17:08:37  INFO [OCXOrderStatus.java:262] - Order ID is :302098845
+ 12-14-2021 17:08:37  INFO [OCXOrderStatus.java:267] - SG ID is :302098844
+ 12-14-2021 17:08:37  INFO [ISTOrderCreation_HALO.java:189] - Status of the order  for Fulfilment is : DE
+ 12-14-2021 17:08:37  INFO [ISTOrderCreation_HALO.java:192] - ==========================================================================================
+ 12-14-2021 17:08:37  INFO [ISTOrderCreation_HALO.java:193] - =======================FULLFILMENT OF THE ORDER INITIATING==================================
+ 12-14-2021 17:08:57  INFO [TriggerFulfimentComplete.java:48] - URL is:http://zltv9973.vci.att.com:41300/ORDERING_PORTFOLIO/com.amdocs.services.fulfillmentOrderCompleted.fulfillmentOrderCompleted
+ 12-14-2021 17:08:57  INFO [UpdateXMLs.java:664] - Request After update is :<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+  <soapenv:Header>
+    <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" soapenv:mustUnderstand="1">
+      <wsse:UsernameToken wsu:Id="UsernameToken-18">
+        <wsse:Username>Asmsa1</wsse:Username>
+        <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">Asmsa1</wsse:Password>
+      </wsse:UsernameToken>
+    </wsse:Security>
+  </soapenv:Header>
+  <soapenv:Body>
+    <ns0:fulfillmentOrderCompleted xmlns:ns0="http://FulfillmentOrderCompleted.fulfillmentOrderCompleted.services.amdocs.com">
+      <OrderingContext>
+        <localeString>EN</localeString>
+      </OrderingContext>
+      <FulfillmentOrderCompletedInput>
+        <orderActionId>302098845</orderActionId>
+        <orderActionVersion>1</orderActionVersion>
+        <orderId>302098844</orderId>
+      </FulfillmentOrderCompletedInput>
+    </ns0:fulfillmentOrderCompleted>
+  </soapenv:Body>
+</soapenv:Envelope>
+ 12-14-2021 17:08:57  INFO [TriggerFulfimentComplete.java:56] - Response in format is:<S:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<env:Header/>
+<S:Body>
+<ns2:fulfillmentOrderCompletedResponse xmlns:ns2="http://FulfillmentOrderCompleted.fulfillmentOrderCompleted.services.amdocs.com">
+<FulfillmentOrderCompletedOutput>
+<errorCode>success</errorCode>
+</FulfillmentOrderCompletedOutput>
+</ns2:fulfillmentOrderCompletedResponse>
+</S:Body>
+</S:Envelope>
+
+ 12-14-2021 17:09:27  INFO [ISTOrderCreation_HALO.java:202] - =======================FULLFILMENT OF THE ORDER COMPLETED==================================
+ 12-14-2021 17:11:27  INFO [OCXOrderCreationOld_MIS_Steps.java:156] -  Order checking CTH 
+ 12-14-2021 17:11:27  INFO [OCXOrderCreationOld_MIS_Steps.java:157] - MIS
+ 12-14-2021 17:11:27  INFO [OCXOrderStatus.java:63] - {
+   "SearchOrderRequest":{
+      "searchOrderInputsX9":{
+         "returnLocationX9":"true"
+      }
+   }
+}
+ 12-14-2021 17:11:27  INFO [OCXOrderStatus.java:64] - Getting response for SORID :1-MEDCB1933 with URL : http://zltv9973.vci.att.com:41300/rp-webapp-9/ordering/Orders?paramType=solutionid&paramValue=1-MEDCB1933
+ 12-14-2021 17:11:39  INFO [OCXOrderStatus.java:163] - PMN  :  DE
+ 12-14-2021 17:11:39  INFO [OCXOrderStatus.java:163] - SCMC  :  DE
+ 12-14-2021 17:11:39  INFO [OCXOrderStatus.java:163] - null  :  null
+ 12-14-2021 17:11:39  INFO [OCXOrderStatus.java:163] - AMC  :  DE
+ 12-14-2021 17:11:39  INFO [OCXOrderStatus.java:163] - CPEM  :  DE
+ 12-14-2021 17:11:39  INFO [OCXOrderStatus.java:163] - SCM  :  DE
+ 12-14-2021 17:11:39  INFO [OCXOrderStatus.java:168] - PMN  :  302098849
+ 12-14-2021 17:11:39  INFO [OCXOrderStatus.java:168] - SCMC  :  302098851
+ 12-14-2021 17:11:39  INFO [OCXOrderStatus.java:168] - null  :  null
+ 12-14-2021 17:11:39  INFO [OCXOrderStatus.java:168] - AMC  :  302098847
+ 12-14-2021 17:11:39  INFO [OCXOrderStatus.java:168] - CPEM  :  302098853
+ 12-14-2021 17:11:39  INFO [OCXOrderStatus.java:168] - SCM  :  302098845
+ 12-14-2021 17:11:39  INFO [OCXOrderStatus.java:98] - Status is : DE
+ 12-14-2021 17:11:39  INFO [OCXOrderStatus.java:127] - Order ID is :302098845
+ 12-14-2021 17:11:39  INFO [OCXOrderStatus.java:134] - SG ID is :302098844
+ 12-14-2021 17:13:29  INFO [OCXOrderStatus.java:63] - {
+   "SearchOrderRequest":{
+      "searchOrderInputsX9":{
+         "returnLocationX9":"true"
+      }
+   }
+}
+ 12-14-2021 17:13:29  INFO [OCXOrderStatus.java:64] - Getting response for SORID :1-MEDCB1933 with URL : http://zltv9973.vci.att.com:41300/rp-webapp-9/ordering/Orders?paramType=solutionid&paramValue=1-MEDCB1933
+ 12-14-2021 17:13:40  INFO [OCXOrderStatus.java:163] - PMN  :  DE
+ 12-14-2021 17:13:40  INFO [OCXOrderStatus.java:163] - SCMC  :  DE
+ 12-14-2021 17:13:40  INFO [OCXOrderStatus.java:163] - null  :  null
+ 12-14-2021 17:13:40  INFO [OCXOrderStatus.java:163] - AMC  :  DE
+ 12-14-2021 17:13:40  INFO [OCXOrderStatus.java:163] - CPEM  :  DE
+ 12-14-2021 17:13:40  INFO [OCXOrderStatus.java:163] - SCM  :  DE
+ 12-14-2021 17:13:40  INFO [OCXOrderStatus.java:168] - PMN  :  302098849
+ 12-14-2021 17:13:40  INFO [OCXOrderStatus.java:168] - SCMC  :  302098851
+ 12-14-2021 17:13:40  INFO [OCXOrderStatus.java:168] - null  :  null
+ 12-14-2021 17:13:40  INFO [OCXOrderStatus.java:168] - AMC  :  302098847
+ 12-14-2021 17:13:40  INFO [OCXOrderStatus.java:168] - CPEM  :  302098853
+ 12-14-2021 17:13:40  INFO [OCXOrderStatus.java:168] - SCM  :  302098845
+ 12-14-2021 17:13:40  INFO [OCXOrderStatus.java:98] - Status is : DE
+ 12-14-2021 17:13:40  INFO [OCXOrderStatus.java:127] - Order ID is :302098845
+ 12-14-2021 17:13:40  INFO [OCXOrderStatus.java:134] - SG ID is :302098844
+ 12-14-2021 17:13:40  INFO [OCXOrderCreationOld_MIS_Steps.java:123] - MIS New Arch Site Order Number is: 302098845
+ 12-14-2021 17:13:40  INFO [OCXOrderCreationOld_MIS_Steps.java:145] - The status of 302098845 is: DE
+ 12-14-2021 17:13:40  INFO [OCXOrderCreationOld_MIS_Steps.java:146] - Site /Siteless/ BVOIP Order Number is: 302098845
+ 12-14-2021 17:13:40  INFO [OCXOrderCreationOld_MIS_Steps.java:207] -  Checking CTH of MIS
+ 12-14-2021 17:13:40  INFO [OCXOrderCreationOld_MIS_Steps.java:221] - Order ID is : 302098845
+ 12-14-2021 17:16:10  INFO [OCXOrderCreationOld_MIS_Steps.java:225] - Order successfully submitted
+ 12-14-2021 17:16:10  INFO [OrderSearchSeleniumSteps.java:48] - =========================Opening Browser==============================
+ 12-14-2021 17:16:17  INFO [SeleniumBase.java:62] - Chrome Browser Initialized
+ 12-14-2021 17:16:23  INFO [SeleniumBase.java:81] - Launched given url
+ 12-14-2021 17:16:30  INFO [OrderSearchSeleniumSteps.java:51] - =========================Opened Browser==============================
+ 12-14-2021 17:16:38  INFO [OrderSearchSeleniumSteps.java:137] - MIS NEW arch Order ID to be searched in GUI is : 302098845
+ 12-14-2021 17:17:14  INFO [ServiceOrderPage.java:50] - /L8YX/990384//ATI/
+ 12-14-2021 17:17:15  INFO [OrderSearchSeleniumSteps.java:218] - =========================GUI Testing Completed==============================
+ 12-14-2021 17:17:15  INFO [ISTOrderCreation_HALO.java:216] - This is only for AVPN order , not for MIS orders
+ 12-14-2021 17:19:15  INFO [OCXOrderCreationOld_MIS_Steps.java:156] -  Order checking CTH 
+ 12-14-2021 17:19:15  INFO [OCXOrderCreationOld_MIS_Steps.java:157] - MIS
+ 12-14-2021 17:19:15  INFO [OCXOrderStatus.java:63] - {
+   "SearchOrderRequest":{
+      "searchOrderInputsX9":{
+         "returnLocationX9":"true"
+      }
+   }
+}
+ 12-14-2021 17:19:15  INFO [OCXOrderStatus.java:64] - Getting response for SORID :1-MEDCB1933 with URL : http://zltv9973.vci.att.com:41300/rp-webapp-9/ordering/Orders?paramType=solutionid&paramValue=1-MEDCB1933
+ 12-14-2021 17:19:26  INFO [OCXOrderStatus.java:163] - PMN  :  DE
+ 12-14-2021 17:19:26  INFO [OCXOrderStatus.java:163] - SCMC  :  DE
+ 12-14-2021 17:19:26  INFO [OCXOrderStatus.java:163] - null  :  null
+ 12-14-2021 17:19:26  INFO [OCXOrderStatus.java:163] - AMC  :  DE
+ 12-14-2021 17:19:26  INFO [OCXOrderStatus.java:163] - CPEM  :  DE
+ 12-14-2021 17:19:26  INFO [OCXOrderStatus.java:163] - SCM  :  DE
+ 12-14-2021 17:19:26  INFO [OCXOrderStatus.java:168] - PMN  :  302098849
+ 12-14-2021 17:19:26  INFO [OCXOrderStatus.java:168] - SCMC  :  302098851
+ 12-14-2021 17:19:26  INFO [OCXOrderStatus.java:168] - null  :  null
+ 12-14-2021 17:19:26  INFO [OCXOrderStatus.java:168] - AMC  :  302098847
+ 12-14-2021 17:19:26  INFO [OCXOrderStatus.java:168] - CPEM  :  302098853
+ 12-14-2021 17:19:26  INFO [OCXOrderStatus.java:168] - SCM  :  302098845
+ 12-14-2021 17:19:26  INFO [OCXOrderStatus.java:98] - Status is : DE
+ 12-14-2021 17:19:26  INFO [OCXOrderStatus.java:127] - Order ID is :302098845
+ 12-14-2021 17:19:26  INFO [OCXOrderStatus.java:134] - SG ID is :302098844
+ 12-14-2021 17:21:16  INFO [OCXOrderStatus.java:63] - {
+   "SearchOrderRequest":{
+      "searchOrderInputsX9":{
+         "returnLocationX9":"true"
+      }
+   }
+}
+ 12-14-2021 17:21:16  INFO [OCXOrderStatus.java:64] - Getting response for SORID :1-MEDCB1933 with URL : http://zltv9973.vci.att.com:41300/rp-webapp-9/ordering/Orders?paramType=solutionid&paramValue=1-MEDCB1933
+ 12-14-2021 17:21:27  INFO [OCXOrderStatus.java:163] - PMN  :  DE
+ 12-14-2021 17:21:27  INFO [OCXOrderStatus.java:163] - SCMC  :  DE
+ 12-14-2021 17:21:27  INFO [OCXOrderStatus.java:163] - null  :  null
+ 12-14-2021 17:21:27  INFO [OCXOrderStatus.java:163] - AMC  :  DE
+ 12-14-2021 17:21:27  INFO [OCXOrderStatus.java:163] - CPEM  :  DE
+ 12-14-2021 17:21:27  INFO [OCXOrderStatus.java:163] - SCM  :  DE
+ 12-14-2021 17:21:27  INFO [OCXOrderStatus.java:168] - PMN  :  302098849
+ 12-14-2021 17:21:27  INFO [OCXOrderStatus.java:168] - SCMC  :  302098851
+ 12-14-2021 17:21:27  INFO [OCXOrderStatus.java:168] - null  :  null
+ 12-14-2021 17:21:27  INFO [OCXOrderStatus.java:168] - AMC  :  302098847
+ 12-14-2021 17:21:27  INFO [OCXOrderStatus.java:168] - CPEM  :  302098853
+ 12-14-2021 17:21:27  INFO [OCXOrderStatus.java:168] - SCM  :  302098845
+ 12-14-2021 17:21:27  INFO [OCXOrderStatus.java:98] - Status is : DE
+ 12-14-2021 17:21:27  INFO [OCXOrderStatus.java:127] - Order ID is :302098845
+ 12-14-2021 17:21:27  INFO [OCXOrderStatus.java:134] - SG ID is :302098844
+ 12-14-2021 17:21:27  INFO [OCXOrderCreationOld_MIS_Steps.java:145] - The status of  is: 
+ 12-14-2021 17:21:27  INFO [OCXOrderCreationOld_MIS_Steps.java:146] - Site /Siteless/ BVOIP Order Number is: 
+ 

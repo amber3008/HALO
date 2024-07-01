@@ -1,0 +1,62 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://CustomerOrderEstablishment.ocxGenericServices.services.amdocs.com">
+    <soapenv:Header>
+        <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:UsernameToken wsu:Id="UsernameToken-E9831C5131DB1C636214604451108501">
+                <wsse:Username>OMS</wsse:Username>
+                <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">Oms111</wsse:Password>
+                <!--wsse:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">vAMoAVTyRHWrqnMzZjAWBw==</wsse:Nonce>
+            <wsu:Created>2016-04-12T07:11:50.847Z</wsu:Created-->
+            </wsse:UsernameToken>
+        </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <cus:createProductOrderForExistingProduct>
+            <!--Optional:-->
+            <createProductOrderForExistingProductRequest>
+                <salesChannel>SA</salesChannel>
+                <options>
+                    <confirmationChecksApproved>true</confirmationChecksApproved>
+                </options>
+                <order>
+                    <customer>
+                        <customerId>8390000001705</customerId>
+                    </customer>
+                    <description>change of EVCA CVLAN</description>
+                    <attUserId>sp295w</attUserId>
+                    <startOrderingProcess>true</startOrderingProcess> <!--true/false-->
+                    <topLevelProducts>
+                        <associationSpec>
+                            <assignedProductId>900451008</assignedProductId>
+                        </associationSpec>
+                        <orderItem>
+                            <contacts>
+                                <contactType>CUS</contactType>
+                                <firstName>Sagar</firstName>
+                                <lastName>Patankar</lastName>
+                            </contacts>
+                            <orderActionType>CH</orderActionType>
+                            <serviceRequiredDate>2020-03-01T23:59:59+02:00</serviceRequiredDate>
+                        </orderItem>
+                        <topLevelProduct>
+                         
+                            <containedProducts>
+                                <action>CHANGE</action>
+                                <associationSpecDefinition>
+                                    <componentServiceType>EVCA</componentServiceType>
+                                </associationSpecDefinition>
+                                <characteristicValues>
+                                    <characteristicDefinition>
+                                        <attributeCode>CVLANTAG</attributeCode>
+                                        <attributeId>1711</attributeId>
+                                    </characteristicDefinition>
+                                    <value>910</value>
+                                </characteristicValues>
+                            </containedProducts>
+                        </topLevelProduct>
+                    </topLevelProducts>
+                    
+                </order>
+            </createProductOrderForExistingProductRequest>
+        </cus:createProductOrderForExistingProduct>
+    </soapenv:Body>
+</soapenv:Envelope>

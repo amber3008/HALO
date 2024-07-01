@@ -1,0 +1,37 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"> 
+   <SOAP-ENV:Header> 
+      <ns3:MessageHeader xmlns:ns3="http://csi.cingular.com/CSI/Namespaces/Types/Public/MessageHeader.xsd" xmlns:ns2="http://csi.cingular.com/CSI/Namespaces/Types/Public/CingularDataModel.xsd"> 
+         <ns3:TrackingMessageHeader> 
+            <ns2:infrastructureVersion>86</ns2:infrastructureVersion> 
+            <ns2:applicationName>OMX</ns2:applicationName> 
+            <ns2:version>v144</ns2:version> 
+            <ns2:messageId>1D4DF61D967345BD82F4DFE047A82A9C_4989FC6C6ABC412DAD84B1B82FD611B7_0</ns2:messageId> 
+            <ns2:responseTo>OMX</ns2:responseTo> 
+            <ns2:timeToLive>300000</ns2:timeToLive> 
+            <ns2:conversationId>1D4DF61D967345BD82F4DFE047A82A9C_4989FC6C6ABC412DAD84B1B82FD611B7_0</ns2:conversationId> 
+            <ns2:dateTimeStamp>2019-02-27T13:38:17.115Z</ns2:dateTimeStamp> 
+            <ns2:uniqueTransactionId>1D4DF61D967345BD82F4DFE047A82A9C_4989FC6C6ABC412DAD84B1B82FD611B7_0</ns2:uniqueTransactionId> 
+         </ns3:TrackingMessageHeader> 
+         <ns3:SecurityMessageHeader> 
+            <ns2:userName>omx</ns2:userName> 
+            <ns2:userPassword>omx0414</ns2:userPassword> 
+         </ns3:SecurityMessageHeader> 
+         <ns3:SequenceMessageHeader> 
+            <ns2:sequenceNumber>1</ns2:sequenceNumber> 
+            <ns2:totalInSequence>1</ns2:totalInSequence> 
+         </ns3:SequenceMessageHeader> 
+      </ns3:MessageHeader> 
+   </SOAP-ENV:Header> 
+   <SOAP-ENV:Body> 
+      <ns2:ManageCPEWorkflowResponse xmlns:ns2="http://csi.cingular.com/CSI/Namespaces/Container/Public/ManageCPEWorkflowResponse.xsd" xmlns:ns3="http://csi.cingular.com/CSI/Namespaces/Types/Public/CingularDataModel.xsd"> 
+         <ns2:orderSourceSystem>OMX</ns2:orderSourceSystem> 
+         <ns2:eventType>5</ns2:eventType> 
+         <ns2:orderId>17365805</ns2:orderId> 
+         <ns2:cpeOrderStatus>COMPLETE</ns2:cpeOrderStatus> <!--HW_RETRIEVAL_IN_PROGRESS, COMPLETE_NA, IN_PROGRESS, SHIPPED, DELIVERED, PONR_SUPP_EQUIPMENT, PONR_CANCEL_EQUIPMENT, SUBMITTED, COMPLETE, RETURNED, CANCEL_REQUESTED, NOTDELIVERED, CONFIG_FAILURE-->
+         <ns2:Response> 
+            <ns3:code>0</ns3:code> 
+            <ns3:description>SUCCESS</ns3:description> 
+         </ns2:Response> 
+      </ns2:ManageCPEWorkflowResponse> 
+   </SOAP-ENV:Body> 
+</SOAP-ENV:Envelope>

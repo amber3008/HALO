@@ -1,0 +1,11 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sear="http://athena.it.att.com/aff/search">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sear:hierarchySearchRequest>
+         <!--You have a CHOICE of the next 3 items at this level-->
+         <!--<sear:orderId>?</sear:orderId>-->
+         <!--<sear:sorId>?</sear:sorId>-->
+         <sear:serviceGroupOrderId>{$sgId$}</sear:serviceGroupOrderId>
+      </sear:hierarchySearchRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

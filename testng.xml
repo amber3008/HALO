@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNg_Test">
+ <!--  <test  name="Test1">
+    <classes>
+      <class name="com.testng.Test1_RestAssured"/>
+    </classes>
+  </test> Test -->
+   <test name="HALOTesting" annotations="JDK" preserve-order="true">
+        <classes>
+            <class name="com.amdocs.halo.automation.executor.TestRunner"/>
+        </classes>
+    </test>
+</suite> <!-- Suite -->

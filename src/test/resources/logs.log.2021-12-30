@@ -1,0 +1,29 @@
+12-30-2021 10:59:19  INFO [OMXOrderCreationSteps.java:57] - --------------------Triggering Notify Request-----------------
+ 12-30-2021 10:59:21  INFO [TriggerNotifyRequest.java:56] - URL is:http://newtt4a1.snt.bst.bls.com:9003/omxenterprise-client-inbound-ws-war/NxEnterpriseService
+ 12-30-2021 10:59:21  INFO [TriggerNotifyRequest.java:57] - URL is:http://newtt4a1.snt.bst.bls.com:9003/omxenterprise-client-inbound-ws-war/NxEnterpriseService
+ 12-30-2021 10:59:21  INFO [UpdateXMLs.java:75] - SOR ID is:1-TNRSCPABDDD54
+ 12-30-2021 10:59:21  INFO [UpdateXMLs.java:100] - Request After update is :<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:nxen="http://omx.att.com/omx/nxenterprise" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v3="http://cio.att.com/commonheader/v3">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <nxen:notifyProjectRequest>
+         <nxen:sourceSystem>ATTeBiz</nxen:sourceSystem>
+         <!--ATTeBiz,SalesExpr,ROME-->
+         <nxen:serviceNameList>
+            <nxen:serviceName>MIS</nxen:serviceName> 
+            <nxen:serviceName>BVOIP</nxen:serviceName>
+           <!-- <nxen:serviceName>AVPN</nxen:serviceName>-->
+         </nxen:serviceNameList>
+         <!--<nxen:sorId>1-TNRSCPABDDD54</nxen:sorId> -->
+         <nxen:solutionID>1-TNRSCPABDDD54</nxen:solutionID>
+         <nxen:ProjectIdList>
+            <nxen:dborProjectId>TNRSCPAB843874</nxen:dborProjectId>
+         </nxen:ProjectIdList>
+         <nxen:customerName>HALOAMBCUSTOMER</nxen:customerName>
+         <nxen:opportunityId>1-C2823484</nxen:opportunityId>
+         <!--<nxen:eventOperation>SORSubmitted</nxen:eventOperation>-->
+         <nxen:eventOperation>submitOrderData</nxen:eventOperation>
+         <nxen:SOREligibility>OMX</nxen:SOREligibility>
+      </nxen:notifyProjectRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+ 

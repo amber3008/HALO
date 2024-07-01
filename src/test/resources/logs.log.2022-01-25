@@ -1,0 +1,826 @@
+01-25-2022 14:58:54  INFO [OMXOrderCreationSteps.java:57] - --------------------Triggering Notify Request-----------------
+ 01-25-2022 14:58:56  INFO [TriggerNotifyRequest.java:56] - URL is:http://newtt5a1.snt.bst.bls.com:9003/omxenterprise-client-inbound-ws-war/NxEnterpriseService
+ 01-25-2022 14:58:56  INFO [TriggerNotifyRequest.java:57] - URL is:http://newtt5a1.snt.bst.bls.com:9003/omxenterprise-client-inbound-ws-war/NxEnterpriseService
+ 01-25-2022 14:58:56  INFO [UpdateXMLs.java:76] - SOR ID is:1-MECDA5771
+ 01-25-2022 14:58:56  INFO [UpdateXMLs.java:101] - Request After update is :<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:nxen="http://omx.att.com/omx/nxenterprise" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v3="http://cio.att.com/commonheader/v3">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <nxen:notifyProjectRequest>
+         <nxen:sourceSystem>ATTeBiz</nxen:sourceSystem>
+         <!--ATTeBiz,SalesExpr,ROME-->
+         <nxen:serviceNameList>
+            <nxen:serviceName>MIS</nxen:serviceName> 
+            <!--<nxen:serviceName>BVOIP</nxen:serviceName>-->
+           <!-- <nxen:serviceName>AVPN</nxen:serviceName>-->
+         </nxen:serviceNameList>
+         <!--<nxen:sorId>1-MECDA5771</nxen:sorId> -->
+         <nxen:solutionID>1-MECDA5771</nxen:solutionID>
+         <nxen:ProjectIdList>
+            <nxen:dborProjectId>ME386207</nxen:dborProjectId>
+         </nxen:ProjectIdList>
+         <nxen:customerName>HALOAMBCUSTOMER</nxen:customerName>
+         <nxen:opportunityId>1-C2823484</nxen:opportunityId>
+         <!--<nxen:eventOperation>SORSubmitted</nxen:eventOperation>-->
+         <nxen:eventOperation>submitOrderData</nxen:eventOperation>
+         <nxen:SOREligibility>OMX</nxen:SOREligibility>
+      </nxen:notifyProjectRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+ 01-25-2022 14:58:57  INFO [TriggerNotifyRequest.java:64] - Response in format is:<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+<env:Header/>
+<env:Body>
+<ns3:notifyProjectResponse xmlns="http://cio.att.com/commonheader/v3" xmlns:ns3="http://omx.att.com/omx/nxenterprise"/>
+</env:Body>
+</env:Envelope>
+
+ 01-25-2022 14:58:57  INFO [OMXOrderCreationSteps.java:63] - --------------------SOR ID while testing-----------------
+ 01-25-2022 14:58:57  INFO [OMXOrderCreationSteps.java:64] - 1-MECDA5771
+ 01-25-2022 14:58:57  INFO [OMXOrderCreationSteps.java:65] - --------------------PROJ ID while testing-----------------
+ 01-25-2022 14:58:57  INFO [OMXOrderCreationSteps.java:66] - ME386207
+ 01-25-2022 14:58:57  INFO [OMXOrderCreationSteps.java:67] - --------------------Notify Request Triggered-----------------
+ 01-25-2022 14:58:58  INFO [TriggerDecomposeSalesOrderRequest_MIS.java:46] - URL is:http://zltv9973.vci.att.com:41300/NW-WEB_SERVICES/NotifyOCX?wsdl
+ 01-25-2022 14:58:58  INFO [UpdateXMLs.java:213] - SOR ID is:1-MECDA5771
+ 01-25-2022 14:58:58  INFO [UpdateXMLs.java:217] - Request After update is :<?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Header/>
+  <env:Body>
+    <ns0:decomposeSalesOrderRequest xmlns:ns0="http://amdocs/oms/ws/v1">
+      <decomposeSORRequest>
+        <CustomerID>590206355201</CustomerID>
+        <Context/>
+        <projectID>ME386207</projectID>
+        <SORID>1-MECDA5771</SORID>
+        <StoreOnly>N</StoreOnly>
+        <WSHeader>
+          <WSContext>
+            <FromAppId>OMX</FromAppId>
+            <ToAppId>OCX</ToAppId>
+          </WSContext>
+          <WSResponseMessageExpiration>0</WSResponseMessageExpiration>
+        </WSHeader>
+      </decomposeSORRequest>
+    </ns0:decomposeSalesOrderRequest>
+  </env:Body>
+</env:Envelope>
+ 01-25-2022 14:58:58  INFO [TriggerDecomposeSalesOrderRequest_MIS.java:53] - Response in format is:<S:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<env:Header/>
+<S:Body>
+<ns2:decomposeSalesOrderRequestResponse xmlns:ns2="http://amdocs/oms/ws/v1"/>
+</S:Body>
+</S:Envelope>
+
+ 01-25-2022 15:00:39  INFO [OCXOrderStatus.java:63] - {
+   "SearchOrderRequest":{
+      "searchOrderInputsX9":{
+         "returnLocationX9":"true"
+      }
+   }
+}
+ 01-25-2022 15:00:39  INFO [OCXOrderStatus.java:64] - Getting response for SORID :1-MECDA5771 with URL : http://zltv9973.vci.att.com:41300/rp-webapp-9/ordering/Orders?paramType=solutionid&paramValue=1-MECDA5771
+ 01-25-2022 15:00:55  INFO [OCXOrderStatus.java:163] - null  :  null
+ 01-25-2022 15:00:55  INFO [OCXOrderStatus.java:163] - ACSM  :  NE
+ 01-25-2022 15:00:55  INFO [OCXOrderStatus.java:163] - MISM  :  NE
+ 01-25-2022 15:00:55  INFO [OCXOrderStatus.java:163] - BVOIP  :  NE
+ 01-25-2022 15:00:55  INFO [OCXOrderStatus.java:168] - null  :  null
+ 01-25-2022 15:00:55  INFO [OCXOrderStatus.java:168] - ACSM  :  302136442
+ 01-25-2022 15:00:55  INFO [OCXOrderStatus.java:168] - MISM  :  302136444
+ 01-25-2022 15:00:55  INFO [OCXOrderStatus.java:168] - BVOIP  :  302136446
+ 01-25-2022 15:00:55  INFO [OCXOrderStatus.java:98] - Status is : NE
+ 01-25-2022 15:00:55  INFO [OCXOrderStatus.java:127] - Order ID is :302136444
+ 01-25-2022 15:00:55  INFO [OCXOrderStatus.java:134] - SG ID is :302136441
+ 01-25-2022 15:00:55  INFO [OMXOrderCreationSteps.java:85] - --------------------Triggering SG Level MOR-----------------
+ 01-25-2022 15:00:55  INFO [OMXOrderCreationSteps.java:86] - Type Of order is : MIS
+ 01-25-2022 15:00:55  INFO [OMXOrderCreationSteps.java:87] - Testing Type is : IST
+ 01-25-2022 15:00:55  INFO [TriggerMOR_SGLevel.java:58] - Type if Order is : MIS
+ 01-25-2022 15:00:55  INFO [TriggerMOR_SGLevel.java:105] - -------------------------Pushing ManageOrder Request for SG for Old Arch MIS---------------------
+ 01-25-2022 15:00:55  INFO [TriggerMOR_SGLevel.java:145] - URL is:http://t5nap1a1.snt.bst.bls.com:9003/ocx-client-inbound-ws-war/OrderManagementServicePort
+ 01-25-2022 15:00:55  INFO [TriggerMOR_SGLevel.java:148] - SORID and Project ID is:1-MECDA5771
+ 01-25-2022 15:00:55  INFO [TriggerMOR_SGLevel.java:149] - ME386207
+ 01-25-2022 15:00:55  INFO [TriggerMOR_SGLevel.java:150] - Request to be updated:<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:mod="http://cio.att.com/order/management/model" xmlns:mod1="http://cio.att.com/req/model" xmlns:mod2="http://cio.att.com/entity/model" xmlns:mod3="http://cio.att.com/ord/model" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v3="http://cio.att.com/commonheader/v3">
+   <soapenv:Header>
+      <v3:WSHeader>
+         <v3:WSContext>
+            <v3:FromAppId>OCX</v3:FromAppId>
+            <v3:ToAppId>OMX</v3:ToAppId>
+         </v3:WSContext>
+      </v3:WSHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <mod:manageOrderRequest>
+         <mod:order>
+            <mod1:eid>
+               <mod2:context>OCX</mod2:context>
+               <mod2:id>{$sorId$}</mod2:id>
+               <mod2:entityType>SOR</mod2:entityType>
+            </mod1:eid>
+           <!-- <mod1:type>BVOIP</mod1:type>-->
+            <mod3:isBundle>true</mod3:isBundle>
+            <mod3:subOrders>
+               <mod3:item>
+                  <mod1:eid>
+                     <mod2:context>OCX</mod2:context>
+                     <mod2:id>{$sgId$}</mod2:id>
+                     <mod2:entityType>Order</mod2:entityType>
+                  </mod1:eid>
+                  <mod1:type>DECOMPOSE</mod1:type>
+                  <mod1:characteristics>
+                     <mod2:item>
+                        <mod2:name>ServiceGroupOrderId</mod2:name>
+                        <mod2:value>{$sgId$}</mod2:value>
+                     </mod2:item>
+                      <mod2:item>
+                <mod2:name>projectId</mod2:name>
+                <mod2:value>{$projId$}</mod2:value>
+              </mod2:item>
+                  </mod1:characteristics>
+                  <mod1:associations>
+                     <mod2:item>
+                        <mod2:associationName>AssociatedServiceOrder</mod2:associationName>
+                        <mod2:items>
+                           <mod2:item>
+                              <mod2:context>OCX</mod2:context>
+                              <mod2:id>{$oaIdAc$}</mod2:id>
+                              <mod2:entityType>OrderAction</mod2:entityType>
+                              <mod2:type>ACSM</mod2:type>
+                              <!--<mod2:product>ACSM</mod2:product>-->
+                           </mod2:item>
+                        </mod2:items>
+                     </mod2:item>
+                     <mod2:item>
+                        <mod2:associationName>AssociatedServiceOrder</mod2:associationName>
+                        <mod2:items>
+                           <mod2:item>
+                              <mod2:context>OCX</mod2:context>
+                              <mod2:id>{$oaId$}</mod2:id>
+                              <mod2:entityType>OrderAction</mod2:entityType>
+                              <mod2:type>MISM</mod2:type>
+                           </mod2:item>
+                        </mod2:items>
+                     </mod2:item>
+                  </mod1:associations>
+                  <mod3:isBundle>false</mod3:isBundle>
+                  <mod3:actionType>PR</mod3:actionType>
+                  <mod3:actionSubType>NA</mod3:actionSubType>
+                  <mod3:version>1</mod3:version>
+                  <!--<mod3:DueDate>2015-10-04T18:13:51.0</mod3:DueDate> -->
+               </mod3:item>
+            </mod3:subOrders>
+         </mod:order>
+      </mod:manageOrderRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+ 01-25-2022 15:00:55  INFO [TriggerMOR_SGLevel.java:151] - -------------------------Updating Xmls--------------------------
+ 01-25-2022 15:00:55  INFO [UpdateXMLs.java:140] - SOR ID is:1-MECDA5771
+ 01-25-2022 15:00:56  INFO [OCXOrderStatus.java:63] - {
+   "SearchOrderRequest":{
+      "searchOrderInputsX9":{
+         "returnLocationX9":"true"
+      }
+   }
+}
+ 01-25-2022 15:00:56  INFO [OCXOrderStatus.java:64] - Getting response for SORID :1-MECDA5771 with URL : http://zltv9973.vci.att.com:41300/rp-webapp-9/ordering/Orders?paramType=solutionid&paramValue=1-MECDA5771
+ 01-25-2022 15:01:07  INFO [OCXOrderStatus.java:163] - null  :  null
+ 01-25-2022 15:01:07  INFO [OCXOrderStatus.java:163] - ACSM  :  DE
+ 01-25-2022 15:01:07  INFO [OCXOrderStatus.java:163] - MISM  :  DE
+ 01-25-2022 15:01:07  INFO [OCXOrderStatus.java:163] - BVOIP  :  NE
+ 01-25-2022 15:01:07  INFO [OCXOrderStatus.java:168] - null  :  null
+ 01-25-2022 15:01:07  INFO [OCXOrderStatus.java:168] - ACSM  :  302136442
+ 01-25-2022 15:01:07  INFO [OCXOrderStatus.java:168] - MISM  :  302136444
+ 01-25-2022 15:01:07  INFO [OCXOrderStatus.java:168] - BVOIP  :  302136446
+ 01-25-2022 15:01:07  INFO [OCXOrderStatus.java:98] - Status is : DE
+ 01-25-2022 15:01:07  INFO [OCXOrderStatus.java:127] - Order ID is :302136444
+ 01-25-2022 15:01:07  INFO [OCXOrderStatus.java:134] - SG ID is :302136441
+ 01-25-2022 15:01:07  INFO [UpdateXMLs.java:179] - Request After update is :<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:mod="http://cio.att.com/order/management/model" xmlns:mod1="http://cio.att.com/req/model" xmlns:mod2="http://cio.att.com/entity/model" xmlns:mod3="http://cio.att.com/ord/model" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v3="http://cio.att.com/commonheader/v3">
+   <soapenv:Header>
+      <v3:WSHeader>
+         <v3:WSContext>
+            <v3:FromAppId>OCX</v3:FromAppId>
+            <v3:ToAppId>OMX</v3:ToAppId>
+         </v3:WSContext>
+      </v3:WSHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <mod:manageOrderRequest>
+         <mod:order>
+            <mod1:eid>
+               <mod2:context>OCX</mod2:context>
+               <mod2:id>1-MECDA5771</mod2:id>
+               <mod2:entityType>SOR</mod2:entityType>
+            </mod1:eid>
+           <!-- <mod1:type>BVOIP</mod1:type>-->
+            <mod3:isBundle>true</mod3:isBundle>
+            <mod3:subOrders>
+               <mod3:item>
+                  <mod1:eid>
+                     <mod2:context>OCX</mod2:context>
+                     <mod2:id>302136441</mod2:id>
+                     <mod2:entityType>Order</mod2:entityType>
+                  </mod1:eid>
+                  <mod1:type>DECOMPOSE</mod1:type>
+                  <mod1:characteristics>
+                     <mod2:item>
+                        <mod2:name>ServiceGroupOrderId</mod2:name>
+                        <mod2:value>302136441</mod2:value>
+                     </mod2:item>
+                      <mod2:item>
+                <mod2:name>projectId</mod2:name>
+                <mod2:value>ME386207</mod2:value>
+              </mod2:item>
+                  </mod1:characteristics>
+                  <mod1:associations>
+                     <mod2:item>
+                        <mod2:associationName>AssociatedServiceOrder</mod2:associationName>
+                        <mod2:items>
+                           <mod2:item>
+                              <mod2:context>OCX</mod2:context>
+                              <mod2:id>302136442</mod2:id>
+                              <mod2:entityType>OrderAction</mod2:entityType>
+                              <mod2:type>ACSM</mod2:type>
+                              <!--<mod2:product>ACSM</mod2:product>-->
+                           </mod2:item>
+                        </mod2:items>
+                     </mod2:item>
+                     <mod2:item>
+                        <mod2:associationName>AssociatedServiceOrder</mod2:associationName>
+                        <mod2:items>
+                           <mod2:item>
+                              <mod2:context>OCX</mod2:context>
+                              <mod2:id>302136444</mod2:id>
+                              <mod2:entityType>OrderAction</mod2:entityType>
+                              <mod2:type>MISM</mod2:type>
+                           </mod2:item>
+                        </mod2:items>
+                     </mod2:item>
+                  </mod1:associations>
+                  <mod3:isBundle>false</mod3:isBundle>
+                  <mod3:actionType>PR</mod3:actionType>
+                  <mod3:actionSubType>NA</mod3:actionSubType>
+                  <mod3:version>1</mod3:version>
+                  <!--<mod3:DueDate>2015-10-04T18:13:51.0</mod3:DueDate> -->
+               </mod3:item>
+            </mod3:subOrders>
+         </mod:order>
+      </mod:manageOrderRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+ 01-25-2022 15:01:07  INFO [UpdateXMLs.java:186] - [Ljava.lang.String;@e57e5d6
+ 01-25-2022 15:01:07  INFO [TriggerMOR_SGLevel.java:165] - Response in format is:<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+<env:Header/>
+<env:Body>
+<ns4:manageOrderResponse xmlns:ns5="http://cio.att.com/req/model" xmlns:ns2="http://cio.att.com/ord/model" xmlns:ns1="http://cio.att.com/entity/model" xmlns:ns4="http://cio.att.com/order/management/model"/>
+</env:Body>
+</env:Envelope>
+
+ 01-25-2022 15:01:07  INFO [OMXOrderCreationSteps.java:89] - --------------------SG Level MOR Triggered-----------------
+ 01-25-2022 15:01:17  INFO [OMXOrderCreationSteps.java:92] - SOR ID is: 1-MECDA5771
+ 01-25-2022 15:01:17  INFO [OMXOrderCreationSteps.java:93] - SG ID is: 302136441
+ 01-25-2022 15:01:17  INFO [OMXOrderCreationSteps.java:94] - Order ID is: 302136444
+ 01-25-2022 15:03:07  INFO [OCXOrderStatus.java:63] - {
+   "SearchOrderRequest":{
+      "searchOrderInputsX9":{
+         "returnLocationX9":"true"
+      }
+   }
+}
+ 01-25-2022 15:03:07  INFO [OCXOrderStatus.java:64] - Getting response for SORID :1-MECDA5771 with URL : http://zltv9973.vci.att.com:41300/rp-webapp-9/ordering/Orders?paramType=solutionid&paramValue=1-MECDA5771
+ 01-25-2022 15:03:18  INFO [OCXOrderStatus.java:163] - null  :  null
+ 01-25-2022 15:03:18  INFO [OCXOrderStatus.java:163] - ACSM  :  DE
+ 01-25-2022 15:03:18  INFO [OCXOrderStatus.java:163] - MISM  :  DE
+ 01-25-2022 15:03:18  INFO [OCXOrderStatus.java:163] - BVOIP  :  NE
+ 01-25-2022 15:03:18  INFO [OCXOrderStatus.java:168] - null  :  null
+ 01-25-2022 15:03:18  INFO [OCXOrderStatus.java:168] - ACSM  :  302136442
+ 01-25-2022 15:03:18  INFO [OCXOrderStatus.java:168] - MISM  :  302136444
+ 01-25-2022 15:03:18  INFO [OCXOrderStatus.java:168] - BVOIP  :  302136446
+ 01-25-2022 15:03:18  INFO [OCXOrderStatus.java:98] - Status is : DE
+ 01-25-2022 15:03:18  INFO [OCXOrderStatus.java:127] - Order ID is :302136444
+ 01-25-2022 15:03:18  INFO [OCXOrderStatus.java:134] - SG ID is :302136441
+ 01-25-2022 15:03:18  INFO [OCXOrderCreationOld_MIS_Steps.java:129] - MIS Old Arch Site Order Number is: 302136444
+ 01-25-2022 15:03:18  INFO [OCXOrderCreationOld_MIS_Steps.java:145] - The status of 302136444 is: DE
+ 01-25-2022 15:03:18  INFO [OCXOrderCreationOld_MIS_Steps.java:146] - Site /Siteless/ BVOIP Order Number is: 302136444
+ 01-25-2022 15:05:18  INFO [OCXOrderCreationOld_MIS_Steps.java:156] -  Order checking CTH 
+ 01-25-2022 15:05:18  INFO [OCXOrderCreationOld_MIS_Steps.java:157] - MIS
+ 01-25-2022 15:05:18  INFO [OCXOrderStatus.java:63] - {
+   "SearchOrderRequest":{
+      "searchOrderInputsX9":{
+         "returnLocationX9":"true"
+      }
+   }
+}
+ 01-25-2022 15:05:18  INFO [OCXOrderStatus.java:64] - Getting response for SORID :1-MECDA5771 with URL : http://zltv9973.vci.att.com:41300/rp-webapp-9/ordering/Orders?paramType=solutionid&paramValue=1-MECDA5771
+ 01-25-2022 15:05:30  INFO [OCXOrderStatus.java:163] - null  :  null
+ 01-25-2022 15:05:30  INFO [OCXOrderStatus.java:163] - ACSM  :  DE
+ 01-25-2022 15:05:30  INFO [OCXOrderStatus.java:163] - MISM  :  DE
+ 01-25-2022 15:05:30  INFO [OCXOrderStatus.java:163] - BVOIP  :  NE
+ 01-25-2022 15:05:30  INFO [OCXOrderStatus.java:168] - null  :  null
+ 01-25-2022 15:05:30  INFO [OCXOrderStatus.java:168] - ACSM  :  302136442
+ 01-25-2022 15:05:30  INFO [OCXOrderStatus.java:168] - MISM  :  302136444
+ 01-25-2022 15:05:30  INFO [OCXOrderStatus.java:168] - BVOIP  :  302136446
+ 01-25-2022 15:05:30  INFO [OCXOrderStatus.java:98] - Status is : DE
+ 01-25-2022 15:05:30  INFO [OCXOrderStatus.java:127] - Order ID is :302136444
+ 01-25-2022 15:05:30  INFO [OCXOrderStatus.java:134] - SG ID is :302136441
+ 01-25-2022 15:07:20  INFO [OCXOrderStatus.java:63] - {
+   "SearchOrderRequest":{
+      "searchOrderInputsX9":{
+         "returnLocationX9":"true"
+      }
+   }
+}
+ 01-25-2022 15:07:20  INFO [OCXOrderStatus.java:64] - Getting response for SORID :1-MECDA5771 with URL : http://zltv9973.vci.att.com:41300/rp-webapp-9/ordering/Orders?paramType=solutionid&paramValue=1-MECDA5771
+ 01-25-2022 15:07:31  INFO [OCXOrderStatus.java:163] - null  :  null
+ 01-25-2022 15:07:31  INFO [OCXOrderStatus.java:163] - ACSM  :  DE
+ 01-25-2022 15:07:31  INFO [OCXOrderStatus.java:163] - MISM  :  DE
+ 01-25-2022 15:07:31  INFO [OCXOrderStatus.java:163] - BVOIP  :  NE
+ 01-25-2022 15:07:31  INFO [OCXOrderStatus.java:168] - null  :  null
+ 01-25-2022 15:07:31  INFO [OCXOrderStatus.java:168] - ACSM  :  302136442
+ 01-25-2022 15:07:31  INFO [OCXOrderStatus.java:168] - MISM  :  302136444
+ 01-25-2022 15:07:31  INFO [OCXOrderStatus.java:168] - BVOIP  :  302136446
+ 01-25-2022 15:07:31  INFO [OCXOrderStatus.java:98] - Status is : DE
+ 01-25-2022 15:07:31  INFO [OCXOrderStatus.java:127] - Order ID is :302136444
+ 01-25-2022 15:07:31  INFO [OCXOrderStatus.java:134] - SG ID is :302136441
+ 01-25-2022 15:07:31  INFO [OCXOrderCreationOld_MIS_Steps.java:145] - The status of  is: 
+ 01-25-2022 15:07:31  INFO [OCXOrderCreationOld_MIS_Steps.java:146] - Site /Siteless/ BVOIP Order Number is: 
+ 01-25-2022 15:07:31  INFO [OCXOrderCreationOld_MIS_Steps.java:207] -  Checking CTH of MIS
+ 01-25-2022 15:07:31  INFO [OCXOrderCreationOld_MIS_Steps.java:221] - Order ID is : 302136444
+ 01-25-2022 15:10:01  INFO [OCXOrderCreationOld_MIS_Steps.java:225] - Order successfully submitted
+ 01-25-2022 15:10:01  INFO [OrderSearchSeleniumSteps.java:48] - =========================Opening Browser==============================
+ 01-25-2022 15:10:09  INFO [SeleniumBase.java:67] - Edge Browser Initialized
+ 01-25-2022 15:10:12  INFO [SeleniumBase.java:86] - Launched given url
+ 01-25-2022 15:10:19  INFO [OrderSearchSeleniumSteps.java:51] - =========================Opened Browser==============================
+ 01-25-2022 15:10:29  INFO [OrderSearchSeleniumSteps.java:137] - MIS OLD arch Order ID to be searched in GUI is : 302136444
+ 01-25-2022 15:11:06  INFO [ServiceOrderPage.java:50] - MLEC123451
+ 01-25-2022 15:11:07  INFO [OrderSearchSeleniumSteps.java:218] - =========================GUI Testing Completed==============================
+ 01-25-2022 19:05:50  INFO [OMXOrderCreationSteps.java:57] - --------------------Triggering Notify Request-----------------
+ 01-25-2022 19:05:53  INFO [TriggerNotifyRequest.java:56] - URL is:http://newtt5a1.snt.bst.bls.com:9003/omxenterprise-client-inbound-ws-war/NxEnterpriseService
+ 01-25-2022 19:05:53  INFO [TriggerNotifyRequest.java:57] - URL is:http://newtt5a1.snt.bst.bls.com:9003/omxenterprise-client-inbound-ws-war/NxEnterpriseService
+ 01-25-2022 19:05:53  INFO [UpdateXMLs.java:76] - SOR ID is:1-TNRSCPABACD19
+ 01-25-2022 19:05:53  INFO [UpdateXMLs.java:101] - Request After update is :<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:nxen="http://omx.att.com/omx/nxenterprise" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v3="http://cio.att.com/commonheader/v3">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <nxen:notifyProjectRequest>
+         <nxen:sourceSystem>ATTeBiz</nxen:sourceSystem>
+         <!--ATTeBiz,SalesExpr,ROME-->
+         <nxen:serviceNameList>
+            <nxen:serviceName>MIS</nxen:serviceName> 
+            <nxen:serviceName>BVOIP</nxen:serviceName>
+           <!-- <nxen:serviceName>AVPN</nxen:serviceName>-->
+         </nxen:serviceNameList>
+         <!--<nxen:sorId>1-TNRSCPABACD19</nxen:sorId> -->
+         <nxen:solutionID>1-TNRSCPABACD19</nxen:solutionID>
+         <nxen:ProjectIdList>
+            <nxen:dborProjectId>TNRSCPAB726066</nxen:dborProjectId>
+         </nxen:ProjectIdList>
+         <nxen:customerName>HALOAMBCUSTOMER</nxen:customerName>
+         <nxen:opportunityId>1-C2823484</nxen:opportunityId>
+         <!--<nxen:eventOperation>SORSubmitted</nxen:eventOperation>-->
+         <nxen:eventOperation>submitOrderData</nxen:eventOperation>
+         <nxen:SOREligibility>OMX</nxen:SOREligibility>
+      </nxen:notifyProjectRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+ 01-25-2022 19:05:54  INFO [TriggerNotifyRequest.java:64] - Response in format is:<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+<env:Header/>
+<env:Body>
+<ns3:notifyProjectResponse xmlns="http://cio.att.com/commonheader/v3" xmlns:ns3="http://omx.att.com/omx/nxenterprise"/>
+</env:Body>
+</env:Envelope>
+
+ 01-25-2022 19:05:54  INFO [OMXOrderCreationSteps.java:63] - --------------------SOR ID while testing-----------------
+ 01-25-2022 19:05:54  INFO [OMXOrderCreationSteps.java:64] - 1-TNRSCPABACD19
+ 01-25-2022 19:05:54  INFO [OMXOrderCreationSteps.java:65] - --------------------PROJ ID while testing-----------------
+ 01-25-2022 19:05:54  INFO [OMXOrderCreationSteps.java:66] - TNRSCPAB726066
+ 01-25-2022 19:05:54  INFO [OMXOrderCreationSteps.java:67] - --------------------Notify Request Triggered-----------------
+ 01-25-2022 19:05:54  INFO [TriggerDecomposeSalesOrderRequest_MIS.java:46] - URL is:http://zltv9973.vci.att.com:41300/NW-WEB_SERVICES/NotifyOCX?wsdl
+ 01-25-2022 19:05:54  INFO [UpdateXMLs.java:213] - SOR ID is:1-TNRSCPABACD19
+ 01-25-2022 19:05:54  INFO [UpdateXMLs.java:217] - Request After update is :<?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Header/>
+  <env:Body>
+    <ns0:decomposeSalesOrderRequest xmlns:ns0="http://amdocs/oms/ws/v1">
+      <decomposeSORRequest>
+        <CustomerID>590206355201</CustomerID>
+        <Context/>
+        <projectID>TNRSCPAB726066</projectID>
+        <SORID>1-TNRSCPABACD19</SORID>
+        <StoreOnly>N</StoreOnly>
+        <WSHeader>
+          <WSContext>
+            <FromAppId>OMX</FromAppId>
+            <ToAppId>OCX</ToAppId>
+          </WSContext>
+          <WSResponseMessageExpiration>0</WSResponseMessageExpiration>
+        </WSHeader>
+      </decomposeSORRequest>
+    </ns0:decomposeSalesOrderRequest>
+  </env:Body>
+</env:Envelope>
+ 01-25-2022 19:05:54  INFO [TriggerDecomposeSalesOrderRequest_MIS.java:53] - Response in format is:<S:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<env:Header/>
+<S:Body>
+<ns2:decomposeSalesOrderRequestResponse xmlns:ns2="http://amdocs/oms/ws/v1"/>
+</S:Body>
+</S:Envelope>
+
+ 01-25-2022 19:07:34  INFO [OCXOrderStatus.java:67] - {
+   "SearchOrderRequest":{
+      "searchOrderInputsX9":{
+         "returnLocationX9":"true"
+      }
+   }
+}
+ 01-25-2022 19:07:34  INFO [OCXOrderStatus.java:68] - Getting response for SORID :1-TNRSCPABACD19 with URL : http://zltv9973.vci.att.com:41300/rp-webapp-9/ordering/Orders?paramType=solutionid&paramValue=1-TNRSCPABACD19
+ 01-25-2022 19:07:50  INFO [OCXOrderStatus.java:167] - null  :  null
+ 01-25-2022 19:07:50  INFO [OCXOrderStatus.java:167] - MISM  :  NE
+ 01-25-2022 19:07:50  INFO [OCXOrderStatus.java:167] - ACSM  :  NE
+ 01-25-2022 19:07:50  INFO [OCXOrderStatus.java:167] - BVOIP  :  NE
+ 01-25-2022 19:07:50  INFO [OCXOrderStatus.java:172] - null  :  null
+ 01-25-2022 19:07:50  INFO [OCXOrderStatus.java:172] - MISM  :  302137024
+ 01-25-2022 19:07:50  INFO [OCXOrderStatus.java:172] - ACSM  :  302137026
+ 01-25-2022 19:07:50  INFO [OCXOrderStatus.java:172] - BVOIP  :  302137022
+ 01-25-2022 19:07:50  INFO [OCXOrderStatus.java:102] - Status is : NE
+ 01-25-2022 19:07:50  INFO [OCXOrderStatus.java:131] - Order ID is :302137024
+ 01-25-2022 19:07:50  INFO [OCXOrderStatus.java:138] - SG ID is :302137021
+ 01-25-2022 19:07:50  INFO [OMXOrderCreationSteps.java:85] - --------------------Triggering SG Level MOR-----------------
+ 01-25-2022 19:07:50  INFO [OMXOrderCreationSteps.java:86] - Type Of order is : IPFLEXMIS
+ 01-25-2022 19:07:50  INFO [OMXOrderCreationSteps.java:87] - Testing Type is : IST
+ 01-25-2022 19:07:50  INFO [TriggerMOR_SGLevel.java:58] - Type if Order is : IPFLEXMIS
+ 01-25-2022 19:07:50  INFO [TriggerMOR_SGLevel.java:112] - -------------------------Pushing ManageOrder Request for SG for Old Arch IPFLEX---------------------
+ 01-25-2022 19:07:50  INFO [TriggerMOR_SGLevel.java:145] - URL is:http://t5nap1a1.snt.bst.bls.com:9003/ocx-client-inbound-ws-war/OrderManagementServicePort
+ 01-25-2022 19:07:50  INFO [TriggerMOR_SGLevel.java:148] - SORID and Project ID is:1-TNRSCPABACD19
+ 01-25-2022 19:07:50  INFO [TriggerMOR_SGLevel.java:149] - TNRSCPAB726066
+ 01-25-2022 19:07:50  INFO [TriggerMOR_SGLevel.java:150] - Request to be updated:<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns0:manageOrderRequest xmlns="http://cio.att.com/entity/model" xmlns:ns0="http://cio.att.com/order/management/model" xmlns:ns1="http://cio.att.com/ord/model" xmlns:ns2="http://cio.att.com/req/model">
+         <ns0:order>
+            <ns2:eid>
+               <context>OCX</context>
+               <id>{$sorId$}</id>
+               <entityType>SOR</entityType>
+            </ns2:eid>
+            <ns1:isBundle>true</ns1:isBundle>
+            <ns1:user>MASS</ns1:user>
+            <ns1:subOrders>
+               <ns1:item>
+                  <ns2:eid>
+                     <context>OCX</context>
+                     <id>{$sgId$}</id>
+                     <entityType>Order</entityType>
+                  </ns2:eid>
+                  <ns2:type>DECOMPOSE</ns2:type>
+                  <ns2:characteristics>
+                     <item>
+                        <name>ServiceGroupOrderId</name>
+                        <value>{$sgId$}</value>
+                     </item>
+                     <item>
+                        <name>projectId</name>
+                        <value>{$projId$}</value>
+                     </item>
+                  </ns2:characteristics>
+                  <ns2:associations>
+                     <item>
+                        <associationName>AssociatedServiceOrder</associationName>
+                        <items>
+                           <item>
+                              <context>OCX</context>
+                              <id>{$oaIdAc$}</id>
+                              <entityType>OrderAction</entityType>
+                              <type>ACSM</type>
+                              <product>MIS Access</product>
+                           </item>
+                        </items>
+                     </item>
+                     <item>
+                        <associationName>AssociatedServiceOrder</associationName>
+                        <items>
+                           <item>
+                              <context>OCX</context>
+                              <id>{$oaId$}</id>
+                              <entityType>OrderAction</entityType>
+                              <type>MISM</type>
+<!--MISS,MISM-->
+                              <product>MIS</product>
+                           </item>
+                        </items>
+                     </item>
+                     <item>
+                        <associationName>AssociatedServiceOrder</associationName>
+                        <items>
+                           <item>
+                              <context>OCX</context>
+                              <id>{$oaIdBvoip$}</id>
+                              <entityType>OrderAction</entityType>
+                              <type>BVOIP</type>
+<!--BVFLEX,BVOIP-->
+                              <product>IPFLEX</product>
+                           </item>
+                        </items>
+                     </item>
+                  </ns2:associations>
+                  <ns1:isBundle>false</ns1:isBundle>
+                  <ns1:actionType>PR</ns1:actionType>
+                  <ns1:actionSubType>NA</ns1:actionSubType>
+                  <ns1:version>1</ns1:version>
+               </ns1:item>
+            </ns1:subOrders>
+         </ns0:order>
+      </ns0:manageOrderRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+ 01-25-2022 19:07:50  INFO [TriggerMOR_SGLevel.java:151] - -------------------------Updating Xmls--------------------------
+ 01-25-2022 19:07:50  INFO [UpdateXMLs.java:140] - SOR ID is:1-TNRSCPABACD19
+ 01-25-2022 19:07:50  INFO [OCXOrderStatus.java:67] - {
+   "SearchOrderRequest":{
+      "searchOrderInputsX9":{
+         "returnLocationX9":"true"
+      }
+   }
+}
+ 01-25-2022 19:07:50  INFO [OCXOrderStatus.java:68] - Getting response for SORID :1-TNRSCPABACD19 with URL : http://zltv9973.vci.att.com:41300/rp-webapp-9/ordering/Orders?paramType=solutionid&paramValue=1-TNRSCPABACD19
+ 01-25-2022 19:08:02  INFO [OCXOrderStatus.java:167] - null  :  null
+ 01-25-2022 19:08:02  INFO [OCXOrderStatus.java:167] - MISM  :  NE
+ 01-25-2022 19:08:02  INFO [OCXOrderStatus.java:167] - ACSM  :  NE
+ 01-25-2022 19:08:02  INFO [OCXOrderStatus.java:167] - BVOIP  :  NE
+ 01-25-2022 19:08:02  INFO [OCXOrderStatus.java:172] - null  :  null
+ 01-25-2022 19:08:02  INFO [OCXOrderStatus.java:172] - MISM  :  302137024
+ 01-25-2022 19:08:02  INFO [OCXOrderStatus.java:172] - ACSM  :  302137026
+ 01-25-2022 19:08:02  INFO [OCXOrderStatus.java:172] - BVOIP  :  302137022
+ 01-25-2022 19:08:02  INFO [OCXOrderStatus.java:102] - Status is : NE
+ 01-25-2022 19:08:02  INFO [OCXOrderStatus.java:131] - Order ID is :302137024
+ 01-25-2022 19:08:02  INFO [OCXOrderStatus.java:138] - SG ID is :302137021
+ 01-25-2022 19:08:02  INFO [UpdateXMLs.java:179] - Request After update is :<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns0:manageOrderRequest xmlns="http://cio.att.com/entity/model" xmlns:ns0="http://cio.att.com/order/management/model" xmlns:ns1="http://cio.att.com/ord/model" xmlns:ns2="http://cio.att.com/req/model">
+         <ns0:order>
+            <ns2:eid>
+               <context>OCX</context>
+               <id>1-TNRSCPABACD19</id>
+               <entityType>SOR</entityType>
+            </ns2:eid>
+            <ns1:isBundle>true</ns1:isBundle>
+            <ns1:user>MASS</ns1:user>
+            <ns1:subOrders>
+               <ns1:item>
+                  <ns2:eid>
+                     <context>OCX</context>
+                     <id>302137021</id>
+                     <entityType>Order</entityType>
+                  </ns2:eid>
+                  <ns2:type>DECOMPOSE</ns2:type>
+                  <ns2:characteristics>
+                     <item>
+                        <name>ServiceGroupOrderId</name>
+                        <value>302137021</value>
+                     </item>
+                     <item>
+                        <name>projectId</name>
+                        <value>TNRSCPAB726066</value>
+                     </item>
+                  </ns2:characteristics>
+                  <ns2:associations>
+                     <item>
+                        <associationName>AssociatedServiceOrder</associationName>
+                        <items>
+                           <item>
+                              <context>OCX</context>
+                              <id>302137026</id>
+                              <entityType>OrderAction</entityType>
+                              <type>ACSM</type>
+                              <product>MIS Access</product>
+                           </item>
+                        </items>
+                     </item>
+                     <item>
+                        <associationName>AssociatedServiceOrder</associationName>
+                        <items>
+                           <item>
+                              <context>OCX</context>
+                              <id>302137024</id>
+                              <entityType>OrderAction</entityType>
+                              <type>MISM</type>
+<!--MISS,MISM-->
+                              <product>MIS</product>
+                           </item>
+                        </items>
+                     </item>
+                     <item>
+                        <associationName>AssociatedServiceOrder</associationName>
+                        <items>
+                           <item>
+                              <context>OCX</context>
+                              <id>302137022</id>
+                              <entityType>OrderAction</entityType>
+                              <type>BVOIP</type>
+<!--BVFLEX,BVOIP-->
+                              <product>IPFLEX</product>
+                           </item>
+                        </items>
+                     </item>
+                  </ns2:associations>
+                  <ns1:isBundle>false</ns1:isBundle>
+                  <ns1:actionType>PR</ns1:actionType>
+                  <ns1:actionSubType>NA</ns1:actionSubType>
+                  <ns1:version>1</ns1:version>
+               </ns1:item>
+            </ns1:subOrders>
+         </ns0:order>
+      </ns0:manageOrderRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+ 01-25-2022 19:08:02  INFO [UpdateXMLs.java:186] - [Ljava.lang.String;@78054f54
+ 01-25-2022 19:08:02  INFO [TriggerMOR_SGLevel.java:165] - Response in format is:<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+<env:Header/>
+<env:Body>
+<ns4:manageOrderResponse xmlns:ns5="http://cio.att.com/req/model" xmlns:ns2="http://cio.att.com/ord/model" xmlns:ns1="http://cio.att.com/entity/model" xmlns:ns4="http://cio.att.com/order/management/model"/>
+</env:Body>
+</env:Envelope>
+
+ 01-25-2022 19:08:02  INFO [OMXOrderCreationSteps.java:89] - --------------------SG Level MOR Triggered-----------------
+ 01-25-2022 19:08:12  INFO [OMXOrderCreationSteps.java:92] - SOR ID is: 1-TNRSCPABACD19
+ 01-25-2022 19:08:12  INFO [OMXOrderCreationSteps.java:93] - SG ID is: 302137021
+ 01-25-2022 19:08:12  INFO [OMXOrderCreationSteps.java:94] - Order ID is: 302137024
+ 01-25-2022 19:10:02  INFO [OCXOrderStatus.java:67] - {
+   "SearchOrderRequest":{
+      "searchOrderInputsX9":{
+         "returnLocationX9":"true"
+      }
+   }
+}
+ 01-25-2022 19:10:02  INFO [OCXOrderStatus.java:68] - Getting response for SORID :1-TNRSCPABACD19 with URL : http://zltv9973.vci.att.com:41300/rp-webapp-9/ordering/Orders?paramType=solutionid&paramValue=1-TNRSCPABACD19
+ 01-25-2022 19:10:13  INFO [OCXOrderStatus.java:167] - null  :  null
+ 01-25-2022 19:10:13  INFO [OCXOrderStatus.java:167] - MISM  :  DE
+ 01-25-2022 19:10:13  INFO [OCXOrderStatus.java:167] - ACSM  :  DE
+ 01-25-2022 19:10:13  INFO [OCXOrderStatus.java:167] - BVOIP  :  NE
+ 01-25-2022 19:10:13  INFO [OCXOrderStatus.java:172] - null  :  null
+ 01-25-2022 19:10:13  INFO [OCXOrderStatus.java:172] - MISM  :  302137024
+ 01-25-2022 19:10:13  INFO [OCXOrderStatus.java:172] - ACSM  :  302137026
+ 01-25-2022 19:10:13  INFO [OCXOrderStatus.java:172] - BVOIP  :  302137022
+ 01-25-2022 19:10:13  INFO [OCXOrderStatus.java:102] - Status is : DE
+ 01-25-2022 19:10:13  INFO [OCXOrderStatus.java:131] - Order ID is :302137024
+ 01-25-2022 19:10:13  INFO [OCXOrderStatus.java:138] - SG ID is :302137021
+ 01-25-2022 19:10:13  INFO [OCXOrderCreationOld_MIS_Steps.java:129] - MIS Old Arch Site Order Number is: 302137024
+ 01-25-2022 19:10:13  INFO [OCXOrderCreationOld_MIS_Steps.java:145] - The status of 302137024 is: DE
+ 01-25-2022 19:10:13  INFO [OCXOrderCreationOld_MIS_Steps.java:146] - Site /Siteless/ BVOIP Order Number is: 302137024
+ 01-25-2022 19:12:13  INFO [OCXOrderCreationOld_MIS_Steps.java:156] -  Order checking CTH 
+ 01-25-2022 19:12:13  INFO [OCXOrderCreationOld_MIS_Steps.java:157] - IPFLEXMIS
+ 01-25-2022 19:12:14  INFO [OCXOrderStatus.java:67] - {
+   "SearchOrderRequest":{
+      "searchOrderInputsX9":{
+         "returnLocationX9":"true"
+      }
+   }
+}
+ 01-25-2022 19:12:14  INFO [OCXOrderStatus.java:68] - Getting response for SORID :1-TNRSCPABACD19 with URL : http://zltv9973.vci.att.com:41300/rp-webapp-9/ordering/Orders?paramType=solutionid&paramValue=1-TNRSCPABACD19
+ 01-25-2022 19:12:25  INFO [OCXOrderStatus.java:167] - null  :  null
+ 01-25-2022 19:12:25  INFO [OCXOrderStatus.java:167] - MISM  :  DE
+ 01-25-2022 19:12:25  INFO [OCXOrderStatus.java:167] - ACSM  :  DE
+ 01-25-2022 19:12:25  INFO [OCXOrderStatus.java:167] - BVOIP  :  NE
+ 01-25-2022 19:12:25  INFO [OCXOrderStatus.java:172] - null  :  null
+ 01-25-2022 19:12:25  INFO [OCXOrderStatus.java:172] - MISM  :  302137024
+ 01-25-2022 19:12:25  INFO [OCXOrderStatus.java:172] - ACSM  :  302137026
+ 01-25-2022 19:12:25  INFO [OCXOrderStatus.java:172] - BVOIP  :  302137022
+ 01-25-2022 19:12:25  INFO [OCXOrderStatus.java:102] - Status is : DE
+ 01-25-2022 19:12:25  INFO [OCXOrderStatus.java:131] - Order ID is :302137024
+ 01-25-2022 19:12:25  INFO [OCXOrderStatus.java:138] - SG ID is :302137021
+ 01-25-2022 19:14:15  INFO [OCXOrderStatus.java:67] - {
+   "SearchOrderRequest":{
+      "searchOrderInputsX9":{
+         "returnLocationX9":"true"
+      }
+   }
+}
+ 01-25-2022 19:14:15  INFO [OCXOrderStatus.java:68] - Getting response for SORID :1-TNRSCPABACD19 with URL : http://zltv9973.vci.att.com:41300/rp-webapp-9/ordering/Orders?paramType=solutionid&paramValue=1-TNRSCPABACD19
+ 01-25-2022 19:14:26  INFO [OCXOrderStatus.java:167] - null  :  null
+ 01-25-2022 19:14:26  INFO [OCXOrderStatus.java:167] - MISM  :  DE
+ 01-25-2022 19:14:26  INFO [OCXOrderStatus.java:167] - ACSM  :  DE
+ 01-25-2022 19:14:26  INFO [OCXOrderStatus.java:167] - BVOIP  :  NE
+ 01-25-2022 19:14:26  INFO [OCXOrderStatus.java:172] - null  :  null
+ 01-25-2022 19:14:26  INFO [OCXOrderStatus.java:172] - MISM  :  302137024
+ 01-25-2022 19:14:26  INFO [OCXOrderStatus.java:172] - ACSM  :  302137026
+ 01-25-2022 19:14:26  INFO [OCXOrderStatus.java:172] - BVOIP  :  302137022
+ 01-25-2022 19:14:26  INFO [OCXOrderStatus.java:102] - Status is : DE
+ 01-25-2022 19:14:26  INFO [OCXOrderStatus.java:131] - Order ID is :302137024
+ 01-25-2022 19:14:26  INFO [OCXOrderStatus.java:138] - SG ID is :302137021
+ 01-25-2022 19:14:26  INFO [OCXOrderCreationOld_MIS_Steps.java:104] - BVOIP Order Number is: 302137022
+ 01-25-2022 19:14:26  INFO [OCXOrderCreationOld_MIS_Steps.java:145] - The status of 302137022 is: NE
+ 01-25-2022 19:14:26  INFO [OCXOrderCreationOld_MIS_Steps.java:146] - Site /Siteless/ BVOIP Order Number is: 302137022
+ 01-25-2022 19:14:26  INFO [OCXOrderCreationOld_MIS_Steps.java:207] -  Checking CTH of IPFLEXMIS
+ 01-25-2022 19:14:26  INFO [OCXOrderCreationOld_MIS_Steps.java:221] - Order ID is : 302137024
+ 01-25-2022 19:16:56  INFO [OCXOrderCreationOld_MIS_Steps.java:225] - Order successfully submitted
+ 01-25-2022 19:16:56  INFO [OrderSearchSeleniumSteps.java:48] - =========================Opening Browser==============================
+ 01-25-2022 19:16:59  INFO [SeleniumBase.java:67] - Edge Browser Initialized
+ 01-25-2022 19:17:02  INFO [SeleniumBase.java:86] - Launched given url
+ 01-25-2022 19:17:09  INFO [OrderSearchSeleniumSteps.java:51] - =========================Opened Browser==============================
+ 01-25-2022 19:17:19  INFO [OrderSearchSeleniumSteps.java:137] - MIS OLD arch Order ID to be searched in GUI is : 302137024
+ 01-25-2022 19:17:57  INFO [ServiceOrderPage.java:50] - MLEC123451
+ 01-25-2022 19:17:59  INFO [OrderSearchSeleniumSteps.java:218] - =========================GUI Testing Completed==============================
+ 01-25-2022 19:18:09  INFO [DBConnection.java:135] - Host :zlty18035.vci.att.com
+ 01-25-2022 19:18:09  INFO [DBConnection.java:137] - Port :1524
+ 01-25-2022 19:18:09  INFO [DBConnection.java:139] - SID :T5CP1D3
+ 01-25-2022 19:18:09  INFO [DBConnection.java:141] - UserName :qa13oms
+ 01-25-2022 19:18:09  INFO [DBConnection.java:143] - Password :DQP_BH63W03_XTDC
+ 01-25-2022 19:18:10  INFO [DBConnection.java:30] - Is the connection open: true
+ 01-25-2022 19:18:10  INFO [DBConnection.java:33] - SQL need to run is :
+select assignment_idx, ctdb_cre_datetime, step_instance_id, state, form_id, display_name from tbassignment where order_action_id ='302137022' order by assignment_idx desc
+ 01-25-2022 19:18:11  INFO [DBConnection.java:41] - ---------------Following rows are created in tbassignment------------------------
+ 01-25-2022 19:18:11  INFO [DBConnection.java:48] - UpdateOrderActionAttributes
+ 01-25-2022 19:18:11  INFO [DBConnection.java:52] - ---------------SQL Execution End for tbassignment------------------------
+ 01-25-2022 19:18:11  INFO [DBConnection.java:60] - Is the connection open: false
+ 01-25-2022 19:18:11  INFO [DBConnection.java:135] - Host :zlty18035.vci.att.com
+ 01-25-2022 19:18:11  INFO [DBConnection.java:137] - Port :1524
+ 01-25-2022 19:18:11  INFO [DBConnection.java:139] - SID :T5CP1D3
+ 01-25-2022 19:18:11  INFO [DBConnection.java:141] - UserName :qa13oms
+ 01-25-2022 19:18:11  INFO [DBConnection.java:143] - Password :DQP_BH63W03_XTDC
+ 01-25-2022 19:18:11  INFO [DBConnection.java:69] - Is the connection open: true
+ 01-25-2022 19:18:20  INFO [DBConnection.java:79] - SQL executed successfully
+ 01-25-2022 19:18:20  INFO [DBConnection.java:81] - Is the connection open: false
+ 01-25-2022 19:18:20  INFO [OCXOrderCreationOld_MIS_Steps.java:259] - BVOIP Order ID is : 302137022
+ 01-25-2022 19:18:20  INFO [SaveTNAndUDR.java:37] - {"TelephoneNumbersDetails":{"telephoneNumbersX9":[{"valueTo":"8987677831","characteristics":[{"characteristicDefinition":{"code":"lRN"},"name":"LRN","value":"8158606000"},{"characteristicDefinition":{"code":"lecSwitchType"},"name":"LEC Switch Type","value":"5ESS"},{"characteristicDefinition":{"code":"lecSwitchCLLI"},"name":"LEC Switch CLLI","value":"CHCGIL24DS0"},{"characteristicDefinition":{"code":"lnsSwitchType"},"name":"LNS Switch Type","value":"GSX"},{"characteristicDefinition":{"code":"lnsSwitchCLLI"},"name":"LNS Switch CLLI","value":"CHCGILCLGT5"},{"characteristicDefinition":{"code":"e911Type"},"name":"E911 type","value":"1"},{"characteristicDefinition":{"code":"tnRateCenter"},"name":"TN Rate Center","value":"CHICGOZN04"},{"characteristicDefinition":{"code":"reservedTnDescription"},"name":"Reserved TN Description"},{"characteristicDefinition":{"code":"reservedTnOtherDescription"},"name":"Reserved TN Other Description"}],"quantity":null,"reservationID":null,"origin":{"code":"RE","value":null},"virtualNumber":"false","value":"8987677831","vanityType":{"code":"REG","value":null},"status":{"code":"RES","value":null}}],"requestIDX9":47764}}
+ 01-25-2022 19:18:20  INFO [SaveTNAndUDR.java:38] - Getting response for SORID :302137022 with URL : http://zltv9973.vci.att.com:41300/rp-webapp-9/ordering/SaveTelephoneNumbersInProduct?orderVersion=1&orderNumber=302137022
+ 01-25-2022 19:18:26  INFO [SaveTNAndUDR.java:51] - {
+    "SaveTelephoneNumbersResponse": {
+        
+    }
+}
+ 01-25-2022 19:18:30  INFO [SaveTNAndUDR.java:82] - {"SaveUserDefineRangesInProductServiceRestRequest":{"orderVersionX9":"1","rangesX9":[{"valueTo":"8987677831","value":"8987677831","charactersticGroups":[{"characteristics":[{"id":"isDirectoryListing","value":"N"}],"id":"42903"},{"characteristics":[{"id":"interLATAPICFreezeIndicator","value":"true"},{"id":"interLATAPIC","value":"0288"},{"id":"cnamOption","value":"2"},{"id":"cnam","value":"HALOISTCUSTOMER"},{"id":"lidbOption","value":"4"},{"id":"intraLATAPICFreezeIndicator","value":"true"},{"id":"intraLATAPIC","value":"0288"}],"id":"7771"},{"characteristics":[{"id":"e164CountryCode","value":"1"},{"id":"gatewayCityCode","value":"898"},{"id":"startExtensionRange","value":"7677831"},{"id":"endExtensionRange","value":"7677831"},{"id":"lengthOfPBXExtension","value":"10"}],"id":"7721"}]}],"orderNumberX9":"302137022","requestIDX9":"47764","rangesForDeletionX9":[]}}
+ 01-25-2022 19:18:30  INFO [SaveTNAndUDR.java:83] - Getting response for Order Id :302137022 with URL : http://zltv9973.vci.att.com:41300/rp-webapp-9/ordering/SaveUserDefinedRangesServiceInProduct
+ 01-25-2022 19:18:33  INFO [SaveTNAndUDR.java:96] - {
+    "SaveUserDefinedRangesResponse": {
+        
+    }
+}
+ 01-25-2022 19:18:37  INFO [UpdateOAAdditionalInfoReq.java:63] - {
+  "SaveOAExternalValsInput": {
+    "extValuesListX9": [
+      {
+        "idX9": "ConflictCheckSuccess",
+        "valueX9": "Y"
+      }
+    ]
+  }
+}
+ 01-25-2022 19:18:37  INFO [UpdateOAAdditionalInfoReq.java:64] - Getting response for OA :302137022 with URL : http://zltv9973.vci.att.com:41300/rp-webapp-9/ordering/SaveOAExternalVals?orderVersion=1&orderNumber=302137022
+ 01-25-2022 19:18:40  INFO [UpdateOAAdditionalInfoReq.java:77] - {
+    "SaveOAExternalValsOutput": {
+        "extValuesX9": [
+            {
+                "valueX9": "Y",
+                "idX9": "ConflictCheckSuccess"
+            }
+        ]
+    }
+}
+ 01-25-2022 19:18:51  INFO [OCXOrderStatus.java:240] - {
+   "SearchOrderRequest":{
+      "searchOrderInputsX9":{
+         "returnLocationX9":"true"
+      }
+   }
+}
+ 01-25-2022 19:18:51  INFO [OCXOrderStatus.java:241] - Getting response for ORDERID :302137022 with URL : http://zltv9973.vci.att.com:41300/rp-webapp-9/ordering/Orders?paramType=orderactionId&paramValue=302137022
+ 01-25-2022 19:19:01  INFO [OCXOrderStatus.java:258] - io.restassured.internal.RestAssuredResponseImpl@1124910c
+ 01-25-2022 19:19:01  INFO [OCXOrderStatus.java:261] - Status of order is :NE
+ 01-25-2022 19:19:01  INFO [OCXOrderStatus.java:266] - Order ID is :302137022
+ 01-25-2022 19:19:01  INFO [OCXOrderStatus.java:271] - SG ID is :302137021
+ 01-25-2022 19:19:01  INFO [OCXOrderCreationOld_MIS_Steps.java:290] - Request after update is : {"SubmitOrderActionReq":{"orderActionIdListX9":[],"orderRefX9":[{"orderVersionX9":"1","orderNumberX9":"302137022"}]}}
+ 01-25-2022 19:20:58  INFO [OCXOrderStatus.java:240] - {
+   "SearchOrderRequest":{
+      "searchOrderInputsX9":{
+         "returnLocationX9":"true"
+      }
+   }
+}
+ 01-25-2022 19:20:58  INFO [OCXOrderStatus.java:241] - Getting response for ORDERID :302137022 with URL : http://zltv9973.vci.att.com:41300/rp-webapp-9/ordering/Orders?paramType=orderactionId&paramValue=302137022
+ 01-25-2022 19:21:09  INFO [OCXOrderStatus.java:258] - io.restassured.internal.RestAssuredResponseImpl@349312d5
+ 01-25-2022 19:21:09  INFO [OCXOrderStatus.java:261] - Status of order is :NE
+ 01-25-2022 19:21:09  INFO [OCXOrderStatus.java:266] - Order ID is :302137022
+ 01-25-2022 19:21:09  INFO [OCXOrderStatus.java:271] - SG ID is :302137021
+ 01-25-2022 19:21:09  INFO [OCXOrderCreationOld_MIS_Steps.java:295] - The status of the order is : NE
+ 01-25-2022 19:21:13  INFO [OCXOrderStatus.java:240] - {
+   "SearchOrderRequest":{
+      "searchOrderInputsX9":{
+         "returnLocationX9":"true"
+      }
+   }
+}
+ 01-25-2022 19:21:13  INFO [OCXOrderStatus.java:241] - Getting response for ORDERID :302137022 with URL : http://zltv9973.vci.att.com:41300/rp-webapp-9/ordering/Orders?paramType=orderactionId&paramValue=302137022
+ 01-25-2022 19:21:23  INFO [OCXOrderStatus.java:258] - io.restassured.internal.RestAssuredResponseImpl@16c5b50a
+ 01-25-2022 19:21:23  INFO [OCXOrderStatus.java:261] - Status of order is :NE
+ 01-25-2022 19:21:23  INFO [OCXOrderStatus.java:266] - Order ID is :302137022
+ 01-25-2022 19:21:23  INFO [OCXOrderStatus.java:271] - SG ID is :302137021
+ 01-25-2022 19:21:23  INFO [OCXOrderCreationOld_MIS_Steps.java:311] - ==============If order not submitted , Submitting theorder==================
+ 01-25-2022 19:21:23  INFO [OCXOrderCreationOld_MIS_Steps.java:312] - The status of the order is: NE
+ 01-25-2022 19:21:23  INFO [OCXOrderCreationOld_MIS_Steps.java:323] - Request after update is : {"SubmitOrderActionReq":{"orderActionIdListX9":[],"orderRefX9":[{"orderVersionX9":"1","orderNumberX9":"302137022"}]}}
+ 01-25-2022 19:23:17  INFO [OCXOrderStatus.java:240] - {
+   "SearchOrderRequest":{
+      "searchOrderInputsX9":{
+         "returnLocationX9":"true"
+      }
+   }
+}
+ 01-25-2022 19:23:17  INFO [OCXOrderStatus.java:241] - Getting response for ORDERID :302137022 with URL : http://zltv9973.vci.att.com:41300/rp-webapp-9/ordering/Orders?paramType=orderactionId&paramValue=302137022
+ 01-25-2022 19:23:27  INFO [OCXOrderStatus.java:258] - io.restassured.internal.RestAssuredResponseImpl@2c6927f0
+ 01-25-2022 19:23:27  INFO [OCXOrderStatus.java:261] - Status of order is :NE
+ 01-25-2022 19:23:27  INFO [OCXOrderStatus.java:266] - Order ID is :302137022
+ 01-25-2022 19:23:27  INFO [OCXOrderStatus.java:271] - SG ID is :302137021
+ 01-25-2022 19:23:27  INFO [OCXOrderCreationOld_MIS_Steps.java:328] - The status of the order is : NE
+ 

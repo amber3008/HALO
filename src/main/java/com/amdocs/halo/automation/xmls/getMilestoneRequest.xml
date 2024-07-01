@@ -1,0 +1,9 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:exec="http://amdocs.com/oss/aff/schema/executionPlanView">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <exec:getMilestoneRequest>
+         <exec:planID>F8827839720941B4BEB76AADE307364A</exec:planID>
+         <exec:milestoneID>SIDs_Rcvd</exec:milestoneID>
+      </exec:getMilestoneRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

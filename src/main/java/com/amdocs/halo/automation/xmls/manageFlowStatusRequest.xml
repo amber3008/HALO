@@ -1,0 +1,37 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-1">
+            <wsse:Username>OMS</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">Oms111</wsse:Password>
+         </wsse:UsernameToken>
+      </wsse:Security>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ns1:manageFlowStatus xmlns:ns1="http://ManageFlowStatus.manageFlowStatus.services.amdocs.com">
+         <OrderingContext>
+            <localeString>EN</localeString>
+         </OrderingContext>
+         <ManageFlowStatusInput>
+            <!--<extValuesList>
+          <idX9>TNOM_STATUS</idX9>
+          <valueX9>COMPLETED</valueX9>
+        </extValuesList>-->
+            <extValuesList>
+               <idX9>PENDING_DISCONNECT_PRESENT</idX9>
+               <valueX9>FALSE</valueX9>
+            </extValuesList>
+            <extValuesList>
+               <idX9>RVIM_STATUS</idX9>
+               <valueX9>COMPLETED</valueX9>
+            </extValuesList>
+            <extValuesList>
+               <idX9>CHECKOUT</idX9>
+               <valueX9>MANUAL</valueX9>
+            </extValuesList>
+            <orderNumber>{$projectId$}</orderNumber>
+            <orderVersion>1</orderVersion>
+         </ManageFlowStatusInput>
+      </ns1:manageFlowStatus>
+   </soapenv:Body>
+</soapenv:Envelope>

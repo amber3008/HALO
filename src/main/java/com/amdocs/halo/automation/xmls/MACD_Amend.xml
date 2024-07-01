@@ -1,0 +1,62 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://CustomerOrderTrackingAndManagement.ocxGenericServices.services.amdocs.com"> 
+   <soapenv:Header> 
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"> 
+         <wsse:UsernameToken wsu:Id="UsernameToken-E9831C5131DB1C636214604451108501"> 
+            <wsse:Username>OMS</wsse:Username> 
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">Oms111</wsse:Password> 
+         </wsse:UsernameToken> 
+      </wsse:Security> 
+   </soapenv:Header> 
+   <soapenv:Body> 
+      <tns:amendProductOrderItem xmlns:tns="http://CustomerOrderTrackingAndManagement.ocxGenericServices.services.amdocs.com"> 
+         <amendProductOrderItemRequest> 
+            <salesChannel>SA</salesChannel> 
+            <options> 
+               <confirmationChecksApproved>true</confirmationChecksApproved> 
+               <bulkOrderIndicator/> 
+            </options> 
+            <order> 
+               <customer> 
+                  <customerId>89291271010</customerId> 
+                  <organizationId>1115130</organizationId> 
+                  <contractId>3305329</contractId> 
+                  <customerName>Albert Test CR193632</customerName> 
+                  <saartId>SAART11041</saartId> 
+                  <customerType>WHOLESALE</customerType> 
+               </customer> 
+               <productOrderItemId>{$oID$}</productOrderItemId> 
+               <!--order ID for IEVC--> 
+               <startOrderingProcess>true</startOrderingProcess> 
+               <topLevelProduct> 
+                  <associationSpec> 
+                     <assignedProductId>{$aID$}</assignedProductId> 
+                     <!--AP ID for IEVC--> 
+                  </associationSpec> 
+                  <orderItem> 
+                     <orderActionType>CH</orderActionType> 
+                     <!--CH,PR, CE--> 
+                     <serviceRequiredDate>2021-05-11T00:59:00-05:00</serviceRequiredDate> 
+                  </orderItem> 
+                  <topLevelProduct> 
+                     <containedProducts> 
+                        <action>CHANGE</action> 
+                        <associationSpecDefinition> 
+                           <componentServiceType>PBGP</componentServiceType> 
+                        </associationSpecDefinition> 
+                        <characteristicValues> 
+                           <characteristicDefinition> 
+                              <attributeCode>localAsNumber</attributeCode> 
+                              <attributeId>72963</attributeId> 
+                           </characteristicDefinition> 
+                           <value>1111</value> 
+                        </characteristicValues> 
+                     </containedProducts> 
+                  </topLevelProduct> 
+               </topLevelProduct> 
+               <startOrderingProcess>true</startOrderingProcess> 
+               <!--<DueDate>2021-02-28T22:00:00.000-08:00</DueDate>--> 
+            </order> 
+         </amendProductOrderItemRequest> 
+      </tns:amendProductOrderItem> 
+   </soapenv:Body> 
+</soapenv:Envelope>

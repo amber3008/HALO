@@ -1,0 +1,80 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://CustomerOrderTrackingAndManagement.ocxGenericServices.services.amdocs.com">
+ <soapenv:Header> 
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"> 
+         <wsse:UsernameToken> 
+            <wsse:Username>OMS</wsse:Username> 
+            <wsse:Password>Oms111</wsse:Password> 
+         </wsse:UsernameToken> 
+      </wsse:Security> 
+   </soapenv:Header> 
+   <soapenv:Body> 
+      <cus:cancelProductOrder> 
+         <!--Optional:--> 
+         <cancelProductOrderRequest> 
+            <salesChannel>SA</salesChannel> 
+            <!--1 or more repetitions:--> 
+            <cancelProductOrderInput> 
+               <!--Optional:--> 
+               <bulkOrderId/> 
+               <cancelReason> 
+                  <!--Optional:--> 
+                  <reasonText>Leaving Country</reasonText> 
+                  <!--Optional:--> 
+                  <reasonType>CREQ</reasonType> 
+               </cancelReason> 
+               <!--Zero or more repetitions:--> 
+               <contacts> 
+                  <!--Optional: 
+                  <city>?</city>--> 
+                  <contactType>CUS</contactType> 
+                  <!--Optional: 
+                  <country>?</country>--> 
+                  <!--Optional: 
+                  <email>?</email>--> 
+                  <!--Optional:--> 
+                  <firstName>Sagar</firstName> 
+                  <!--Optional: 
+                  <isoCountryCode>?</isoCountryCode>--> 
+                  <!--Optional: 
+                  <landLinePhone>?</landLinePhone>--> 
+                  <!--Optional:--> 
+                  <lastName>Patankar</lastName> 
+                  <!--Optional: 
+                  <mobilePhone>?</mobilePhone>--> 
+                  <!--Optional: 
+                  <stateName>?</stateName>--> 
+                  <!--Optional: 
+                  <state>?</state>--> 
+                  <!--Optional: 
+                  <streetAddress1>?</streetAddress1>--> 
+                  <!--Optional: 
+                  <streetAddress2>?</streetAddress2>--> 
+                  <!--Optional: 
+                  <zipCode>?</zipCode>--> 
+               </contacts> 
+               <!--Optional:--> 
+               <locationId/> 
+               <!--Optional:--> 
+               <!--<orderItemAttributes> 
+                   All Optional: 
+                  <aosteOrderNumber>?</aosteOrderNumber> 
+                  <customerSiteId>?</customerSiteId> 
+                  <espNggniOrderNumber>?</espNggniOrderNumber> 
+                  <notes>?</notes> 
+                  <orderActionPurposeText>?</orderActionPurposeText> 
+                  <orderActionPurpose>?</orderActionPurpose> 
+                  <sareaNggniOrderNumber>?</sareaNggniOrderNumber> 
+                  <sorId>?</sorId> 
+                  <timeZone>?</timeZone> 
+                  <transportActionType>?</transportActionType> 
+               </orderItemAttributes>--> 
+               <!--Optional:--> 
+               <productOrderId>{$poId$}</productOrderId> 
+               <!--Optional: 
+               <productOrderItemId>270310_1</roductOrderItemId> 
+--> 
+            </cancelProductOrderInput> 
+         </cancelProductOrderRequest> 
+      </cus:cancelProductOrder> 
+   </soapenv:Body> 
+</soapenv:Envelope>

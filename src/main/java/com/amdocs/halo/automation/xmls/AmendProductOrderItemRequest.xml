@@ -1,0 +1,57 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://CustomerOrderTrackingAndManagement.ocxGenericServices.services.amdocs.com">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-E9831C5131DB1C636214604451108501">
+            <wsse:Username>OMS</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">Oms111</wsse:Password>
+         </wsse:UsernameToken>
+      </wsse:Security>
+   </soapenv:Header>
+   <soapenv:Body>
+      <tns:amendProductOrderItem xmlns:tns="http://CustomerOrderTrackingAndManagement.ocxGenericServices.services.amdocs.com">
+         <amendProductOrderItemRequest>
+            <salesChannel>SA</salesChannel>
+            <options>
+               <confirmationChecksApproved>true</confirmationChecksApproved>
+               <bulkOrderIndicator/>
+            </options>
+            <order>
+               <userId>hs1650</userId>
+                <customer>
+                  <customerId>INTERNAL_45</customerId>
+                  <organizationId>1115130</organizationId>
+                  <contractId>3305329</contractId>
+                  <customerName>HarmeshS</customerName>
+                  <saartId>SAART11040</saartId>
+                  <customerType>CORP</customerType>
+               </customer>
+               <productOrderItemId>{$oaId$}_1</productOrderItemId>
+               <startOrderingProcess>true</startOrderingProcess>
+               <topLevelProduct>
+                  <associationSpec>
+                     <assignedProductId>{$apId$}</assignedProductId>
+                  </associationSpec>
+                  <orderItem>
+                     <orderActionType>PR</orderActionType>
+                     <serviceRequiredDate>2019-06-01T04:29:00-06:00</serviceRequiredDate>
+                  </orderItem>
+                  <topLevelProduct>
+                     <containedProducts>
+                        <action>CHANGE</action>
+                        <associationSpecDefinition>
+                           <componentServiceType>{$componentServiceType$}</componentServiceType>
+                        </associationSpecDefinition>
+                        <characteristicValues>
+                           <characteristicDefinition>
+                              <attributeCode>{$attribute$}</attributeCode>
+                           </characteristicDefinition>
+                           <value>{$attributeValue$}</value>
+                        </characteristicValues>
+                     </containedProducts>
+                  </topLevelProduct>
+               </topLevelProduct>
+            </order>
+         </amendProductOrderItemRequest>
+      </tns:amendProductOrderItem>
+   </soapenv:Body>
+</soapenv:Envelope>

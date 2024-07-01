@@ -1,0 +1,18 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bas="http://athena.it.att.com/basicordermessage" xmlns:v3="http://cio.att.com/commonheader/v3" xmlns:com="http://athena.it.att.com/commonordermessaging"> 
+   <soapenv:Header/> 
+   <soapenv:Body> 
+      <basicOrderResponse xmlns="http://athena.it.att.com/basicordermessage" xmlns:ns1="http://cio.att.com/commonheader/v3" xmlns:ns0="http://athena.it.att.com/commonordermessaging"> 
+         <ns1:WSResponseHeader> 
+            <ns1:WSCorrelationId>{$CorrelationId$}</ns1:WSCorrelationId> 
+         </ns1:WSResponseHeader> 
+         <ns0:orderId>{$orderId$}</ns0:orderId> 
+         <ns0:orderNumber>{$orderId$}</ns0:orderNumber> 
+         <ns0:orderVersion>1</ns0:orderVersion> 
+         <ns0:eventOperation>PortServiceRequest</ns0:eventOperation> 
+         <ns0:status>COMPLETE</ns0:status> 
+         <ns0:statusDescription>COMPLETED</ns0:statusDescription> 
+         <projectId>{$projectId$}</projectId> 
+         <projectResultCharacteristics/> 
+      </basicOrderResponse> 
+   </soapenv:Body> 
+</soapenv:Envelope>

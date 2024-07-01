@@ -1,0 +1,157 @@
+11-18-2021 17:25:43  INFO [OMXOrderCreationSteps.java:57] - --------------------Triggering Notify Request-----------------
+ 11-18-2021 17:25:45  INFO [TriggerNotifyRequest.java:56] - URL is:http://newtt4a1.snt.bst.bls.com:9003/omxenterprise-client-inbound-ws-war/NxEnterpriseService
+ 11-18-2021 17:25:45  INFO [TriggerNotifyRequest.java:57] - URL is:http://newtt4a1.snt.bst.bls.com:9003/omxenterprise-client-inbound-ws-war/NxEnterpriseService
+ 11-18-2021 17:25:45  INFO [UpdateXMLs.java:75] - SOR ID is:1-MEDAA700
+ 11-18-2021 17:25:45  INFO [UpdateXMLs.java:100] - Request After update is :<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:nxen="http://omx.att.com/omx/nxenterprise" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v3="http://cio.att.com/commonheader/v3">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <nxen:notifyProjectRequest>
+         <nxen:sourceSystem>ATTeBiz</nxen:sourceSystem>
+         <!--ATTeBiz,SalesExpr,ROME-->
+         <nxen:serviceNameList>
+            <nxen:serviceName>MIS</nxen:serviceName> 
+            <!--<nxen:serviceName>BVOIP</nxen:serviceName>-->
+           <!-- <nxen:serviceName>AVPN</nxen:serviceName>-->
+         </nxen:serviceNameList>
+         <!--<nxen:sorId>1-MEDAA700</nxen:sorId> -->
+         <nxen:solutionID>1-MEDAA700</nxen:solutionID>
+         <nxen:ProjectIdList>
+            <nxen:dborProjectId>ME25335</nxen:dborProjectId>
+         </nxen:ProjectIdList>
+         <nxen:customerName>HALOAMBCUSTOMER</nxen:customerName>
+         <nxen:opportunityId>1-C2823484</nxen:opportunityId>
+         <!--<nxen:eventOperation>SORSubmitted</nxen:eventOperation>-->
+         <nxen:eventOperation>submitOrderData</nxen:eventOperation>
+         <nxen:SOREligibility>OMX</nxen:SOREligibility>
+      </nxen:notifyProjectRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+ 11-18-2021 17:25:46  INFO [TriggerNotifyRequest.java:64] - Response in format is:<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+<env:Header/>
+<env:Body>
+<ns3:notifyProjectResponse xmlns="http://cio.att.com/commonheader/v3" xmlns:ns3="http://omx.att.com/omx/nxenterprise"/>
+</env:Body>
+</env:Envelope>
+
+ 11-18-2021 17:25:46  INFO [OMXOrderCreationSteps.java:63] - --------------------SOR ID while testing-----------------
+ 11-18-2021 17:25:46  INFO [OMXOrderCreationSteps.java:64] - 1-MEDAA700
+ 11-18-2021 17:25:46  INFO [OMXOrderCreationSteps.java:65] - --------------------PROJ ID while testing-----------------
+ 11-18-2021 17:25:46  INFO [OMXOrderCreationSteps.java:66] - ME25335
+ 11-18-2021 17:25:46  INFO [OMXOrderCreationSteps.java:67] - --------------------Notify Request Triggered-----------------
+ 11-18-2021 17:25:47  INFO [TriggerDecomposeSalesOrderRequest_MIS.java:46] - URL is:http://zltv9972.vci.att.com:41200/NW-WEB_SERVICES/NotifyOCX?wsdl
+ 11-18-2021 17:25:47  INFO [UpdateXMLs.java:212] - SOR ID is:1-MEDAA700
+ 11-18-2021 17:25:47  INFO [UpdateXMLs.java:216] - Request After update is :<?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Header/>
+  <env:Body>
+    <ns0:decomposeSalesOrderRequest xmlns:ns0="http://amdocs/oms/ws/v1">
+      <decomposeSORRequest>
+        <CustomerID>590206355201</CustomerID>
+        <Context/>
+        <projectID>ME25335</projectID>
+        <SORID>1-MEDAA700</SORID>
+        <StoreOnly>N</StoreOnly>
+        <WSHeader>
+          <WSContext>
+            <FromAppId>OMX</FromAppId>
+            <ToAppId>OCX</ToAppId>
+          </WSContext>
+          <WSResponseMessageExpiration>0</WSResponseMessageExpiration>
+        </WSHeader>
+      </decomposeSORRequest>
+    </ns0:decomposeSalesOrderRequest>
+  </env:Body>
+</env:Envelope>
+ 11-18-2021 17:25:47  INFO [TriggerDecomposeSalesOrderRequest_MIS.java:53] - Response in format is:<S:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<env:Header/>
+<S:Body>
+<ns2:decomposeSalesOrderRequestResponse xmlns:ns2="http://amdocs/oms/ws/v1"/>
+</S:Body>
+</S:Envelope>
+
+ 11-18-2021 17:27:28  INFO [OCXOrderStatus.java:63] - {
+   "SearchOrderRequest":{
+      "searchOrderInputsX9":{
+         "returnLocationX9":"true"
+      }
+   }
+}
+ 11-18-2021 17:27:28  INFO [OCXOrderStatus.java:64] - Getting response for SORID :1-MEDAA700 with URL : http://zltv9972.vci.att.com:41200/rp-webapp-9/ordering/Orders?paramType=solutionid&paramValue=1-MEDAA700
+ 11-18-2021 17:39:55  INFO [OMXOrderCreationSteps.java:57] - --------------------Triggering Notify Request-----------------
+ 11-18-2021 17:39:57  INFO [TriggerNotifyRequest.java:56] - URL is:http://newtt4a1.snt.bst.bls.com:9003/omxenterprise-client-inbound-ws-war/NxEnterpriseService
+ 11-18-2021 17:39:57  INFO [TriggerNotifyRequest.java:57] - URL is:http://newtt4a1.snt.bst.bls.com:9003/omxenterprise-client-inbound-ws-war/NxEnterpriseService
+ 11-18-2021 17:39:57  INFO [UpdateXMLs.java:75] - SOR ID is:1-MEABD5675
+ 11-18-2021 17:39:57  INFO [UpdateXMLs.java:100] - Request After update is :<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:nxen="http://omx.att.com/omx/nxenterprise" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v3="http://cio.att.com/commonheader/v3">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <nxen:notifyProjectRequest>
+         <nxen:sourceSystem>ATTeBiz</nxen:sourceSystem>
+         <!--ATTeBiz,SalesExpr,ROME-->
+         <nxen:serviceNameList>
+            <nxen:serviceName>MIS</nxen:serviceName> 
+            <!--<nxen:serviceName>BVOIP</nxen:serviceName>-->
+           <!-- <nxen:serviceName>AVPN</nxen:serviceName>-->
+         </nxen:serviceNameList>
+         <!--<nxen:sorId>1-MEABD5675</nxen:sorId> -->
+         <nxen:solutionID>1-MEABD5675</nxen:solutionID>
+         <nxen:ProjectIdList>
+            <nxen:dborProjectId>ME796892</nxen:dborProjectId>
+         </nxen:ProjectIdList>
+         <nxen:customerName>HALOAMBCUSTOMER</nxen:customerName>
+         <nxen:opportunityId>1-C2823484</nxen:opportunityId>
+         <!--<nxen:eventOperation>SORSubmitted</nxen:eventOperation>-->
+         <nxen:eventOperation>submitOrderData</nxen:eventOperation>
+         <nxen:SOREligibility>OMX</nxen:SOREligibility>
+      </nxen:notifyProjectRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+ 11-18-2021 17:39:58  INFO [TriggerNotifyRequest.java:64] - Response in format is:<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+<env:Header/>
+<env:Body>
+<ns3:notifyProjectResponse xmlns="http://cio.att.com/commonheader/v3" xmlns:ns3="http://omx.att.com/omx/nxenterprise"/>
+</env:Body>
+</env:Envelope>
+
+ 11-18-2021 17:39:58  INFO [OMXOrderCreationSteps.java:63] - --------------------SOR ID while testing-----------------
+ 11-18-2021 17:39:58  INFO [OMXOrderCreationSteps.java:64] - 1-MEABD5675
+ 11-18-2021 17:39:58  INFO [OMXOrderCreationSteps.java:65] - --------------------PROJ ID while testing-----------------
+ 11-18-2021 17:39:58  INFO [OMXOrderCreationSteps.java:66] - ME796892
+ 11-18-2021 17:39:58  INFO [OMXOrderCreationSteps.java:67] - --------------------Notify Request Triggered-----------------
+ 11-18-2021 17:39:58  INFO [TriggerDecomposeSalesOrderRequest_MIS.java:46] - URL is:http://zltv9972.vci.att.com:41200/NW-WEB_SERVICES/NotifyOCX?wsdl
+ 11-18-2021 17:39:58  INFO [UpdateXMLs.java:212] - SOR ID is:1-MEABD5675
+ 11-18-2021 17:39:58  INFO [UpdateXMLs.java:216] - Request After update is :<?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Header/>
+  <env:Body>
+    <ns0:decomposeSalesOrderRequest xmlns:ns0="http://amdocs/oms/ws/v1">
+      <decomposeSORRequest>
+        <CustomerID>590206355201</CustomerID>
+        <Context/>
+        <projectID>ME796892</projectID>
+        <SORID>1-MEABD5675</SORID>
+        <StoreOnly>N</StoreOnly>
+        <WSHeader>
+          <WSContext>
+            <FromAppId>OMX</FromAppId>
+            <ToAppId>OCX</ToAppId>
+          </WSContext>
+          <WSResponseMessageExpiration>0</WSResponseMessageExpiration>
+        </WSHeader>
+      </decomposeSORRequest>
+    </ns0:decomposeSalesOrderRequest>
+  </env:Body>
+</env:Envelope>
+ 11-18-2021 17:39:58  INFO [TriggerDecomposeSalesOrderRequest_MIS.java:53] - Response in format is:<S:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<env:Header/>
+<S:Body>
+<ns2:decomposeSalesOrderRequestResponse xmlns:ns2="http://amdocs/oms/ws/v1"/>
+</S:Body>
+</S:Envelope>
+
+ 11-18-2021 17:41:39  INFO [OCXOrderStatus.java:63] - {
+   "SearchOrderRequest":{
+      "searchOrderInputsX9":{
+         "returnLocationX9":"true"
+      }
+   }
+}
+ 11-18-2021 17:41:39  INFO [OCXOrderStatus.java:64] - Getting response for SORID :1-MEABD5675 with URL : http://zltv9972.vci.att.com:41200/rp-webapp-9/ordering/Orders?paramType=solutionid&paramValue=1-MEABD5675
+ 

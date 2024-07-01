@@ -1,0 +1,98 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://CustomerOrderEstablishment.ocxGenericServices.services.amdocs.com"> 
+   <soapenv:Header> 
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"> 
+         <wsse:UsernameToken wsu:Id="UsernameToken-E9831C5131DB1C636214604451108501"> 
+            <wsse:Username>OMS</wsse:Username> 
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">Oms111</wsse:Password> 
+            <!--wsse:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">vAMoAVTyRHWrqnMzZjAWBw==</wsse:Nonce> 
+                    <wsu:Created>2016-04-12T07:11:50.847Z</wsu:Created--> 
+         </wsse:UsernameToken> 
+      </wsse:Security> 
+   </soapenv:Header> 
+   <soapenv:Body> 
+      <cus:createProductOrderForExistingProduct> 
+         <createProductOrderForExistingProductRequest> 
+            <salesChannel>SS</salesChannel> 
+            <options> 
+               <confirmationChecksApproved>true</confirmationChecksApproved> 
+            </options> 
+            <order> 
+               <attUserId>sp295w</attUserId> 
+               <customer> 
+                  <customerId>892912790506</customerId> 
+                  <organizationId>1115130</organizationId> 
+                  <contractId>3305329</contractId> 
+                  <customerName>Albert Test CR193632</customerName> 
+                  <saartId>SAART11041</saartId> 
+                  <customerType>WHOLESALE</customerType> 
+               </customer> 
+               <description>P</description> 
+               <startOrderingProcess>true</startOrderingProcess> 
+               <!--Zero or more repetitions:--> 
+               <topLevelProducts> 
+                  <associationSpec> 
+                     <assignedProductId>{$apId$}</assignedProductId> 
+                     <!--to be changed if using diferent inventory--> 
+                  </associationSpec> 
+                  <orderItem> 
+                     <contacts> 
+                        <contactType>CUS</contactType> 
+                        <firstName>Sagar</firstName> 
+                        <lastName>Patankar</lastName> 
+                     </contacts> 
+                     <orderActionType>CE</orderActionType> 
+                     <serviceRequiredDate>2020-05-06T23:59:59+02:00</serviceRequiredDate> 
+                  </orderItem> 
+               </topLevelProducts> 
+               <topLevelProducts> 
+                  <associationSpec> 
+                     <assignedProductId>{$apId1$}</assignedProductId> 
+                     <!--to be changed if using diferent inventory--> 
+                  </associationSpec> 
+                  <orderItem> 
+                     <contacts> 
+                        <contactType>CUS</contactType> 
+                        <firstName>Sagar</firstName> 
+                        <lastName>Patankar</lastName> 
+                     </contacts> 
+                     <orderActionType>CE</orderActionType> 
+                     <serviceRequiredDate>2020-05-06T23:59:59+02:00</serviceRequiredDate> 
+                  </orderItem> 
+               </topLevelProducts> 
+               <topLevelProducts> 
+                  <associationSpec> 
+                     <assignedProductId>{$apId2$}</assignedProductId> 
+                     <!--to be changed if using diferent inventory--> 
+                  </associationSpec> 
+                  <orderItem> 
+                     <contacts> 
+                        <contactType>CUS</contactType> 
+                        <firstName>Sagar</firstName> 
+                        <lastName>Patankar</lastName> 
+                     </contacts> 
+                     <orderActionType>CE</orderActionType> 
+                     <serviceRequiredDate>2020-05-06T23:59:59+02:00</serviceRequiredDate> 
+                  </orderItem> 
+               </topLevelProducts> 
+               <topLevelProducts> 
+                  <associationSpec> 
+                     <assignedProductId>{$apId3$}</assignedProductId> 
+                     <!--to be changed if using diferent inventory--> 
+                  </associationSpec> 
+                  <orderItem> 
+                     <contacts> 
+                        <contactType>CUS</contactType> 
+                        <firstName>Sagar</firstName> 
+                        <lastName>Patankar</lastName> 
+                     </contacts> 
+                     <orderActionType>CE</orderActionType> 
+                     <serviceRequiredDate>2020-05-06T23:59:59+02:00</serviceRequiredDate> 
+                  </orderItem> 
+               </topLevelProducts> 
+ 
+              
+            </order> 
+         </createProductOrderForExistingProductRequest> 
+      </cus:createProductOrderForExistingProduct> 
+   </soapenv:Body> 
+</soapenv:Envelope>

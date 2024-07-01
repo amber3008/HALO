@@ -1,0 +1,8 @@
+<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+   <env:Header/>
+   <env:Body>
+      <getVisibilityPlanRequest xmlns="http://athena.it.att.com/visibility" xmlns:ns0="http://athena.it.att.com/commonordermessaging" xmlns:ns2="http://athena.it.att.com/aff/common" xmlns:ns1="http://cio.att.com/commonheader/v3">
+         <projectId>{$projectId$}</projectId>
+      </getVisibilityPlanRequest>
+   </env:Body>
+</env:Envelope>

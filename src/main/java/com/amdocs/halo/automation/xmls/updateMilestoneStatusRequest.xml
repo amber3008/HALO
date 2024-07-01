@@ -1,0 +1,16 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:upd="http://amdocs.com/oss/aff/schema/updateMilestoneStatus">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <upd:updateMilestoneStatusRequest>
+         <upd:projectMilestones>
+            <upd:projectIdentifier>Project69578</upd:projectIdentifier>
+            <upd:Milestones>
+               <upd:Milestone>
+                  <upd:ID>SIDs_Rcvd</upd:ID>
+                  <upd:status>ACTIVE</upd:status>
+               </upd:Milestone>
+            </upd:Milestones>
+         </upd:projectMilestones>
+      </upd:updateMilestoneStatusRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

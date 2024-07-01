@@ -1,0 +1,24 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:nxen="http://omx.att.com/omx/nxenterprise" xmlns:v3="http://cio.att.com/commonheader/v3">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <nxen:notifyProjectRequest>
+         <nxen:sourceSystem>ROME</nxen:sourceSystem>
+         <!--ATTeBiz,SalesExpr,ROME,ServiceNow-->
+         <nxen:serviceNameList>
+            <nxen:serviceName>{$orderType$}</nxen:serviceName> 
+            <!--<nxen:serviceName>BVOIP</nxen:serviceName>-->
+           <!-- <nxen:serviceName>AVPN</nxen:serviceName>-->
+         </nxen:serviceNameList>
+         <nxen:sorId>{$sorId$}</nxen:sorId> 
+         <!-- <nxen:solutionID>{$sorId$}</nxen:solutionID> Not for Service Now-->
+         <nxen:ProjectIdList>
+            <nxen:dborProjectId>{$projId$}</nxen:dborProjectId>
+         </nxen:ProjectIdList>
+         <nxen:customerName>HALOAMBCUSTOMER</nxen:customerName>
+         <nxen:opportunityId>1-C2823484</nxen:opportunityId>
+         <nxen:eventOperation>SORSubmitted</nxen:eventOperation>
+         <!--<nxen:eventOperation>submitOrderData</nxen:eventOperation> Not For Service Now-->
+         <nxen:SOREligibility>OMX</nxen:SOREligibility>
+      </nxen:notifyProjectRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

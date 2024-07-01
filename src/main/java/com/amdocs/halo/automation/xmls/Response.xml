@@ -1,0 +1,25 @@
+<S:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+   <env:Header/>
+   <S:Body>
+      <ns2:createAndStartOrderResponse xmlns:ns2="http://CreateAndStartOrder.createAndStartOrder.services.amdocs.com">
+         <CreateAndStartOrderOutput>
+            <correlationIDX9>2681101</correlationIDX9>
+            <orderInformationX9>
+               <orderIdX9>202099804</orderIdX9>
+               <orderStatusX9>DO</orderStatusX9>
+               <productOfferingX9>
+                  <offerNameX9>IP FLEX Standalone</offerNameX9>
+                  <orderActionInformationX9>
+                     <orderActionStatusX9>DO</orderActionStatusX9>
+                     <orderNumberX9>202099805</orderNumberX9>
+                     <orderVersionX9>1</orderVersionX9>
+                     <productIdentifierX9>IPFX2227516</productIdentifierX9>
+                     <productX9>IPFLEX</productX9>
+                     <serviceTypeX9>BVOIP</serviceTypeX9>
+                  </orderActionInformationX9>
+               </productOfferingX9>
+            </orderInformationX9>
+         </CreateAndStartOrderOutput>
+      </ns2:createAndStartOrderResponse>
+   </S:Body>
+</S:Envelope>

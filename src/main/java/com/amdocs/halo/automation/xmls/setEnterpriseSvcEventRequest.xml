@@ -1,0 +1,18 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+  <soapenv:Body>
+    <ns2:setEnterpriseSvcEventRequest xmlns="http://cio.att.com/commonheader/v3" xmlns:ns2="http://athena.it.att.com/setenterprisesvcevent">
+      <ns2:enterpriseSvcEvent>
+        <ns2:sourceSystemName>EFMS-A</ns2:sourceSystemName>
+        <ns2:messageDate>2021-01-12T07:40:40.298Z</ns2:messageDate>
+        <ns2:externalOrderId>{$oaId$}</ns2:externalOrderId>
+        <ns2:eventId>548805757</ns2:eventId>
+        <ns2:eventType>100</ns2:eventType>
+        <ns2:eventDescription>RID</ns2:eventDescription>
+        <ns2:eventLevel>X</ns2:eventLevel>
+        <ns2:slsOrderEventComp>Y</ns2:slsOrderEventComp>
+        <ns2:completedDate>2021-01-12T00:00:00.000-05:00</ns2:completedDate>
+        <ns2:eventCompletionApplicable>YES</ns2:eventCompletionApplicable>
+      </ns2:enterpriseSvcEvent>
+    </ns2:setEnterpriseSvcEventRequest>
+  </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,99 @@
+{
+  "SaveUserDefineRangesInProductServiceRestRequest": {
+    "orderNumberX9": "296347",
+    "orderVersionX9": "1",
+    "rangesX9": [
+      {
+        "value": "8987677830",
+        "valueTo": "8987677830",
+        "charactersticGroups": [
+          {
+            "id": "42903",
+            "characteristics": [
+              {
+                "id": "isDirectoryListing",
+                "value": "N"
+              }
+            ]
+          },
+          {
+            "id": "7771",
+            "characteristics": [
+              {
+                "id": "interLATAPICFreezeIndicator",
+                "value": "true"
+              },
+              {
+                "id": "interLATAPIC",
+                "value": "0288"
+              },
+              {
+                "id": "cnamOption",
+                "value": "2"
+              },
+              {
+                "id": "cnam",
+                "value": "HALOISTCUSTOMER"
+              },
+              {
+                "id": "lidbOption",
+                "value": "4"
+              },
+              {
+                "id": "intraLATAPICFreezeIndicator",
+                "value": "true"
+              },
+              {
+                "id": "intraLATAPIC",
+                "value": "0288"
+              }
+            ]
+          },
+          {
+            "id": "7721",
+            "characteristics": [
+              {
+                "id": "e164CountryCode",
+                "value": "1"
+              },
+              {
+                "id": "gatewayCityCode",
+                "value": "898"
+              },
+              {
+                "id": "startExtensionRange",
+                "value": "7677830"
+              },
+              {
+                "id": "endExtensionRange",
+                "value": "7677830"
+              },
+              {
+                "id": "lengthOfPBXExtension",
+                "value": "10"
+              },
+              {
+                "id": "startPrefix",
+                "value": "7"
+              },
+              {
+                "id": "isoCountryCode",
+                "value": "US"
+              },
+              {
+                "id": "e164CountryCode",
+                "value": "1"
+              },
+              {
+                "id": "startAndEndExtensionRange",
+                "value": "8987677830- 7830"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "rangesForDeletionX9": [],
+    "requestIDX9": "296347"
+  }
+}

@@ -1,0 +1,11 @@
+{ 
+  "CancelOrderInput": { 
+    "orderToCancelX9": [ 
+      { 
+        "orderIDX9": "{$OrderID$}", 
+        "cancelUserTextX9": "Others: Other Notes: Test", 
+        "orderActionReasonListX9": [] 
+      } 
+    ] 
+  } 
+}

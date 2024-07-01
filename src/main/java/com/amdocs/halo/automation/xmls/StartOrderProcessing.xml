@@ -1,0 +1,33 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ocx="http://oCXOrderingServices.interfaces.oms.services.cih.amdocs.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ocx:startOrderingProcess>
+         <!--Optional:-->
+         <!--Optional:-->
+         <OrderingContext>
+            <locale>
+               <country>US</country>
+               <language>en</language>
+               <variant/>
+            </locale>
+            <salesChannel>
+               <valueAsString>SA</valueAsString>
+            </salesChannel>
+         </OrderingContext>
+         <!--Optional:-->
+         <StartOrderingProcessInput>
+            <!--Optional:-->
+            <orderID>
+               <!--Optional:-->
+               <orderID>{$poId$}</orderID>
+               <!--Order Id to be submitted-->
+            </orderID>
+         </StartOrderingProcessInput>
+         <!--Optional:-->
+         <MaskInfo>
+            <!--Zero or more repetitions:-->
+            <maskPropertyPathList>OMS</maskPropertyPathList>
+         </MaskInfo>
+      </ocx:startOrderingProcess>
+   </soapenv:Body>
+</soapenv:Envelope>

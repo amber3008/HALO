@@ -1,0 +1,20 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns1:retrieveTnStatusAndErrorRequest xmlns:ns0="http://athena.it.att.com/ocx/interfaces/tnmgmt" xmlns:ns2="http://cio.att.com/commonheader/v3" xmlns:ns1="http://athena.it.att.com/ocx/tnordermgmt" xmlns:ns3="http://athena.it.att.com/ocx/domain/common">
+         <ns2:WSHeader>
+            <ns2:WSContext>
+               <ns2:FromAppId>OCX_IM_GUI</ns2:FromAppId>
+               <ns2:ToAppId>OCX-IM-TNOMSERVICES</ns2:ToAppId>
+            </ns2:WSContext>
+            <ns2:WSCallback>
+               <ns2:WSCorrelationId>ba2b87f2-60e4-4a72-92dd-fa723244da4d</ns2:WSCorrelationId>
+            </ns2:WSCallback>
+            <ns2:WSConversationId>7dfbef9a-6b88-497b-a072-acce3f86f75f</ns2:WSConversationId>
+         </ns2:WSHeader>
+         <ns1:orderNumberAndVersion>
+            <ns3:orderNumber>187356845</ns3:orderNumber>
+         </ns1:orderNumberAndVersion>
+      </ns1:retrieveTnStatusAndErrorRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

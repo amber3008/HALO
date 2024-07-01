@@ -1,0 +1,11 @@
+{
+  "RetrieveOAAdditionalInfoReq": {
+    "orderRefX9": [
+      {
+        "orderNumberX9": "202080501",
+        "orderVersionX9": "1"
+      }
+    ],
+    "returnInventoryX9": false
+  }
+}

@@ -1,0 +1,9 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:exec="http://amdocs.com/oss/aff/schema/executionPlanView">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <exec:getActivityRequest>
+         <exec:planID>{$PlanID$}</exec:planID>
+         <exec:activityID>{$ActivityID$}</exec:activityID>
+      </exec:getActivityRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

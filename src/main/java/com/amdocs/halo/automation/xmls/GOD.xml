@@ -1,0 +1,35 @@
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+   <S:Header>
+      <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>OMS</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">Oms111</wsse:Password>
+         </wsse:UsernameToken>
+      </wsse:Security>
+   </S:Header>
+   <S:Body>
+      <ns0:GetOrderData xmlns:ns0="http://getOrderData.getOrderData.services.amdocs.com">
+         <OrderingContext/>
+         <GetOrderDataInput>
+            <orderNumber>{$oID$}</orderNumber>
+            <orderVersion>1</orderVersion>
+          <requestDataList>
+              
+               <requestData>MainComponentInfoRequired</requestData> 
+               <requestData>CustomerDataRequired</requestData> 
+               <requestData>AssociatedProductsRequired</requestData> 
+               <requestData>DependencyGroupRequired</requestData> 
+               <requestData>DirectoryListingInformationRequired</requestData> 
+               <requestData>TnInformationRequired</requestData> 
+               <requestData>PortedTnInformationRequired</requestData> 
+               <requestData>E911InformationRequired</requestData> 
+               <requestData>LsrInformationRequired</requestData> 
+               <requestData>LidbCareCnamRequired</requestData> 
+               <requestData>RangeLevelDialPlanRequired</requestData>     
+            </requestDataList>
+ 
+            <requestingApplication>OMX</requestingApplication>
+         </GetOrderDataInput>
+      </ns0:GetOrderData>
+   </S:Body>
+</S:Envelope>

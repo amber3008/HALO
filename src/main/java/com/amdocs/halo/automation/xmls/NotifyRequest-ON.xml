@@ -1,0 +1,35 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns0:Notify xmlns:ns0="http://amdocs/oms/ws/v1">
+         <NotifyRequest>
+            <Event>
+               <Body>
+                  <OrderNotification>
+                     <attOrderNumber>{$orderType$}</attOrderNumber>
+                     <attOrderVersion>1</attOrderVersion>
+                     <characteristics>
+                        <item>
+                           <Name>entityType</Name>
+                           <Value>OrderAction</Value>
+                        </item>
+                     </characteristics>
+                     <description>Completed</description>
+                     <orderFinalStatus>true</orderFinalStatus>
+                     <passedPoNRStatus>true</passedPoNRStatus>
+                     <requestingApplication>OMX</requestingApplication>
+                     <status>ON</status>
+                  </OrderNotification>
+               </Body>
+               <Header>
+                  <correlationID>159428B61D924B6889313E1D81CE5436_8A47B5D7EA15414AAB761FCB33EE9B4C_0__281154</correlationID>
+                  <EntityId xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <Name>OrderNotification</Name>
+                  <SequenceNumber>0</SequenceNumber>
+                  <Timestamp>2020-09-16T05:07:12.281-04:00</Timestamp>
+               </Header>
+            </Event>
+         </NotifyRequest>
+      </ns0:Notify>
+   </soapenv:Body>
+</soapenv:Envelope>

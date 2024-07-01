@@ -1,0 +1,13 @@
+<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Header/>
+  <env:Body>
+    <orderSearchRequest xmlns="http://athena.it.att.com/aff/search" xmlns:ns0="http://athena.it.att.com/aff/common">
+      <orderId>232170191</orderId>
+      <serviceOrderDataSearchRequest>
+        <info/>
+        <dates/>
+        <cnrInfo/>
+      </serviceOrderDataSearchRequest>
+    </orderSearchRequest>
+  </env:Body>
+</env:Envelope>

@@ -1,0 +1,53 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://CustomerOrderEstablishment.ocxGenericServices.services.amdocs.com">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-E9831C5131DB1C636214604451108501">
+            <wsse:Username>OMS</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">Oms111</wsse:Password>
+            <!--wsse:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">vAMoAVTyRHWrqnMzZjAWBw==</wsse:Nonce>
+                    <wsu:Created>2016-04-12T07:11:50.847Z</wsu:Created-->
+         </wsse:UsernameToken>
+      </wsse:Security>
+   </soapenv:Header>
+   <soapenv:Body>
+ <cus:createProductOrderForExistingProduct xmlns:tns="http://CustomerOrderEstablishment.ocxGenericServices.services.amdocs.com">
+         <createProductOrderForExistingProductRequest>
+            <salesChannel>SA</salesChannel>
+            <options>
+               <confirmationChecksApproved>true</confirmationChecksApproved>
+               <bulkOrderIndicator>false</bulkOrderIndicator>
+            </options>
+            <order>
+              <customer>
+                  <customerId>892912790306</customerId>
+                  <organizationId>1115130</organizationId>
+                  <contractId>3305329</contractId>
+                  <customerName>HarmeshS</customerName>
+                  <saartId>SAART11040</saartId>
+                  <customerType>CORP</customerType>
+               </customer>
+
+               <startOrderingProcess>true</startOrderingProcess>
+               <topLevelProducts>
+                  <associationSpec>
+                     <assignedProductId>{$assignProductId$}</assignedProductId>
+                  </associationSpec>
+                  <orderItem>
+                     <contacts>
+                        <contactType>CUS</contactType>
+                        <email>harmesh.saluja@amdocs.com</email>
+                        <firstName>Harmesh</firstName>
+                        <landLinePhone>1231231234</landLinePhone>
+                        <lastName>Saluja</lastName>
+                        <mobilePhone>1231231234</mobilePhone>
+                     </contacts>
+                     <orderActionType>CE</orderActionType>
+                     <serviceRequiredDate>2022-12-12T07:38:39.876-05:00</serviceRequiredDate>
+                  </orderItem>
+               </topLevelProducts>
+               <userId>hs1650</userId>
+            </order>
+         </createProductOrderForExistingProductRequest>
+      </cus:createProductOrderForExistingProduct>
+   </soapenv:Body>
+</soapenv:Envelope> 

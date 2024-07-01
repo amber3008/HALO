@@ -1,0 +1,12 @@
+{
+	"SubmitOrderActionReq": {
+		"orderActionIdListX9": [
+		],
+		"orderRefX9": [
+			{
+				"orderNumberX9": "{$OrderActionID$}",
+				"orderVersionX9": "2"
+			}
+		]
+	}
+}

@@ -1,0 +1,12 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:err="http://amdocs.com/oss/aff/schema/error">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <err:errorResolved>
+         <err:errorResolved>
+            <err:planID>{$planId$}</err:planID>
+            <err:activityID>{$activityId$}</err:activityID>
+            <err:errorID>{$errorId$}</err:errorID>
+         </err:errorResolved>
+      </err:errorResolved>
+   </soapenv:Body>
+</soapenv:Envelope>

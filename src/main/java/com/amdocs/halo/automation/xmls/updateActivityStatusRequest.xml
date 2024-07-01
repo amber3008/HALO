@@ -1,0 +1,14 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:upd="http://amdocs.com/oss/aff/schema/updateactivitystatus">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <upd:updateActivityStatus>
+         <upd:updateActivityStatusRequest>
+            <upd:activityStatusUpdate>
+               <upd:planID>{$planId$}</upd:planID>
+               <upd:activityID>{$activityId$}</upd:activityID>
+               <upd:status>{$status$}</upd:status>
+            </upd:activityStatusUpdate>
+         </upd:updateActivityStatusRequest>
+      </upd:updateActivityStatus>
+   </soapenv:Body>
+</soapenv:Envelope>

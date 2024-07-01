@@ -1,0 +1,14 @@
+{
+  "AmendOrderActionInput": {
+    "orderActionsToAmendX9": [
+      {
+        "orderActionIDX9": null,
+        "orderActionReasonX9": "70",
+        "orderActionFreeTextX9": "Other: Test",
+        "orderNumberX9": "202082313",
+        "orderVersionX9": "1",
+        "attuidX9": "ab780k"
+      }
+    ]
+  }
+}

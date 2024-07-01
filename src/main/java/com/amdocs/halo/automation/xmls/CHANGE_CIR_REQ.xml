@@ -1,0 +1,83 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://CustomerOrderEstablishment.ocxGenericServices.services.amdocs.com"> 
+    <soapenv:Header> 
+        <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"> 
+            <wsse:UsernameToken wsu:Id="UsernameToken-E9831C5131DB1C636214604451108501"> 
+                <wsse:Username>OMS</wsse:Username> 
+                <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">Oms111</wsse:Password> 
+                <!--wsse:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">vAMoAVTyRHWrqnMzZjAWBw==</wsse:Nonce> 
+            <wsu:Created>2016-04-12T07:11:50.847Z</wsu:Created--> 
+            </wsse:UsernameToken> 
+        </wsse:Security> 
+    </soapenv:Header> 
+    <soapenv:Body> 
+        <cus:createProductOrderForExistingProduct> 
+            <createProductOrderForExistingProductRequest> 
+                <salesChannel>SS</salesChannel> 
+                <options> 
+                    <confirmationChecksApproved>true</confirmationChecksApproved> 
+                </options> 
+                <order> 
+                    <customer> 
+                        <customerId>892912790506</customerId> 
+                        <organizationId>1115130</organizationId> 
+                        <contractId>3305329</contractId> 
+                        <customerName>Albert Test CR193632</customerName> 
+                        <saartId>SAART11041</saartId> 
+                        <customerType>WHOLESALE</customerType> 
+                    </customer> 
+                    <description>FIS Add</description> 
+                    <startOrderingProcess>true</startOrderingProcess> 
+                    <topLevelProducts> 
+                        <associationSpec> 
+                            <assignedProductId>{$apId$}</assignedProductId> 
+                        </associationSpec> 
+                        <orderItem> 
+                            <contacts> 
+                                <city>TX</city> 
+                                <contactType>CUS</contactType> 
+                                <email>bhausaheb.mugle@amdocs.com</email> 
+                                <firstName>Bhausaheb</firstName> 
+                                <landLinePhone>123458</landLinePhone> 
+                                <lastName>Mugle</lastName> 
+                                <mobilePhone>9822251448</mobilePhone> 
+                            </contacts> 
+                            <orderActionType>CH</orderActionType> 
+                            <orderItemAttributes> 
+                                <orderActionPurpose>MCIR</orderActionPurpose> 
+                            </orderItemAttributes> 
+                            <serviceAdddress> 
+                                <locationId>GLID001</locationId> 
+                                <city>CHGO</city> 
+                                <country>US</country> 
+                                <houseNumber>554</houseNumber> 
+                                <isoCountryCode>IL</isoCountryCode> 
+                                <stateName>554</stateName> 
+                                <state>IL</state> 
+                                <streetName>Diversey</streetName> 
+                                <zipCode>60614-77</zipCode> 
+                                <clli8>CHCMILVWN00</clli8> 
+                            </serviceAdddress> 
+                            <serviceRequiredDate>2020-11-30T23:59:59+02:00</serviceRequiredDate> 
+                        </orderItem> 
+                        <topLevelProduct> 
+                            <containedProducts> 
+                                <action>CHANGE</action> 
+                                <associationSpecDefinition> 
+                                    <componentServiceType>SCMC</componentServiceType> 
+                                </associationSpecDefinition> 
+                                <characteristicValues> 
+                                    <characteristicDefinition> 
+                                        <attributeCode>serviceConnectionSpeed</attributeCode> 
+                                        <attributeId>71863</attributeId> 
+                                    </characteristicDefinition> 
+                                    <value>5000</value> 
+                                </characteristicValues> 
+                            </containedProducts> 
+                        </topLevelProduct> 
+                    </topLevelProducts> 
+                </order> 
+                <startOrderingProcess>true</startOrderingProcess> 
+            </createProductOrderForExistingProductRequest> 
+        </cus:createProductOrderForExistingProduct> 
+    </soapenv:Body> 
+</soapenv:Envelope>

@@ -1,0 +1,75 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://CustomerOrderTrackingAndManagement.ocxGenericServices.services.amdocs.com">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+         <wsse:UsernameToken wsu:id="UsernameToken-E9831C5131DB1C636214604451108501">
+            <wsse:Username>OMS</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">Oms111</wsse:Password>
+         </wsse:UsernameToken>
+      </wsse:Security>
+   </soapenv:Header>
+   <soapenv:Body>
+      <cus:amendProductOrderItem xmlns:tns="http://CustomerOrderTrackingAndManagement.ocxGenericServices.services.amdocs.com">
+         <amendProductOrderItemRequest>
+            <salesChannel>SA</salesChannel>
+            <options>
+               <confirmationChecksApproved>true</confirmationChecksApproved>
+               <bulkOrderIndicator/>
+            </options>
+            <order>
+               <userId>hs1650</userId>
+               <customer>
+                  <customerId>9812274478</customerId>
+                  <organizationId>1115130</organizationId>
+                  <contractId>3305329</contractId>
+                  <customerName>HarmeshS</customerName>
+                  <saartId>SAART11040</saartId>
+                  <customerType>EIS</customerType>
+               </customer>
+               <description>Using update Add Product to offer</description>
+               <productOrderItemId>{$productOrderItemId$}</productOrderItemId>
+               <startOrderingProcess>true</startOrderingProcess>
+               <topLevelProduct>
+                  <associationSpec>
+                     <!--productServiceId>04102025211</productServiceId-->
+                     <assignedProductId>{$assignProductId$}</assignedProductId>
+                     <!--productSpecsCode>EVCAccess</productSpecsCode-->
+                  </associationSpec>
+                  <orderItem>
+                     <contacts>
+                        <contactType>CUS</contactType>
+                        <email>ns1650000@amdocs.com</email>
+                        <firstName>Harmesh</firstName>
+                        <landLinePhone>9123123458</landLinePhone>
+                        <lastName>S</lastName>
+                        <mobilePhone>9856987747</mobilePhone>
+                     </contacts>
+                     <orderActionType>PR</orderActionType>
+                     <serviceRequiredDate>2019-10-08T20:59:59+02:00</serviceRequiredDate>
+                  </orderItem>
+                  <topLevelProduct>
+                     <containedProducts>
+                        <action>CHANGE</action>
+                        <associationSpecDefinition>
+                           <componentServiceType>PORT</componentServiceType>
+                        </associationSpecDefinition>
+                        <!--<characteristicValues>
+                           <characteristicDefinition>
+                              <attributeCode>ClassofService</attributeCode>
+                           </characteristicDefinition>
+                           <value>20</value>
+                        </characteristicValues>-->
+                        <characteristicValues>
+                           <characteristicDefinition>
+                              <attributeCode>providerMtu</attributeCode>
+                              <attributeId>73423</attributeId>
+                           </characteristicDefinition>
+                           <value>8732</value>
+                        </characteristicValues>
+                     </containedProducts>
+                  </topLevelProduct>
+               </topLevelProduct>
+            </order>
+         </amendProductOrderItemRequest>
+      </cus:amendProductOrderItem>
+   </soapenv:Body>
+</soapenv:Envelope>

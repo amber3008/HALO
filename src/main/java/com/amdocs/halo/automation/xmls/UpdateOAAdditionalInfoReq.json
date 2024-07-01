@@ -1,0 +1,27 @@
+{
+  "UpdateOAAdditionalInfoReq": {
+    "orderActionInfoListX9": [
+      {
+        "actionTypeListX9": null,
+        "propertyDataListX9": [
+          {
+            "propertyNameX9": "eisIndicator",
+            "propertyValueX9": "N"
+          }
+        ],
+        "notesListX9": [
+          {
+            "typeOfNotesX9": "Installer Notes",
+            "textX9": null,
+            "timeStampX9": null,
+            "attUIDX9": null
+          }
+        ],
+        "expeditedCircuitListX9": [],
+        "orderActionIdX9": "202058017",
+        "orderNumberX9": null,
+        "orderVersionX9": null
+      }
+    ]
+  }
+}
