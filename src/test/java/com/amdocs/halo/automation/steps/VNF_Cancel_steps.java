@@ -22,6 +22,7 @@ public class VNF_Cancel_steps {
 	public static HashMap<String, List<String>> oaIds;
 	public static String orderId;
 	public static String rsponse;
+	public static String envName;
 	public static Logger logger = null;
 	public VNF_Cancel_steps() throws FileNotFoundException, IOException
 	{

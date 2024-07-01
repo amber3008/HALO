@@ -35,7 +35,7 @@ public class GAMMAOrderCreationAVPN_Steps
 		logger.info("=============================================AVPN GAMMA Order Creation Started=============================================");
 		logger.info(env+" is up");		
 		envName=env;
-      envname=System.getProperty("enviroment");
+		envName=System.getProperty("enviroment");
 	}
 
 	@Given("^No of VLAN (\\d+)$")

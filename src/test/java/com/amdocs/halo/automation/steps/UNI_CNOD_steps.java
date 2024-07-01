@@ -22,7 +22,7 @@ public class UNI_CNOD_steps
 {
 	HashMap<String,List<String>> orderDetails;
 	ArrayList<String> listOfCktIds;
-	
+	public static String envName;
 	public static Logger logger = null;
 	
 	public UNI_CNOD_steps() throws FileNotFoundException, IOException

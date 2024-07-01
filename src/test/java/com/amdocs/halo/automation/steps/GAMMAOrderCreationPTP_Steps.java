@@ -45,7 +45,7 @@ public static Logger logger = null;
 		logger.info(env+" is up");
 		isAdxValue=isAdx;
 		envName=env;
-      envname=System.getProperty("enviroment");
+		envName=System.getProperty("enviroment");
 	}
 	
 	@When("^CNOD of UNI_A is pushed to OCX for PTP\"([^\"]*)\" \"([^\"]*)\" (.*)  (.*)$")

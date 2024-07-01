@@ -19,6 +19,7 @@ import cucumber.api.java.en.When;
 public class VNF_standAlone_steps {
 	HashMap<String,List<String>> orderDetails;
 	ArrayList<String> listOfCktIds;
+	public static String envName;
 	public static Logger logger = null;
 	public VNF_standAlone_steps () throws FileNotFoundException, IOException
 	{

@@ -23,7 +23,7 @@ public class UNI_Cancel_steps
 	public static String rsponse;
 	HashMap<String,List<String>> orderDetails;
 	public static String orderId;
-	
+	public static String envName;
 	public static Logger logger = null;
 	
 	public UNI_Cancel_steps() throws FileNotFoundException, IOException

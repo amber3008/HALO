@@ -20,6 +20,7 @@ public class UCPE_NS_steps {
 	HashMap<String,List<String>> orderDetails;
 	ArrayList<String> listOfCktIds;
 	public static Logger logger = null;
+	public static String envName;
 	public UCPE_NS_steps () throws FileNotFoundException, IOException
 	{
 		logger=LoggerGen.logGen(UCPE_NS_steps.class.getName());
